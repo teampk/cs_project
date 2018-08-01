@@ -14,16 +14,28 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_marginTop="100dp"
-            android:layout_marginLeft="50dp">
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginEnd="50dp"
+            android:orientation="vertical">
 
 
             <SeekBar
-                android:id="@+id/seekBar"
-                android:layout_width="218dp"
-                android:layout_height="22dp"
-                tools:layout_editor_absoluteX="83dp"
-                tools:layout_editor_absoluteY="43dp" />
+                android:id="@+id/sb_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"/>
 
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="this is Seek Bar"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
 
 
         </LinearLayout>
@@ -32,19 +44,31 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_marginTop="100dp"
-            android:layout_marginLeft="50dp">
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginEnd="50dp"
+            android:orientation="vertical">
 
 
 
             <SeekBar
-                android:id="@+id/seekBar2"
+                android:id="@+id/sb_2"
                 style="@style/Widget.AppCompat.SeekBar.Discrete"
-                android:layout_width="217dp"
-                android:layout_height="22dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:max="7"
-                android:progress="0"
-                tools:layout_editor_absoluteX="84dp"
-                tools:layout_editor_absoluteY="92dp" />
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="discrete mode"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
 
         </LinearLayout>
 
