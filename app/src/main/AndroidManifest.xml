@@ -20,6 +20,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".SurveyActivity"/>
+        <activity android:name=".AppIntroActivity"/>
+        <activity android:name=".SignInActivity"/>
+        <activity android:name=".SignUpActivity"/>
+
     </application>
 
 </manifest>
