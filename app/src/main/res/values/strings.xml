@@ -7,4 +7,5 @@
     <string name="action_settings">Settings</string>
 
     <string name="description_sign_in">당신의 행복을 측정하기 위해\n로그인이 필요합니다.</string>
+    <string name="description_sign_up">간단한 회원가입으로\n당신의 행복을 측정해보세요.</string>
 </resources>
