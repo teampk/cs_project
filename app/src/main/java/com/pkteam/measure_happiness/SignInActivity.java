@@ -33,8 +33,8 @@ public class SignInActivity extends AppCompatActivity {
         public void onClick(View view) {
             switch (view.getId()){
                 case R.id.tv_goto_sign_up:
-                    Intent intentSignIn = new Intent(getApplicationContext(), SignInActivity.class);
-                    startActivity(intentSignIn);
+                    Intent intentSignUp = new Intent(getApplicationContext(), SignUpActivity.class);
+                    startActivity(intentSignUp);
                     finish();
                     break;
 

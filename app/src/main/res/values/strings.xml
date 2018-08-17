@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">measure_happiness</string>
+    <string name="app_name">행복 지수 측정</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -8,4 +8,5 @@
 
     <string name="description_sign_in">당신의 행복을 측정하기 위해\n로그인이 필요합니다.</string>
     <string name="description_sign_up">간단한 회원가입으로\n당신의 행복을 측정해보세요.</string>
+
 </resources>
