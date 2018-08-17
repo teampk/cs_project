@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="유저정보" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="로그아웃" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="피드백" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />
+    </group>
+
+    <item android:title="행복 측정 어플리케이션">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="피드백" />
+
+            <item
+                android:id="@+id/nav_inf"
+                android:icon="@drawable/ic_bubble_chart_black_24dp"
+                android:title="어플리케이션 정보" />
+        </menu>
+    </item>
+
+</menu>
