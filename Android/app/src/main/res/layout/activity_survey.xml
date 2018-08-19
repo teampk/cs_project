@@ -79,7 +79,7 @@
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="행복"
-                            android:textSize="14dp"
+                            android:textSize="18dp"
                             android:textColor="@color/colorText"
                             android:textStyle="bold"
                             />
@@ -88,7 +88,7 @@
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="을 위한 10가지 영역"
-                            android:textSize="8dp"
+                            android:textSize="10dp"
                             android:textColor="@color/colorTextBlack"
                             android:textStyle="bold"
                             />
@@ -106,7 +106,7 @@
                             android:gravity="center"
                             android:textColor="@color/colorTextBlack"
                             android:text="중요도"
-                            android:textSize="12dp"
+                            android:textSize="18dp"
                             android:textStyle="bold"/>
 
                     </LinearLayout>
@@ -121,7 +121,7 @@
                             android:gravity="center"
                             android:textColor="@color/colorTextBlack"
                             android:text="만족도"
-                            android:textSize="12dp"
+                            android:textSize="18dp"
                             android:textStyle="bold"/>
 
                     </LinearLayout>
@@ -161,15 +161,17 @@
                         android:layout_weight="@dimen/column_2">
 
                         <SeekBar
+                            style="@style/Widget.AppCompat.SeekBar.Discrete"
                             android:id="@+id/sb_1_1"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:max="100"/>
+                            android:max="7"
+                            />
 
                         <TextView
                             android:id="@+id/tv_1_1"
-                            android:layout_width="20dp"
+                            android:layout_width="10dp"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="0"
@@ -186,16 +188,15 @@
                         android:paddingLeft="5dp">
 
                         <SeekBar
-                            style="@style/Widget.AppCompat.SeekBar.Discrete"
                             android:id="@+id/sb_1_2"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:max="7"/>
+                            android:max="10"/>
 
                         <TextView
                             android:id="@+id/tv_1_2"
-                            android:layout_width="10dp"
+                            android:layout_width="20dp"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="0"
@@ -240,15 +241,16 @@
                         android:layout_weight="@dimen/column_2">
 
                         <SeekBar
+                            style="@style/Widget.AppCompat.SeekBar.Discrete"
                             android:id="@+id/sb_2_1"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:max="100"/>
+                            android:max="7"/>
 
                         <TextView
                             android:id="@+id/tv_2_1"
-                            android:layout_width="20dp"
+                            android:layout_width="10dp"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="0"
@@ -265,16 +267,15 @@
                         android:paddingLeft="5dp">
 
                         <SeekBar
-                            style="@style/Widget.AppCompat.SeekBar.Discrete"
                             android:id="@+id/sb_2_2"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:max="7"/>
+                            android:max="10"/>
 
                         <TextView
                             android:id="@+id/tv_2_2"
-                            android:layout_width="10dp"
+                            android:layout_width="20dp"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="0"
@@ -319,15 +320,16 @@
                         android:layout_weight="@dimen/column_2">
 
                         <SeekBar
+                            style="@style/Widget.AppCompat.SeekBar.Discrete"
                             android:id="@+id/sb_3_1"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:max="100"/>
+                            android:max="7"/>
 
                         <TextView
                             android:id="@+id/tv_3_1"
-                            android:layout_width="20dp"
+                            android:layout_width="10dp"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="0"
@@ -344,16 +346,15 @@
                         android:paddingLeft="5dp">
 
                         <SeekBar
-                            style="@style/Widget.AppCompat.SeekBar.Discrete"
                             android:id="@+id/sb_3_2"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:max="7"/>
+                            android:max="10"/>
 
                         <TextView
                             android:id="@+id/tv_3_2"
-                            android:layout_width="10dp"
+                            android:layout_width="20dp"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="0"
@@ -398,15 +399,16 @@
                         android:layout_weight="@dimen/column_2">
 
                         <SeekBar
+                            style="@style/Widget.AppCompat.SeekBar.Discrete"
                             android:id="@+id/sb_4_1"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:max="100"/>
+                            android:max="7"/>
 
                         <TextView
                             android:id="@+id/tv_4_1"
-                            android:layout_width="20dp"
+                            android:layout_width="10dp"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="0"
@@ -423,16 +425,15 @@
                         android:paddingLeft="5dp">
 
                         <SeekBar
-                            style="@style/Widget.AppCompat.SeekBar.Discrete"
                             android:id="@+id/sb_4_2"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:max="7"/>
+                            android:max="10"/>
 
                         <TextView
                             android:id="@+id/tv_4_2"
-                            android:layout_width="10dp"
+                            android:layout_width="20dp"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="0"
@@ -477,15 +478,16 @@
                         android:layout_weight="@dimen/column_2">
 
                         <SeekBar
+                            style="@style/Widget.AppCompat.SeekBar.Discrete"
                             android:id="@+id/sb_5_1"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:max="100"/>
+                            android:max="7"/>
 
                         <TextView
                             android:id="@+id/tv_5_1"
-                            android:layout_width="20dp"
+                            android:layout_width="10dp"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="0"
@@ -502,16 +504,15 @@
                         android:paddingLeft="5dp">
 
                         <SeekBar
-                            style="@style/Widget.AppCompat.SeekBar.Discrete"
                             android:id="@+id/sb_5_2"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:max="7"/>
+                            android:max="10"/>
 
                         <TextView
                             android:id="@+id/tv_5_2"
-                            android:layout_width="10dp"
+                            android:layout_width="20dp"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="0"
@@ -556,15 +557,16 @@
                         android:layout_weight="@dimen/column_2">
 
                         <SeekBar
+                            style="@style/Widget.AppCompat.SeekBar.Discrete"
                             android:id="@+id/sb_6_1"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:max="100"/>
+                            android:max="7"/>
 
                         <TextView
                             android:id="@+id/tv_6_1"
-                            android:layout_width="20dp"
+                            android:layout_width="10dp"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="0"
@@ -581,16 +583,15 @@
                         android:paddingLeft="5dp">
 
                         <SeekBar
-                            style="@style/Widget.AppCompat.SeekBar.Discrete"
                             android:id="@+id/sb_6_2"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:max="7"/>
+                            android:max="10"/>
 
                         <TextView
                             android:id="@+id/tv_6_2"
-                            android:layout_width="10dp"
+                            android:layout_width="20dp"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="0"
@@ -635,15 +636,16 @@
                         android:layout_weight="@dimen/column_2">
 
                         <SeekBar
+                            style="@style/Widget.AppCompat.SeekBar.Discrete"
                             android:id="@+id/sb_7_1"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:max="100"/>
+                            android:max="7"/>
 
                         <TextView
                             android:id="@+id/tv_7_1"
-                            android:layout_width="20dp"
+                            android:layout_width="10dp"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="0"
@@ -660,16 +662,15 @@
                         android:paddingLeft="5dp">
 
                         <SeekBar
-                            style="@style/Widget.AppCompat.SeekBar.Discrete"
                             android:id="@+id/sb_7_2"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:max="7"/>
+                            android:max="10"/>
 
                         <TextView
                             android:id="@+id/tv_7_2"
-                            android:layout_width="10dp"
+                            android:layout_width="20dp"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="0"
@@ -714,15 +715,16 @@
                         android:layout_weight="@dimen/column_2">
 
                         <SeekBar
+                            style="@style/Widget.AppCompat.SeekBar.Discrete"
                             android:id="@+id/sb_8_1"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:max="100"/>
+                            android:max="7"/>
 
                         <TextView
                             android:id="@+id/tv_8_1"
-                            android:layout_width="20dp"
+                            android:layout_width="10dp"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="0"
@@ -739,16 +741,15 @@
                         android:paddingLeft="5dp">
 
                         <SeekBar
-                            style="@style/Widget.AppCompat.SeekBar.Discrete"
                             android:id="@+id/sb_8_2"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:max="7"/>
+                            android:max="10"/>
 
                         <TextView
                             android:id="@+id/tv_8_2"
-                            android:layout_width="10dp"
+                            android:layout_width="20dp"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="0"
@@ -793,15 +794,16 @@
                         android:layout_weight="@dimen/column_2">
 
                         <SeekBar
+                            style="@style/Widget.AppCompat.SeekBar.Discrete"
                             android:id="@+id/sb_9_1"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:max="100"/>
+                            android:max="7"/>
 
                         <TextView
                             android:id="@+id/tv_9_1"
-                            android:layout_width="20dp"
+                            android:layout_width="10dp"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="0"
@@ -818,16 +820,15 @@
                         android:paddingLeft="5dp">
 
                         <SeekBar
-                            style="@style/Widget.AppCompat.SeekBar.Discrete"
                             android:id="@+id/sb_9_2"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:max="7"/>
+                            android:max="10"/>
 
                         <TextView
                             android:id="@+id/tv_9_2"
-                            android:layout_width="10dp"
+                            android:layout_width="20dp"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="0"
@@ -872,15 +873,16 @@
                         android:layout_weight="@dimen/column_2">
 
                         <SeekBar
+                            style="@style/Widget.AppCompat.SeekBar.Discrete"
                             android:id="@+id/sb_10_1"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:max="100"/>
+                            android:max="7"/>
 
                         <TextView
                             android:id="@+id/tv_10_1"
-                            android:layout_width="20dp"
+                            android:layout_width="10dp"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="0"
@@ -897,16 +899,15 @@
                         android:paddingLeft="5dp">
 
                         <SeekBar
-                            style="@style/Widget.AppCompat.SeekBar.Discrete"
                             android:id="@+id/sb_10_2"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:max="7"/>
+                            android:max="10"/>
 
                         <TextView
                             android:id="@+id/tv_10_2"
-                            android:layout_width="10dp"
+                            android:layout_width="20dp"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="0"

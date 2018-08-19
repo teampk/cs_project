@@ -6,12 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.pkteam.measure_happiness.MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    tools:context="com.pkteam.measure_happiness.View.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@color/colorBackgroundLightGray">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
 
         <LinearLayout
@@ -19,22 +17,91 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btn_survey"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="측정하러 가기!"
-                android:textColor="@color/colorTextInButton"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:background="@color/colorPrimary"
-                android:layout_marginLeft="20dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp">
+
+                <Button
+                    android:id="@+id/btn_survey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/button_orange_round"
+                    android:text="측정하러 가기!"
+                    android:textColor="@color/colorTextInButton"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5">
+
+                <com.github.mikephil.charting.charts.RadarChart
+                    android:id="@+id/chart_radar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_change"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_orange_round"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="변화 추이"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorTextInButton"
+
+                        />
+
+                    <Button
+                        android:id="@+id/btn_ranking"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_orange_round"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="랭 킹"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorTextInButton"
+
+                        />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
 
         </LinearLayout>
 
-    </ScrollView>
 
 
 

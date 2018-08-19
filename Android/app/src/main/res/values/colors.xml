@@ -13,8 +13,14 @@
     <color name="colorTextGray">#acacac</color>
     <color name="colorTextBlack">#000000</color>
 
-    <color name="colorBackgroundLightGray">#FAFAFA</color>
+    <color name="colorGraphGray">#CCCCCC</color>
+
+    <color name="colorBackgroundLightGray">#F9F9F9</color>
 
     <color name="colorRidge">#1c626262</color>
     <color name="colorRidgeCheckBox">#888888</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+
 </resources>
