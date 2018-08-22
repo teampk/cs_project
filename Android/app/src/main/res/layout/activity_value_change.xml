@@ -204,8 +204,8 @@
         <!-- 1.신체적 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="030dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="30dp"
             android:orientation="vertical">
 
             <TextView
@@ -218,12 +218,26 @@
                 android:textSize="14dp"
                 android:textStyle="bold" />
 
-            <ImageView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:layout_marginTop="10dp"
-                android:layout_weight="1"
-                android:background="@color/colorWhite" />
+                android:background="@drawable/background_white_round">
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chart1"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/seekBar1" />
+
+
+
+
+
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
