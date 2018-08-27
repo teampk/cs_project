@@ -40,4 +40,22 @@
         </menu>
     </item>
 
+    <item android:title="테스트 용">
+        <menu>
+            <item
+                android:id="@+id/test_app_intro"
+                android:icon="@drawable/ic_menu_share"
+                android:title="소개 페이지" />
+            <item
+                android:id="@+id/test_sign_up"
+                android:icon="@drawable/ic_menu_send"
+                android:title="회원가입" />
+
+            <item
+                android:id="@+id/test_sign_in"
+                android:icon="@drawable/ic_bubble_chart_black_24dp"
+                android:title="로그인" />
+        </menu>
+    </item>
+
 </menu>

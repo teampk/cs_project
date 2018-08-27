@@ -39,6 +39,9 @@ public class MainActivity extends AppCompatActivity
     private Button btnRanking, btnChange, btnSurvey;
     private TextView tvValueSmile;
 
+    //testing
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,15 +74,11 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
-            Intent intent = new Intent(getApplicationContext(), SignUpActivity.class);
-            startActivity(intent);
+
         } else if (id == R.id.nav_gallery) {
-            Intent intent = new Intent(getApplicationContext(), SignInActivity.class);
-            startActivity(intent);
+
         } else if (id == R.id.nav_slideshow) {
-            Intent intent = new Intent(getApplicationContext(), AppIntroActivity.class);
-            startActivity(intent);
+
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
@@ -87,6 +86,19 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_send) {
 
         }
+
+        ////////// testing
+        else if (id == R.id.test_app_intro){
+            Intent intent = new Intent(getApplicationContext(), AppIntroActivity.class);
+            startActivity(intent);
+        }else if (id == R.id.test_sign_in){
+            Intent intent = new Intent(getApplicationContext(), SignInActivity.class);
+            startActivity(intent);
+        }else if (id == R.id.test_sign_up){
+            Intent intent = new Intent(getApplicationContext(), SignUpActivity.class);
+            startActivity(intent);
+        }
+        //////////
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

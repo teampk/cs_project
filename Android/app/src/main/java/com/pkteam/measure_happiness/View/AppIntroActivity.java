@@ -28,6 +28,7 @@ public class AppIntroActivity extends AppIntro {
         sliderPage1.setImageDrawable(R.drawable.ic_child_care_orange_24dp);
         sliderPage1.setBgColor(Color.WHITE);
 */
+
         addSlide(AppIntroFragment.newInstance(R.layout.app_intro_1));
         addSlide(AppIntroFragment.newInstance(R.layout.app_intro_2));
         addSlide(AppIntroFragment.newInstance(R.layout.app_intro_3));
