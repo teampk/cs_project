@@ -42,9 +42,6 @@ public class MainActivity extends AppCompatActivity
 
     private LinearLayout llSmile;
 
-    //testing
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +58,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -269,8 +266,8 @@ public class MainActivity extends AppCompatActivity
                     break;
 
                 case R.id.ll_smile:
-
-
+                    Intent intent4 = new Intent(getApplicationContext(), SmileInfoActivity.class);
+                    startActivity(intent4);
                     break;
             }
         }

@@ -56,7 +56,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left|center"
-                android:text="지난 7번의 설문조사 결과에 따른 변화추이 입니다."
+                android:text="지난 일곱 번의 설문조사 결과에 따른 변화추이 입니다."
                 android:textColor="@color/colorTextBlack"
                 android:textSize="14dp"
 
