@@ -12,6 +12,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.github.mikephil.charting.charts.RadarChart;
@@ -38,6 +39,8 @@ public class MainActivity extends AppCompatActivity
     private RadarChart mChart;
     private Button btnRanking, btnChange, btnSurvey;
     private TextView tvValueSmile;
+
+    private LinearLayout llSmile;
 
     //testing
 
@@ -115,8 +118,10 @@ public class MainActivity extends AppCompatActivity
         btnSurvey.setOnClickListener(listener);
         btnChange.setOnClickListener(listener);
         btnRanking.setOnClickListener(listener);
+        llSmile = findViewById(R.id.ll_smile);
         tvValueSmile = findViewById(R.id.tv_value_smile);
 
+        llSmile.setOnClickListener(listener);
 
         // Toolbar
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -243,7 +248,7 @@ public class MainActivity extends AppCompatActivity
         mChart.invalidate();
     }
 
-    private Button.OnClickListener listener = new Button.OnClickListener(){
+    private View.OnClickListener listener = new View.OnClickListener(){
         @Override
         public void onClick(View v) {
             switch (v.getId()){
@@ -261,6 +266,11 @@ public class MainActivity extends AppCompatActivity
                 case R.id.btn_survey:
                     Intent intent3 = new Intent(getApplicationContext(), SurveyActivity.class);
                     startActivity(intent3);
+                    break;
+
+                case R.id.ll_smile:
+
+
                     break;
             }
         }

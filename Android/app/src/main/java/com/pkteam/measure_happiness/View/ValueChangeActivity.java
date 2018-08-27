@@ -33,7 +33,6 @@ import java.util.ArrayList;
 
 public class ValueChangeActivity extends AppCompatActivity {
     private LineChart mChart;
-    private Button btnBack;
     private TextView tvGraphTitle;
     private static final String[] graphTitle = {"0",
             "1. 신체적 (Physical)", "2. 정신적 (Emotional)",
@@ -51,7 +50,7 @@ public class ValueChangeActivity extends AppCompatActivity {
     }
     private void bindingView(){
 
-        btnBack = findViewById(R.id.btn_back);
+        Button btnBack = findViewById(R.id.btn_back);
         btnBack.setOnClickListener(listener);
         tvGraphTitle = findViewById(R.id.tv_graph_title);
         Button bt1 = findViewById(R.id.bt_1);

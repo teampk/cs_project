@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--toolbar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorPrimary">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_chevron_left_white_24dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="스마일 정보"
+                android:gravity="center"
+                android:textSize="24dp"
+                android:textColor="@color/colorTextInButton"
+                />
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent">
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <!--my smile-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            >
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="내 스마일 : "
+                android:textColor="@color/colorTextBlack"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="50"
+                android:gravity="center|left"
+                android:textSize="25dp"
+                android:textColor="@color/colorTextBlack"
+                />
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/smile"
+
+                />
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_orange_round"
+                android:text="충전하기"
+                android:textColor="@color/colorTextInButton"
+                android:textSize="18dp"
+                />
+            <Button
+                android:layout_marginTop="30dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_orange_round"
+                android:text="관련상품 보러가기"
+                android:textColor="@color/colorTextInButton"
+                android:textSize="18dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

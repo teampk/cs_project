@@ -26,6 +26,7 @@
         <activity android:name=".View.SignUpActivity"/>
         <activity android:name=".View.ValueChangeActivity"/>
         <activity android:name=".View.ValueRankingActivity"/>
+        <activity android:name=".View.SmileInfoActivity"/>
 
 
 

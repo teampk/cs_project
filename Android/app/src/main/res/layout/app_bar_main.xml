@@ -24,6 +24,7 @@
                 app:popupTheme="@style/AppTheme.PopupOverlay"/>
 
             <LinearLayout
+                android:id="@+id/ll_smile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="20dp"
