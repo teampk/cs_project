@@ -19,4 +19,26 @@
     <string name="app_intro_description_3">The library offers a lot of customization, while keeping it simple for those that like simple.</string>
     <string name="app_intro_description_4">Feel free to explore the rest of the library demo!</string>
 
+    <string name="happy_title_1">1.신체적(Physical)</string>
+    <string name="happy_title_2">2.정서적(Emotional)</string>
+    <string name="happy_title_3">3.사회적(Social)</string>
+    <string name="happy_title_4">4.경제적(Financial)</string>
+    <string name="happy_title_5">5.환경적(Environmental)</string>
+    <string name="happy_title_6">6.지적(Intellectual)</string>
+    <string name="happy_title_7">7.직업적(Occupational)</string>
+    <string name="happy_title_8">8.영적(Spiritual)</string>
+    <string name="happy_title_9">9.정신적(Mental)</string>
+    <string name="happy_title_10">10.메디컬(Medical)</string>
+
+    <string name="happy_description_1">신체적 건강, 수면, 몸매관리, 자세교정, 성형수술, 근육발달, 면역력 유지</string>
+    <string name="happy_description_2">마음의 상처 치유, 온유한 마음, 편안한 상태, 풍부한 감정, 좋은 기분, 신바람</string>
+    <string name="happy_description_3">어울림, 친교, 사회적 교감, 왕따 방지, 남에게 잘 보이고자 하는 맘, 인기, 명예</string>
+    <string name="happy_description_4">노후 준비, 자산관리, 학자금· 전세금· 급전 대출, 여가를 위한 경제적 여유</string>
+    <string name="happy_description_5">공기 정화, 황사 및 미세먼지로의 해방, 깨끗한 물, 안전, 보안, 정책적 환경</string>
+    <string name="happy_description_6">재교육, 지식 및 신기술의 습득, 전문분야/철학/예술/타 문화 지식 함양</string>
+    <string name="happy_description_7">직장 스트레스, 인센티브 및 근무환경, 복지환경, (재)취업, 직업병, 적성 여부</string>
+    <string name="happy_description_8">종교적 활동, 철학적 신념에 따른 결정 및 행동, 의식 절차(Ritual) 및 관습</string>
+    <string name="happy_description_9">우울증, 치매, 기타 정신적 질환의 예방/치유, 정신적 항상성을 유지하는 상태</string>
+    <string name="happy_description_10">의사 처방과 함께 질병의 치료, 치유, 합병증 예방 등을 위한 보조활동</string>
+
 </resources>

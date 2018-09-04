@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,6 +21,7 @@ import com.pkteam.measure_happiness.R;
 
 public class SurveyActivity extends AppCompatActivity {
     private Button btnBack, btnSubmit;
+    private ImageView ivQuestion1, ivQuestion2;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -83,6 +85,24 @@ public class SurveyActivity extends AppCompatActivity {
                                     });
                     AlertDialog dialog = builder.create();    // 알림창 객체 생성
                     dialog.show();
+                    break;
+                case R.id.iv_question_1:
+
+                    AlertDialog.Builder builder1 = new AlertDialog.Builder(SurveyActivity.this);
+                    builder1.setTitle(getString(R.string.happy_title_1));
+                    builder1.setMessage(getString(R.string.happy_description_1));
+                    AlertDialog dialog1 = builder1.create();    // 알림창 객체 생성
+                    dialog1.show();
+
+
+                    break;
+                case R.id.iv_question_2:
+
+                    AlertDialog.Builder builder2 = new AlertDialog.Builder(SurveyActivity.this);
+                    builder2.setTitle(getString(R.string.happy_title_2));
+                    builder2.setMessage(getString(R.string.happy_description_2));
+                    AlertDialog dialog2 = builder2.create();    // 알림창 객체 생성
+                    dialog2.show();
 
 
                     break;
@@ -97,6 +117,13 @@ public class SurveyActivity extends AppCompatActivity {
         btnBack.setOnClickListener(listener);
         btnSubmit = findViewById(R.id.btn_submit);
         btnSubmit.setOnClickListener(listener);
+
+        ivQuestion1 = findViewById(R.id.iv_question_1);
+        ivQuestion2 = findViewById(R.id.iv_question_2);
+
+        ivQuestion1.setOnClickListener(listener);
+        ivQuestion2.setOnClickListener(listener);
+
         SeekBar sb1_1 = findViewById(R.id.sb_1_1);
         TextView tv1_1 = findViewById(R.id.tv_1_1);
         SeekBar sb1_2 = findViewById(R.id.sb_1_2);

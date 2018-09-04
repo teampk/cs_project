@@ -6,7 +6,7 @@
     <dimen name="nav_header_height">176dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
 
-    <dimen name="column_1">5</dimen>
+    <dimen name="column_1">4</dimen>
     <dimen name="column_2">5</dimen>
     <dimen name="column_3">5</dimen>
 
