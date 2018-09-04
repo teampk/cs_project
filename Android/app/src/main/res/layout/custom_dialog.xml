@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:text="0.제목(Title)"
+        android:background="@color/colorPrimary"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/happy_description_1"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="만족도"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="20dp"/>
+
+
+            <SeekBar
+                android:id="@+id/sb_satisfaction"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:max="7"
+                />
+
+            <TextView
+                android:id="@+id/tv_satisfaction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="40dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_question_1"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/happy_question_1_1"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="14dp"/>
+                <RadioGroup
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="a."
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_1_a"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </RadioButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="b."
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_1_b"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </RadioButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="c."
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_1_c"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </RadioButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="d."
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_1_d"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </RadioButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="e."
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_1_e"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </RadioButton>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_question_2"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/happy_question_1_2"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="14dp"/>
+                <RadioGroup
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="a."
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_2_a"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </RadioButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="b."
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_2_b"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </RadioButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="c."
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_2_c"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </RadioButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="d."
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_2_d"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </RadioButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="e."
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_2_e"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </RadioButton>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="100dp">
+                <TextView
+                    android:id="@+id/tv_question_3"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/happy_question_1_3"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="14dp"/>
+                <RadioGroup
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="a."
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_3_a"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </RadioButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="b."
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_3_b"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </RadioButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="c."
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_3_c"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </RadioButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="d."
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_3_d"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </RadioButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="e."
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_3_e"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </RadioButton>
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+
+
+
+
+            <EditText
+                android:visibility="gone"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="100dp"
+                android:id="@+id/mesgase"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:hint="내용을 입력하세요."/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="확인"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:background="#ffffff"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#000000" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="취소"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:background="#ffffff"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+
+</LinearLayout>

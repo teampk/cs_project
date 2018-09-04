@@ -41,4 +41,9 @@
     <string name="happy_description_9">우울증, 치매, 기타 정신적 질환의 예방/치유, 정신적 항상성을 유지하는 상태</string>
     <string name="happy_description_10">의사 처방과 함께 질병의 치료, 치유, 합병증 예방 등을 위한 보조활동</string>
 
+
+    <string name="happy_question_1_1">1.당신은 건강한가요?</string>
+    <string name="happy_question_1_2">2.다이어트를 하시고 계신가요?</string>
+    <string name="happy_question_1_3">3.당신은 얼굴에 만족하시나요? 만족하세요? 정말로요? 진짜로?</string>
+
 </resources>

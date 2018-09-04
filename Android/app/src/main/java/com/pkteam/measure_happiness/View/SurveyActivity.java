@@ -1,18 +1,23 @@
 package com.pkteam.measure_happiness.View;
 
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.pkteam.measure_happiness.CustomDialog;
 import com.pkteam.measure_happiness.R;
 
 /**
@@ -22,6 +27,8 @@ import com.pkteam.measure_happiness.R;
 public class SurveyActivity extends AppCompatActivity {
     private Button btnBack, btnSubmit;
     private ImageView ivQuestion1, ivQuestion2;
+    private CustomDialog mCustomDialog;
+    private TextView tvTest;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -86,13 +93,11 @@ public class SurveyActivity extends AppCompatActivity {
                     AlertDialog dialog = builder.create();    // 알림창 객체 생성
                     dialog.show();
                     break;
+
                 case R.id.iv_question_1:
 
-                    AlertDialog.Builder builder1 = new AlertDialog.Builder(SurveyActivity.this);
-                    builder1.setTitle(getString(R.string.happy_title_1));
-                    builder1.setMessage(getString(R.string.happy_description_1));
-                    AlertDialog dialog1 = builder1.create();    // 알림창 객체 생성
-                    dialog1.show();
+                    CustomDialog customDialog = new CustomDialog(SurveyActivity.this);
+                    customDialog.callFunction(tvTest);
 
 
                     break;
@@ -112,7 +117,10 @@ public class SurveyActivity extends AppCompatActivity {
         }
     };
 
+
     private void bindingView() {
+        tvTest = findViewById(R.id.tv_test);
+
         btnBack = findViewById(R.id.btn_back);
         btnBack.setOnClickListener(listener);
         btnSubmit = findViewById(R.id.btn_submit);
