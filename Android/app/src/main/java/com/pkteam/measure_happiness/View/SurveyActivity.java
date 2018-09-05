@@ -1,20 +1,13 @@
 package com.pkteam.measure_happiness.View;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.SeekBar;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.pkteam.measure_happiness.CustomDialog;
@@ -26,9 +19,9 @@ import com.pkteam.measure_happiness.R;
 
 public class SurveyActivity extends AppCompatActivity {
     private Button btnBack, btnSubmit;
-    private ImageView ivQuestion1, ivQuestion2;
     private CustomDialog mCustomDialog;
-    private Button btnQuestion1, btnQuestion2;
+    private Button btnQuestion1, btnQuestion2, btnQuestion3, btnQuestion4, btnQuestion5,
+            btnQuestion6, btnQuestion7, btnQuestion8, btnQuestion9, btnQuestion10;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -68,27 +61,6 @@ public class SurveyActivity extends AppCompatActivity {
                     dialog.show();
                     break;
 
-                case R.id.iv_question_1:
-
-                    CustomDialog customDialog = new CustomDialog(SurveyActivity.this);
-                    customDialog.callFunction(
-                            getString(R.string.happy_title_1),
-                            getString(R.string.happy_description_1),
-                            getString(R.string.happy_question_1_1),
-                            getString(R.string.happy_question_1_2),
-                            getString(R.string.happy_question_1_3));
-
-                    break;
-                case R.id.iv_question_2:
-
-                    AlertDialog.Builder builder2 = new AlertDialog.Builder(SurveyActivity.this);
-                    builder2.setTitle(getString(R.string.happy_title_2));
-                    builder2.setMessage(getString(R.string.happy_description_2));
-                    AlertDialog dialog2 = builder2.create();    // 알림창 객체 생성
-                    dialog2.show();
-
-
-                    break;
                 case R.id.btn_question_1:
                     CustomDialog customDialog1 = new CustomDialog(SurveyActivity.this);
                     customDialog1.callFunction(
@@ -106,6 +78,15 @@ public class SurveyActivity extends AppCompatActivity {
                             getString(R.string.happy_question_2_1),
                             getString(R.string.happy_question_2_2),
                             getString(R.string.happy_question_2_3));
+                    break;
+                case R.id.btn_question_3:
+                    CustomDialog customDialog3 = new CustomDialog(SurveyActivity.this);
+                    customDialog3.callFunction(
+                            getString(R.string.happy_title_3),
+                            getString(R.string.happy_description_3),
+                            getString(R.string.happy_question_3_1),
+                            getString(R.string.happy_question_3_2),
+                            getString(R.string.happy_question_3_3));
                     break;
                 default:
                     break;
@@ -125,12 +106,10 @@ public class SurveyActivity extends AppCompatActivity {
         btnQuestion1.setOnClickListener(listener);
         btnQuestion2 = findViewById(R.id.btn_question_2);
         btnQuestion2.setOnClickListener(listener);
+        btnQuestion3 = findViewById(R.id.btn_question_3);
+        btnQuestion3.setOnClickListener(listener);
 
-        ivQuestion1 = findViewById(R.id.iv_question_1);
-        ivQuestion2 = findViewById(R.id.iv_question_2);
 
-        ivQuestion1.setOnClickListener(listener);
-        ivQuestion2.setOnClickListener(listener);
 
 
     }

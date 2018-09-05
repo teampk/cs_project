@@ -13,7 +13,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
 
@@ -100,7 +100,7 @@
 
                 </LinearLayout>
 
-                <!-- 1.physical -->
+                <!-- 1.신체적(physical) -->
                 <LinearLayout
                     android:layout_marginTop="@dimen/margin_measurement"
                     android:layout_width="match_parent"
@@ -115,30 +115,21 @@
 
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="180dp"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="1.신체적"
+                            android:gravity="left|center"
+                            android:text="@string/happy_title_1"
                             android:textSize="14dp"
                             android:textColor="@color/colorTextBlack"
                             android:textStyle="bold"
                             />
 
-                        <ImageView
-                            android:id="@+id/iv_question_1"
-                            android:layout_marginLeft="10dp"
-                            android:layout_width="18dp"
-                            android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/question"/>
-
 
 
                         <Button
                             android:id="@+id/btn_question_1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:paddingLeft="10dp"
-                            android:paddingRight="10dp"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
                             android:gravity="center"
                             android:text="설문시작"
                             android:textColor="@color/colorTextInButton"
@@ -146,19 +137,23 @@
                             />
 
                         <TextView
+                            android:layout_marginLeft="30dp"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
-                            android:text="점수 : 5"/>
+                            android:text="점수 : "/>
 
-
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="0"/>
 
                     </LinearLayout>
 
-
                 </LinearLayout>
 
-                <!-- 2.Emotional -->
+                <!-- 2.정서적(Emotional) -->
                 <LinearLayout
                     android:layout_marginTop="@dimen/margin_measurement"
                     android:layout_width="match_parent"
@@ -173,41 +168,43 @@
 
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="180dp"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="2.정서적"
+                            android:gravity="left|center"
+                            android:text="@string/happy_title_2"
                             android:textSize="14dp"
                             android:textColor="@color/colorTextBlack"
                             android:textStyle="bold"
                             />
-                        <ImageView
-                            android:id="@+id/iv_question_2"
-                            android:layout_marginLeft="10dp"
-                            android:layout_width="18dp"
-                            android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/question"/>
+
+
+
+                        <Button
+                            android:id="@+id/btn_question_2"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:text="설문시작"
+                            android:textColor="@color/colorTextInButton"
+                            android:background="@drawable/button_orange_round"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="점수 : "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="0"/>
+
+
 
                     </LinearLayout>
-
-                    <Button
-                        android:id="@+id/btn_question_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:gravity="center"
-                        android:text="설문시작"
-                        android:textColor="@color/colorTextInButton"
-                        android:background="@drawable/button_orange_round"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="점수 : 5"/>
-
 
 
                 </LinearLayout>
@@ -227,14 +224,41 @@
 
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="180dp"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="3.사회적"
+                            android:gravity="left|center"
+                            android:text="@string/happy_title_3"
                             android:textSize="14dp"
                             android:textColor="@color/colorTextBlack"
                             android:textStyle="bold"
                             />
+
+
+
+                        <Button
+                            android:id="@+id/btn_question_3"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:text="설문시작"
+                            android:textColor="@color/colorTextInButton"
+                            android:background="@drawable/button_orange_round"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="점수 : "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="0"/>
+
+
 
                     </LinearLayout>
 

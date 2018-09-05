@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private RadarChart mChart;
-    private Button btnRanking, btnChange, btnSurvey;
     private TextView tvValueSmile;
 
     private LinearLayout llSmile;
@@ -109,9 +108,9 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         // SURVEY 버튼
-        btnSurvey = findViewById(R.id.btn_survey);
-        btnChange = findViewById(R.id.btn_change);
-        btnRanking = findViewById(R.id.btn_ranking);
+        Button btnSurvey = findViewById(R.id.btn_survey);
+        Button btnChange = findViewById(R.id.btn_change);
+        Button btnRanking = findViewById(R.id.btn_ranking);
         btnSurvey.setOnClickListener(listener);
         btnChange.setOnClickListener(listener);
         btnRanking.setOnClickListener(listener);

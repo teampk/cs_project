@@ -10,6 +10,6 @@
     <dimen name="column_2">5</dimen>
     <dimen name="column_3">5</dimen>
 
-    <dimen name="margin_measurement">10dp</dimen>
+    <dimen name="margin_measurement">30dp</dimen>
 
 </resources>
