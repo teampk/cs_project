@@ -5,7 +5,6 @@ import android.content.Context;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -38,7 +37,6 @@ public class CustomDialog {
         dlg.show();
 
         // 커스텀 다이얼로그의 각 위젯들을 정의한다.
-        final EditText message = dlg.findViewById(R.id.mesgase);
         final Button okButton = dlg.findViewById(R.id.okButton);
         final Button cancelButton = dlg.findViewById(R.id.cancelButton);
 

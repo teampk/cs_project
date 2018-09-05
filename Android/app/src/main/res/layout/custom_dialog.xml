@@ -48,8 +48,18 @@
                 android:textColor="@color/colorTextBlack"
                 android:textSize="24dp"/>
 
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:text="@string/description_importance"
+                android:textSize="15dp"/>
+
+
 
             <SeekBar
+                android:layout_marginTop="10dp"
                 android:id="@+id/sb_satisfaction"
                 style="@style/Widget.AppCompat.SeekBar.Discrete"
                 android:layout_width="match_parent"
@@ -80,8 +90,17 @@
                 android:textSize="24dp"
                 android:textStyle="bold"/>
 
-            <LinearLayout
+            <TextView
                 android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:text="@string/description_satisfaction"
+                android:textSize="15dp"/>
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -446,26 +465,6 @@
                 </RadioGroup>
             </LinearLayout>
 
-
-
-
-
-
-
-            <EditText
-                android:visibility="gone"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="100dp"
-                android:id="@+id/mesgase"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:gravity="center"
-                android:textColor="#000000"
-                android:textSize="16dp"
-                android:hint="내용을 입력하세요."/>
-
-
-
         </LinearLayout>
 
     </ScrollView>
@@ -489,9 +488,9 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="확인"
-            android:textColor="#000000"
+            android:textColor="@color/colorTextInButton"
             android:textSize="16dp"
-            android:background="#ffffff"/>
+            android:background="@color/colorPrimary"/>
 
         <View
             android:layout_width="1dp"
@@ -509,11 +508,5 @@
             android:textSize="16dp"
             android:background="#ffffff"/>
     </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#000000"/>
-
 
 </LinearLayout>

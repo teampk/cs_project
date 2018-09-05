@@ -19,6 +19,9 @@
     <string name="app_intro_description_3">The library offers a lot of customization, while keeping it simple for those that like simple.</string>
     <string name="app_intro_description_4">Feel free to explore the rest of the library demo!</string>
 
+    <string name="description_importance">중요도설명중요도설명중요도설명중요도설명중요도설명중요도설명</string>
+    <string name="description_satisfaction">만족도설명만족도설명만족도설명만족도설명만족도설명만족도설명</string>
+
     <string name="happy_title_1">1.신체적(Physical)</string>
     <string name="happy_title_2">2.정서적(Emotional)</string>
     <string name="happy_title_3">3.사회적(Social)</string>
