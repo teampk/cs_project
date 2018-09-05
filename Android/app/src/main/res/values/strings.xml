@@ -41,9 +41,46 @@
     <string name="happy_description_9">우울증, 치매, 기타 정신적 질환의 예방/치유, 정신적 항상성을 유지하는 상태</string>
     <string name="happy_description_10">의사 처방과 함께 질병의 치료, 치유, 합병증 예방 등을 위한 보조활동</string>
 
+    <string name="happy_question_measure">a.전혀아니다 b.조금아니다 c.보통이다 d.조금그렇다 e.매우그렇다</string>
 
-    <string name="happy_question_1_1">1.당신은 건강한가요?</string>
-    <string name="happy_question_1_2">2.다이어트를 하시고 계신가요?</string>
-    <string name="happy_question_1_3">3.당신은 얼굴에 만족하시나요? 만족하세요? 정말로요? 진짜로?</string>
 
+    <string name="happy_question_1_1">1.나의 수면생활로 주중의 스케쥴을 온전히 소화할 수 있다.</string>
+    <string name="happy_question_1_2">2.나의 육체적 발달(몸매)이 만족스럽다.</string>
+    <string name="happy_question_1_3">3.나의 외모(얼굴 혹은 겉으로 들어나는 외관)가 만족스럽다.</string>
+
+    <string name="happy_question_2_1">1.나는 과거에 겪은 마음의 상처들로부터 자유롭다.</string>
+    <string name="happy_question_2_2">2.나는 다른 사람(영상 혹은 실제)이 겪는 상황을 보고 감정적으로 바라본다.</string>
+    <string name="happy_question_2_3">3.나는 휴식기간을 보내는 중에 심적으로 매우 안정된다.</string>
+
+    <string name="happy_question_3_1">1.남에게 보이는 나의 모습이 중요하다.</string>
+    <string name="happy_question_3_2">2.다른 사람들과 어울리는(일과 외) 시간과 횟수가 많다.</string>
+    <string name="happy_question_3_3">3.나에게는 나와 잘 맞아 정신적 교감을 할 수 있는 친구가 있다.</string>
+
+    <string name="happy_question_4_1">1.나는 나에 의해 생기는 금전적 소실에 대해 부담스럽지 않다.</string>
+    <string name="happy_question_4_2">2.나는 급전 대출에 대해서 진지하게 생각한다.</string>
+    <string name="happy_question_4_3">3.나는 문화생활을 하기위한 소비가 부담스럽지 않다.</string>
+
+    <string name="happy_question_5_1">1.나는 항상 정수된 물을 공급받을 수 있다.</string>
+    <string name="happy_question_5_2">2.나는 밤이나 낮이나 범죄로부터 안전하다.</string>
+    <string name="happy_question_5_3">3.내가 준비하지 않아도 황사나 미세먼지에 의해서 생기는 피해로부터 피할 수 있는 대책이 도처에 존재한다.</string>
+
+    <string name="happy_question_6_1">1.내 전문분야 이외에 공부하고자 하는 의지가 있다.</string>
+    <string name="happy_question_6_2">2.문화생활 중에 직접 활동이 필요한 문화생활을 한다.</string>
+    <string name="happy_question_6_3">3.내 전문분야에 대한 심화공부에 대한 의지가 있다.</string>
+
+    <string name="happy_question_7_1">1.회사에서 제공하는 복지생활에 대해 잘 알고 활용중이다.</string>
+    <string name="happy_question_7_2">2.업무 외의 시간에서 업무에 대한 고민이 필요하지 않다.</string>
+    <string name="happy_question_7_3">3.내가 하는 일이 내 적성과 잘 맞아, 지속적으로 할 의향이 있다.</string>
+
+    <string name="happy_question_8_1">1.나는 종교생활에 적극적이다.</string>
+    <string name="happy_question_8_2">2.나는 일상에서 종교에 의해 내 행실에 제한점을 둔다.</string>
+    <string name="happy_question_8_3">3.일상에서 종교에 의한 의식 혹은 관습을 철저히 지킨다.</string>
+
+    <string name="happy_question_9_1">1.나는 나의 정신적 상태에 대해 늘 잘 이해한다.</string>
+    <string name="happy_question_9_2">2.나는 나의 감정을 잘 컨트롤한다.</string>
+    <string name="happy_question_9_3">3.나는 나의 정신상태 때문에 내가 우울증이 아닌가 고민해본적이 있다.</string>
+
+    <string name="happy_question_10_1">1.나의 건강에 대해서 전문가를 통해 적절한 조치를 취할 수 있다.</string>
+    <string name="happy_question_10_2">2.나는 의사의 처방 이외에 병을 예방하고자 하는 행동 혹은 활동들이 있다.</string>
+    <string name="happy_question_10_3">3.나는 내가 신체적 상처를 입었을 때 적절한 조치를 받아 이후 생활하는데 과거의 신체적 상처가 문제가 되지 않는다.</string>
 </resources>

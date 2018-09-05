@@ -100,50 +100,6 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/column_1">
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/column_2">
-
-                        <TextView
-                            android:id="@+id/tv_test"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:textColor="@color/colorTextBlack"
-                            android:text="중요도"
-                            android:textSize="18dp"
-                            android:textStyle="bold"/>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/column_3">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:textColor="@color/colorTextBlack"
-                            android:text="만족도"
-                            android:textSize="18dp"
-                            android:textStyle="bold"/>
-
-                    </LinearLayout>
-                </LinearLayout>
-
                 <!-- 1.physical -->
                 <LinearLayout
                     android:layout_marginTop="@dimen/margin_measurement"
@@ -176,56 +132,26 @@
                             app:srcCompat="@drawable/question"/>
 
 
-                    </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/column_2">
-
-                        <SeekBar
-                            style="@style/Widget.AppCompat.SeekBar.Discrete"
-                            android:id="@+id/sb_1_1"
-                            android:layout_width="0dp"
+                        <Button
+                            android:id="@+id/btn_question_1"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:max="7"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center"
+                            android:text="설문시작"
+                            android:textColor="@color/colorTextInButton"
+                            android:background="@drawable/button_orange_round"
                             />
 
                         <TextView
-                            android:id="@+id/tv_1_1"
-                            android:layout_width="10dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
-                            android:text="0"
-                            android:textSize="11dp"
-                            android:textColor="#000000"
-                            android:textStyle="bold"/>
+                            android:text="점수 : 5"/>
 
-                    </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/column_3"
-                        android:paddingLeft="5dp">
-
-                        <SeekBar
-                            android:id="@+id/sb_1_2"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:max="10"/>
-
-                        <TextView
-                            android:id="@+id/tv_1_2"
-                            android:layout_width="20dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="11dp"
-                            android:textColor="#000000"
-                            android:textStyle="bold"/>
 
                     </LinearLayout>
 
@@ -264,55 +190,24 @@
 
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="0dp"
+                    <Button
+                        android:id="@+id/btn_question_2"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_weight="@dimen/column_2">
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:gravity="center"
+                        android:text="설문시작"
+                        android:textColor="@color/colorTextInButton"
+                        android:background="@drawable/button_orange_round"
+                        />
 
-                        <SeekBar
-                            style="@style/Widget.AppCompat.SeekBar.Discrete"
-                            android:id="@+id/sb_2_1"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:max="7"/>
-
-                        <TextView
-                            android:id="@+id/tv_2_1"
-                            android:layout_width="10dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="11dp"
-                            android:textColor="#000000"
-                            android:textStyle="bold"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_weight="@dimen/column_3"
-                        android:paddingLeft="5dp">
+                        android:gravity="center"
+                        android:text="점수 : 5"/>
 
-                        <SeekBar
-                            android:id="@+id/sb_2_2"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:max="10"/>
-
-                        <TextView
-                            android:id="@+id/tv_2_2"
-                            android:layout_width="20dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="11dp"
-                            android:textColor="#000000"
-                            android:textStyle="bold"/>
-
-                    </LinearLayout>
 
 
                 </LinearLayout>
@@ -340,56 +235,6 @@
                             android:textColor="@color/colorTextBlack"
                             android:textStyle="bold"
                             />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/column_2">
-
-                        <SeekBar
-                            style="@style/Widget.AppCompat.SeekBar.Discrete"
-                            android:id="@+id/sb_3_1"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:max="7"/>
-
-                        <TextView
-                            android:id="@+id/tv_3_1"
-                            android:layout_width="10dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="11dp"
-                            android:textColor="#000000"
-                            android:textStyle="bold"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/column_3"
-                        android:paddingLeft="5dp">
-
-                        <SeekBar
-                            android:id="@+id/sb_3_2"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:max="10"/>
-
-                        <TextView
-                            android:id="@+id/tv_3_2"
-                            android:layout_width="20dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="11dp"
-                            android:textColor="#000000"
-                            android:textStyle="bold"/>
 
                     </LinearLayout>
 
@@ -422,56 +267,6 @@
 
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/column_2">
-
-                        <SeekBar
-                            style="@style/Widget.AppCompat.SeekBar.Discrete"
-                            android:id="@+id/sb_4_1"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:max="7"/>
-
-                        <TextView
-                            android:id="@+id/tv_4_1"
-                            android:layout_width="10dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="11dp"
-                            android:textColor="#000000"
-                            android:textStyle="bold"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/column_3"
-                        android:paddingLeft="5dp">
-
-                        <SeekBar
-                            android:id="@+id/sb_4_2"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:max="10"/>
-
-                        <TextView
-                            android:id="@+id/tv_4_2"
-                            android:layout_width="20dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="11dp"
-                            android:textColor="#000000"
-                            android:textStyle="bold"/>
-
-                    </LinearLayout>
-
 
                 </LinearLayout>
 
@@ -501,55 +296,6 @@
 
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/column_2">
-
-                        <SeekBar
-                            style="@style/Widget.AppCompat.SeekBar.Discrete"
-                            android:id="@+id/sb_5_1"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:max="7"/>
-
-                        <TextView
-                            android:id="@+id/tv_5_1"
-                            android:layout_width="10dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="11dp"
-                            android:textColor="#000000"
-                            android:textStyle="bold"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/column_3"
-                        android:paddingLeft="5dp">
-
-                        <SeekBar
-                            android:id="@+id/sb_5_2"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:max="10"/>
-
-                        <TextView
-                            android:id="@+id/tv_5_2"
-                            android:layout_width="20dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="11dp"
-                            android:textColor="#000000"
-                            android:textStyle="bold"/>
-
-                    </LinearLayout>
 
 
                 </LinearLayout>
@@ -577,56 +323,6 @@
                             android:textColor="@color/colorTextBlack"
                             android:textStyle="bold"
                             />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/column_2">
-
-                        <SeekBar
-                            style="@style/Widget.AppCompat.SeekBar.Discrete"
-                            android:id="@+id/sb_6_1"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:max="7"/>
-
-                        <TextView
-                            android:id="@+id/tv_6_1"
-                            android:layout_width="10dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="11dp"
-                            android:textColor="#000000"
-                            android:textStyle="bold"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/column_3"
-                        android:paddingLeft="5dp">
-
-                        <SeekBar
-                            android:id="@+id/sb_6_2"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:max="10"/>
-
-                        <TextView
-                            android:id="@+id/tv_6_2"
-                            android:layout_width="20dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="11dp"
-                            android:textColor="#000000"
-                            android:textStyle="bold"/>
 
                     </LinearLayout>
 
@@ -659,57 +355,6 @@
 
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/column_2">
-
-                        <SeekBar
-                            style="@style/Widget.AppCompat.SeekBar.Discrete"
-                            android:id="@+id/sb_7_1"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:max="7"/>
-
-                        <TextView
-                            android:id="@+id/tv_7_1"
-                            android:layout_width="10dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="11dp"
-                            android:textColor="#000000"
-                            android:textStyle="bold"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/column_3"
-                        android:paddingLeft="5dp">
-
-                        <SeekBar
-                            android:id="@+id/sb_7_2"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:max="10"/>
-
-                        <TextView
-                            android:id="@+id/tv_7_2"
-                            android:layout_width="20dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="11dp"
-                            android:textColor="#000000"
-                            android:textStyle="bold"/>
-
-                    </LinearLayout>
-
-
                 </LinearLayout>
 
                 <!-- 8.Spiritual -->
@@ -737,57 +382,6 @@
                             />
 
                     </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/column_2">
-
-                        <SeekBar
-                            style="@style/Widget.AppCompat.SeekBar.Discrete"
-                            android:id="@+id/sb_8_1"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:max="7"/>
-
-                        <TextView
-                            android:id="@+id/tv_8_1"
-                            android:layout_width="10dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="11dp"
-                            android:textColor="#000000"
-                            android:textStyle="bold"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/column_3"
-                        android:paddingLeft="5dp">
-
-                        <SeekBar
-                            android:id="@+id/sb_8_2"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:max="10"/>
-
-                        <TextView
-                            android:id="@+id/tv_8_2"
-                            android:layout_width="20dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="11dp"
-                            android:textColor="#000000"
-                            android:textStyle="bold"/>
-
-                    </LinearLayout>
-
 
                 </LinearLayout>
 
@@ -817,57 +411,6 @@
 
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/column_2">
-
-                        <SeekBar
-                            style="@style/Widget.AppCompat.SeekBar.Discrete"
-                            android:id="@+id/sb_9_1"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:max="7"/>
-
-                        <TextView
-                            android:id="@+id/tv_9_1"
-                            android:layout_width="10dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="11dp"
-                            android:textColor="#000000"
-                            android:textStyle="bold"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/column_3"
-                        android:paddingLeft="5dp">
-
-                        <SeekBar
-                            android:id="@+id/sb_9_2"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:max="10"/>
-
-                        <TextView
-                            android:id="@+id/tv_9_2"
-                            android:layout_width="20dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="11dp"
-                            android:textColor="#000000"
-                            android:textStyle="bold"/>
-
-                    </LinearLayout>
-
-
                 </LinearLayout>
 
                 <!-- 10.Medical -->
@@ -895,57 +438,6 @@
                             />
 
                     </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/column_2">
-
-                        <SeekBar
-                            style="@style/Widget.AppCompat.SeekBar.Discrete"
-                            android:id="@+id/sb_10_1"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:max="7"/>
-
-                        <TextView
-                            android:id="@+id/tv_10_1"
-                            android:layout_width="10dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="11dp"
-                            android:textColor="#000000"
-                            android:textStyle="bold"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="@dimen/column_3"
-                        android:paddingLeft="5dp">
-
-                        <SeekBar
-                            android:id="@+id/sb_10_2"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:max="10"/>
-
-                        <TextView
-                            android:id="@+id/tv_10_2"
-                            android:layout_width="20dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="0"
-                            android:textSize="11dp"
-                            android:textColor="#000000"
-                            android:textStyle="bold"/>
-
-                    </LinearLayout>
-
 
                 </LinearLayout>
 
