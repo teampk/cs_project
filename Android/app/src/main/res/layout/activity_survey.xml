@@ -95,9 +95,6 @@
 
                     </LinearLayout>
 
-
-
-
                 </LinearLayout>
 
                 <!-- 1.신체적(physical) -->
@@ -144,6 +141,7 @@
                             android:text="점수 : "/>
 
                         <TextView
+                            android:id="@+id/tv_score_1"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -197,6 +195,7 @@
                             android:text="점수 : "/>
 
                         <TextView
+                            android:id="@+id/tv_score_2"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -209,7 +208,7 @@
 
                 </LinearLayout>
 
-                <!-- 3.Social -->
+                <!-- 3.사회적(Social) -->
                 <LinearLayout
                     android:layout_marginTop="@dimen/margin_measurement"
                     android:layout_width="match_parent"
@@ -253,6 +252,7 @@
                             android:text="점수 : "/>
 
                         <TextView
+                            android:id="@+id/tv_score_3"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -265,7 +265,7 @@
 
                 </LinearLayout>
 
-                <!-- 4.Financial -->
+                <!-- 4.경제적(Financial) -->
                 <LinearLayout
                     android:layout_marginTop="@dimen/margin_measurement"
                     android:layout_width="match_parent"
@@ -280,21 +280,49 @@
 
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="180dp"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="4.경제적"
+                            android:gravity="left|center"
+                            android:text="@string/happy_title_4"
                             android:textSize="14dp"
                             android:textColor="@color/colorTextBlack"
                             android:textStyle="bold"
                             />
+
+
+
+                        <Button
+                            android:id="@+id/btn_question_4"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:text="설문시작"
+                            android:textColor="@color/colorTextInButton"
+                            android:background="@drawable/button_orange_round"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="점수 : "/>
+
+                        <TextView
+                            android:id="@+id/tv_score_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="0"/>
+
+
 
                     </LinearLayout>
 
 
                 </LinearLayout>
 
-                <!-- 5.Environmental -->
+                <!-- 5.환경적(Environmental) -->
                 <LinearLayout
                     android:layout_marginTop="@dimen/margin_measurement"
                     android:layout_width="match_parent"
@@ -309,22 +337,49 @@
 
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="180dp"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="5.환경적"
+                            android:gravity="left|center"
+                            android:text="@string/happy_title_5"
                             android:textSize="14dp"
                             android:textColor="@color/colorTextBlack"
                             android:textStyle="bold"
                             />
 
-                    </LinearLayout>
 
+
+                        <Button
+                            android:id="@+id/btn_question_5"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:text="설문시작"
+                            android:textColor="@color/colorTextInButton"
+                            android:background="@drawable/button_orange_round"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="점수 : "/>
+
+                        <TextView
+                            android:id="@+id/tv_score_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="0"/>
+
+
+
+                    </LinearLayout>
 
 
                 </LinearLayout>
 
-                <!-- 6.Intellectual -->
+                <!-- 6.지적(Intellectual) -->
                 <LinearLayout
                     android:layout_marginTop="@dimen/margin_measurement"
                     android:layout_width="match_parent"
@@ -339,21 +394,49 @@
 
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="180dp"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="6.지적"
+                            android:gravity="left|center"
+                            android:text="@string/happy_title_6"
                             android:textSize="14dp"
                             android:textColor="@color/colorTextBlack"
                             android:textStyle="bold"
                             />
+
+
+
+                        <Button
+                            android:id="@+id/btn_question_6"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:text="설문시작"
+                            android:textColor="@color/colorTextInButton"
+                            android:background="@drawable/button_orange_round"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="점수 : "/>
+
+                        <TextView
+                            android:id="@+id/tv_score_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="0"/>
+
+
 
                     </LinearLayout>
 
 
                 </LinearLayout>
 
-                <!-- 7.Occupational -->
+                <!-- 7.직업적(Occupational) -->
                 <LinearLayout
                     android:layout_marginTop="@dimen/margin_measurement"
                     android:layout_width="match_parent"
@@ -368,20 +451,49 @@
 
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="180dp"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="7.직업적"
+                            android:gravity="left|center"
+                            android:text="@string/happy_title_7"
                             android:textSize="14dp"
                             android:textColor="@color/colorTextBlack"
                             android:textStyle="bold"
                             />
 
+
+
+                        <Button
+                            android:id="@+id/btn_question_7"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:text="설문시작"
+                            android:textColor="@color/colorTextInButton"
+                            android:background="@drawable/button_orange_round"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="점수 : "/>
+
+                        <TextView
+                            android:id="@+id/tv_score_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="0"/>
+
+
+
                     </LinearLayout>
+
 
                 </LinearLayout>
 
-                <!-- 8.Spiritual -->
+                <!-- 8.영적(Spiritual) -->
                 <LinearLayout
                     android:layout_marginTop="@dimen/margin_measurement"
                     android:layout_width="match_parent"
@@ -396,20 +508,49 @@
 
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="180dp"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="8.영적"
+                            android:gravity="left|center"
+                            android:text="@string/happy_title_8"
                             android:textSize="14dp"
                             android:textColor="@color/colorTextBlack"
                             android:textStyle="bold"
                             />
 
+
+
+                        <Button
+                            android:id="@+id/btn_question_8"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:text="설문시작"
+                            android:textColor="@color/colorTextInButton"
+                            android:background="@drawable/button_orange_round"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="점수 : "/>
+
+                        <TextView
+                            android:id="@+id/tv_score_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="0"/>
+
+
+
                     </LinearLayout>
+
 
                 </LinearLayout>
 
-                <!-- 9.Mental -->
+                <!-- 9.정신적(Mental) -->
                 <LinearLayout
                     android:layout_marginTop="@dimen/margin_measurement"
                     android:layout_width="match_parent"
@@ -424,20 +565,49 @@
 
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="180dp"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="9.정신적"
+                            android:gravity="left|center"
+                            android:text="@string/happy_title_9"
                             android:textSize="14dp"
                             android:textColor="@color/colorTextBlack"
                             android:textStyle="bold"
                             />
 
+
+
+                        <Button
+                            android:id="@+id/btn_question_9"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:text="설문시작"
+                            android:textColor="@color/colorTextInButton"
+                            android:background="@drawable/button_orange_round"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="점수 : "/>
+
+                        <TextView
+                            android:id="@+id/tv_score_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="0"/>
+
+
+
                     </LinearLayout>
+
 
                 </LinearLayout>
 
-                <!-- 10.Medical -->
+                <!-- 10.메디컬(Medical) -->
                 <LinearLayout
                     android:layout_marginTop="@dimen/margin_measurement"
                     android:layout_width="match_parent"
@@ -452,19 +622,47 @@
 
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="180dp"
                             android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:text="10.메디컬"
+                            android:gravity="left|center"
+                            android:text="@string/happy_title_10"
                             android:textSize="14dp"
                             android:textColor="@color/colorTextBlack"
                             android:textStyle="bold"
                             />
 
+
+
+                        <Button
+                            android:id="@+id/btn_question_10"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:text="설문시작"
+                            android:textColor="@color/colorTextInButton"
+                            android:background="@drawable/button_orange_round"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="점수 : "/>
+
+                        <TextView
+                            android:id="@+id/tv_score_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="0"/>
+
+
+
                     </LinearLayout>
 
-                </LinearLayout>
 
+                </LinearLayout>
 
 
             </LinearLayout>

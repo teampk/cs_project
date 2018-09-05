@@ -17,10 +17,307 @@
   <component name="ChangeListManager">
     <list default="true" id="8e43c78a-6e35-4c5a-9dce-39a4850e53e6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/MainActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/CustomDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/CustomDialog.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/SurveyActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/SurveyActivity.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_survey.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_survey.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-20-23-811.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-20-23-811.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-20-42-079.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-20-42-079.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-23-21-747.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-23-21-747.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-25-50-170.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-25-50-170.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-29-52-354.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-29-52-354.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-30-14-840.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-30-14-840.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-30-21-943.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-30-21-943.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-30-28-964.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-30-28-964.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-32-09-716.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-32-09-716.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-33-21-786.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-33-21-786.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-33-46-444.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-33-46-444.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-34-22-587.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-34-22-587.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-34-45-387.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-34-45-387.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-35-18-846.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-35-18-846.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-38-28-081.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-38-28-081.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-39-18-064.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-39-18-064.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-40-36-144.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-40-36-144.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-40-46-630.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-40-46-630.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-40-59-912.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-40-59-912.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-41-11-083.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-41-11-083.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-41-50-240.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-41-50-240.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-42-19-499.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-42-19-499.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-42-44-764.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-42-44-764.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-43-16-620.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-43-16-620.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-46-30-232.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-46-30-232.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-46-48-921.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-46-48-921.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-48-14-898.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-48-14-898.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-49-29-933.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-49-29-933.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-50-09-418.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-50-09-418.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-55-07-776.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-17-55-07-776.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-11-58-641.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-11-58-641.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-12-13-245.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-12-13-245.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-13-42-263.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-13-42-263.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-13-53-611.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-13-53-611.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-14-02-558.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-14-02-558.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-15-19-819.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-15-19-819.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-16-41-679.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-16-41-679.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-17-07-549.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-17-07-549.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-17-19-350.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-17-19-350.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-19-35-581.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-19-35-581.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-21-57-768.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-21-57-768.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-25-34-689.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-25-34-689.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-27-36-311.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-27-36-311.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-28-42-031.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-28-42-031.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-29-03-737.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-29-03-737.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-31-13-794.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-31-13-794.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-32-23-791.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-32-23-791.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-32-58-484.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-32-58-484.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-34-03-212.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-34-03-212.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-37-11-753.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-37-11-753.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-46-49-905.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-46-49-905.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-52-05-041.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-52-05-041.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-52-56-420.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-52-56-420.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-58-15-649.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-58-15-649.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-59-10-991.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-18-59-10-991.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-00-01-930.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-00-01-930.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-03-46-973.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-03-46-973.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-04-08-233.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-04-08-233.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-04-49-448.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-04-49-448.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-09-59-164.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-09-59-164.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-10-57-265.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-10-57-265.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-11-28-232.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-11-28-232.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-36-52-633.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-36-52-633.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-39-15-056.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-39-15-056.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-39-46-642.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-39-46-642.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-41-51-984.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-41-51-984.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-56-19-738.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-56-19-738.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-59-52-741.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-19-59-52-741.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-20-02-46-673.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-20-02-46-673.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-20-08-03-094.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-20-08-03-094.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-20-09-09-291.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-20-09-09-291.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-20-19-08-914.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-20-19-08-914.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-20-21-58-564.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-20-21-58-564.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-20-22-21-075.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-20-22-21-075.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-20-23-01-765.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-20-23-01-765.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-20-23-18-402.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-20-23-18-402.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-20-26-13-546.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-20-26-13-546.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-20-29-16-142.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-20-29-16-142.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-20-30-20-052.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-18-20-30-20-052.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-55-28-558.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-16-55-28-558.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-17-05-57-715.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-17-05-57-715.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-17-08-50-620.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-17-08-50-620.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-17-10-09-366.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-17-10-09-366.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-17-11-45-307.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-17-11-45-307.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-17-21-49-128.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-19-17-21-49-128.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-03-13-834.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-03-13-834.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-05-46-749.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-05-46-749.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-06-48-283.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-06-48-283.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-07-22-992.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-07-22-992.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-07-31-072.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-07-31-072.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-09-33-479.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-09-33-479.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-11-07-746.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-11-07-746.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-11-44-865.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-11-44-865.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-12-08-942.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-12-08-942.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-12-24-750.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-12-24-750.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-20-51-100.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-20-51-100.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-22-47-512.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-22-47-512.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-23-25-827.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-23-25-827.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-28-04-660.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-28-04-660.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-31-59-789.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-31-59-789.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-40-39-422.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-40-39-422.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-40-51-866.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-40-51-866.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-42-18-879.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-42-18-879.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-52-17-913.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-52-17-913.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-53-00-754.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-53-00-754.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-53-58-024.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-21-18-53-58-024.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-39-45-150.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-39-45-150.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-44-00-148.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-44-00-148.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-46-08-018.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-46-08-018.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-46-25-839.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-46-25-839.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-48-29-784.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-48-29-784.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-50-04-267.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-50-04-267.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-51-04-935.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-51-04-935.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-51-14-762.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-51-14-762.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-51-40-801.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-51-40-801.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-51-48-896.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-51-48-896.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-51-55-820.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-51-55-820.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-59-44-369.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-00-59-44-369.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-01-22-552.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-01-22-552.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-08-39-941.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-08-39-941.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-09-50-698.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-09-50-698.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-13-09-427.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-13-09-427.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-20-01-631.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-20-01-631.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-20-43-905.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-20-43-905.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-21-13-122.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-21-13-122.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-21-46-973.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-21-46-973.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-22-43-155.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-22-43-155.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-22-54-903.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-22-54-903.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-23-43-743.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-23-43-743.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-23-56-767.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-23-56-767.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-24-07-670.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-24-07-670.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-24-17-268.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-24-17-268.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-24-41-560.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-24-41-560.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-24-50-182.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-24-50-182.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-27-18-087.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-27-18-087.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-29-12-407.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-29-12-407.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-29-46-838.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-22-01-29-46-838.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-27-15-16-29-750.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-27-15-16-29-750.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-27-15-16-39-201.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-27-15-16-39-201.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-27-15-23-38-025.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-27-15-23-38-025.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-27-15-26-10-065.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-27-15-26-10-065.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-27-15-26-36-300.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-27-15-26-36-300.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-27-15-31-09-980.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-27-15-31-09-980.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-27-15-50-59-290.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-27-15-50-59-290.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-27-15-53-18-734.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-27-15-53-18-734.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-27-15-54-22-958.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-27-15-54-22-958.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-27-15-59-08-254.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-08-27-15-59-08-254.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-09-02-18-42-38-331.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-09-02-18-42-38-331.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-09-02-18-43-53-429.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/android-profile/profile-2018-09-02-18-43-53-429.rawproto" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -91,99 +388,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CustomDialog.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/CustomDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1200">
+              <caret line="80" column="58" lean-forward="false" selection-start-line="80" selection-start-column="58" selection-end-line="80" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#692#693#0" expanded="true" />
+                <element signature="e#730#731#0" expanded="true" />
+                <element signature="e#2284#3038#0" expanded="true" />
+                <element signature="e#3037#3038#0" expanded="true" />
+                <element signature="e#3081#3348#0" expanded="true" />
+                <element signature="e#3347#3348#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SurveyActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/SurveyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-644">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="1260">
+              <caret line="88" column="28" lean-forward="false" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
               <folding>
-                <element signature="e#1017#4051#0" expanded="true" />
-                <element signature="e#1509#1894#0" expanded="true" />
-                <element signature="e#1893#1894#0" expanded="true" />
-                <element signature="e#2550#2583#0" expanded="true" />
-                <element signature="e#2613#2652#0" expanded="true" />
-                <element signature="e#2682#2720#0" expanded="true" />
-                <element signature="e#2750#2788#0" expanded="true" />
-                <element signature="e#2818#2856#0" expanded="true" />
-                <element signature="e#3092#3125#0" expanded="true" />
-                <element signature="e#3155#3194#0" expanded="true" />
-                <element signature="e#3224#3262#0" expanded="true" />
-                <element signature="e#3292#3330#0" expanded="true" />
-                <element signature="e#3360#3398#0" expanded="true" />
-                <element signature="e#3634#3667#0" expanded="true" />
-                <element signature="e#3697#3736#0" expanded="true" />
-                <element signature="e#3766#3804#0" expanded="true" />
-                <element signature="e#3834#3872#0" expanded="true" />
-                <element signature="e#3902#3940#0" expanded="true" />
-                <element signature="e#4050#4051#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2850#2888#0" expanded="true" />
+                <element signature="e#3742#3775#0" expanded="true" />
+                <element signature="e#3805#3844#0" expanded="true" />
+                <element signature="e#3874#3912#0" expanded="true" />
+                <element signature="e#3942#3980#0" expanded="true" />
+                <element signature="e#4010#4048#0" expanded="true" />
+                <element signature="e#4322#4355#0" expanded="true" />
+                <element signature="e#4385#4424#0" expanded="true" />
+                <element signature="e#4454#4492#0" expanded="true" />
+                <element signature="e#4522#4560#0" expanded="true" />
+                <element signature="e#4590#4628#0" expanded="true" />
+                <element signature="e#4902#4935#0" expanded="true" />
+                <element signature="e#4965#5004#0" expanded="true" />
+                <element signature="e#5034#5072#0" expanded="true" />
+                <element signature="e#5102#5140#0" expanded="true" />
+                <element signature="e#5170#5208#0" expanded="true" />
+                <element signature="e#5482#5515#0" expanded="true" />
+                <element signature="e#5545#5584#0" expanded="true" />
+                <element signature="e#5614#5652#0" expanded="true" />
+                <element signature="e#5682#5720#0" expanded="true" />
+                <element signature="e#5750#5788#0" expanded="true" />
+                <element signature="e#6062#6095#0" expanded="true" />
+                <element signature="e#6125#6164#0" expanded="true" />
+                <element signature="e#6194#6232#0" expanded="true" />
+                <element signature="e#6262#6300#0" expanded="true" />
+                <element signature="e#6330#6368#0" expanded="true" />
+                <element signature="e#6642#6675#0" expanded="true" />
+                <element signature="e#6705#6744#0" expanded="true" />
+                <element signature="e#6774#6812#0" expanded="true" />
+                <element signature="e#6842#6880#0" expanded="true" />
+                <element signature="e#6910#6948#0" expanded="true" />
+                <element signature="e#7222#7255#0" expanded="true" />
+                <element signature="e#7285#7324#0" expanded="true" />
+                <element signature="e#7354#7392#0" expanded="true" />
+                <element signature="e#7422#7460#0" expanded="true" />
+                <element signature="e#7490#7528#0" expanded="true" />
+                <element signature="e#7806#7840#0" expanded="true" />
+                <element signature="e#7870#7910#0" expanded="true" />
+                <element signature="e#7940#7979#0" expanded="true" />
+                <element signature="e#8009#8048#0" expanded="true" />
+                <element signature="e#8078#8117#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="61" lean-forward="false" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2438">
-              <caret line="273" column="1" lean-forward="false" selection-start-line="110" selection-start-column="15" selection-end-line="110" selection-end-column="24" />
-              <folding>
-                <element signature="e#4278#4309#0" expanded="true" />
-                <element signature="e#4311#4343#0" expanded="true" />
-                <element signature="e#6631#6643#0" expanded="true" />
-                <element signature="e#6701#6713#0" expanded="true" />
-                <element signature="e#7950#7965#0" expanded="true" />
-                <element signature="e#8290#9272#0" expanded="true" />
-                <element signature="e#9271#9272#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app_bar_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="28" column="47" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="47" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -194,69 +465,76 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="238" column="60" lean-forward="false" selection-start-line="238" selection-start-column="60" selection-end-line="238" selection-end-column="60" />
+            <state relative-caret-position="157">
+              <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
               <folding>
                 <element signature="e#683#1865#0" expanded="false" />
-                <element signature="e#3866#3893#0" expanded="true" />
-                <element signature="e#4267#4284#0" expanded="true" />
-                <element signature="e#4543#4566#0" expanded="true" />
-                <element signature="e#5988#8112#0" expanded="false" />
-                <element signature="e#6047#6074#0" expanded="true" />
-                <element signature="e#6448#6465#0" expanded="true" />
-                <element signature="e#6724#6747#0" expanded="true" />
-                <element signature="e#8223#8250#0" expanded="true" />
-                <element signature="e#8624#8641#0" expanded="true" />
-                <element signature="e#8900#8923#0" expanded="true" />
-                <element signature="e#10402#10429#0" expanded="true" />
-                <element signature="e#10631#11331#0" expanded="false" />
-                <element signature="e#10803#10820#0" expanded="true" />
-                <element signature="e#11483#11510#0" expanded="true" />
-                <element signature="e#11712#12412#0" expanded="false" />
-                <element signature="e#11884#11901#0" expanded="true" />
-                <element signature="e#12564#12591#0" expanded="true" />
-                <element signature="e#12793#13492#0" expanded="false" />
-                <element signature="e#12965#12982#0" expanded="true" />
-                <element signature="e#13643#13670#0" expanded="true" />
-                <element signature="e#13872#14572#0" expanded="false" />
-                <element signature="e#14044#14061#0" expanded="true" />
-                <element signature="e#14719#14746#0" expanded="true" />
-                <element signature="e#14948#15647#0" expanded="false" />
-                <element signature="e#15120#15137#0" expanded="true" />
-                <element signature="e#15791#15818#0" expanded="true" />
-                <element signature="e#16020#16720#0" expanded="false" />
-                <element signature="e#16192#16209#0" expanded="true" />
-                <element signature="e#16866#16893#0" expanded="true" />
-                <element signature="e#17095#17796#0" expanded="false" />
-                <element signature="e#17267#17284#0" expanded="true" />
+                <element signature="e#3804#5982#0" expanded="false" />
+                <element signature="e#6042#8223#0" expanded="false" />
+                <element signature="e#8280#10461#0" expanded="false" />
+                <element signature="e#10521#12702#0" expanded="false" />
+                <element signature="e#11257#11280#0" expanded="true" />
+                <element signature="e#12766#14947#0" expanded="false" />
+                <element signature="e#13502#13525#0" expanded="true" />
+                <element signature="e#15009#17190#0" expanded="false" />
+                <element signature="e#15745#15768#0" expanded="true" />
+                <element signature="e#17253#19434#0" expanded="false" />
+                <element signature="e#17989#18012#0" expanded="true" />
+                <element signature="e#19493#21674#0" expanded="false" />
+                <element signature="e#20229#20252#0" expanded="true" />
+                <element signature="e#21731#23912#0" expanded="false" />
+                <element signature="e#22467#22490#0" expanded="true" />
+                <element signature="e#23971#26155#0" expanded="false" />
+                <element signature="e#24707#24731#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dimens.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-              <folding />
-            </state>
+      <file leaf-file-name="custom_dialog.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_dialog.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/CustomDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="174">
+              <caret line="52" column="48" lean-forward="false" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="48" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#543#544#0" expanded="true" />
-                <element signature="e#581#582#0" expanded="true" />
-                <element signature="e#2111#2400#0" expanded="true" />
-                <element signature="e#2399#2400#0" expanded="true" />
-                <element signature="e#2443#2710#0" expanded="true" />
-                <element signature="e#2709#2710#0" expanded="true" />
+                <element signature="e#4293#5187#0" expanded="false" />
+                <element signature="e#6074#6436#0" expanded="false" />
+                <element signature="e#6739#7101#0" expanded="false" />
+                <element signature="e#7122#7382#0" expanded="false" />
+                <element signature="e#7404#7766#0" expanded="false" />
+                <element signature="e#7787#8047#0" expanded="false" />
+                <element signature="e#8069#8431#0" expanded="false" />
+                <element signature="e#8452#8712#0" expanded="false" />
+                <element signature="e#8734#9096#0" expanded="false" />
+                <element signature="e#9117#9377#0" expanded="false" />
+                <element signature="e#9450#13652#0" expanded="false" />
+                <element signature="e#9633#10029#0" expanded="false" />
+                <element signature="e#10046#13624#0" expanded="false" />
+                <element signature="e#10290#10652#0" expanded="false" />
+                <element signature="e#10673#10933#0" expanded="false" />
+                <element signature="e#10955#11317#0" expanded="false" />
+                <element signature="e#11338#11598#0" expanded="false" />
+                <element signature="e#11620#11982#0" expanded="false" />
+                <element signature="e#12003#12263#0" expanded="false" />
+                <element signature="e#12285#12647#0" expanded="false" />
+                <element signature="e#12668#12928#0" expanded="false" />
+                <element signature="e#12950#13312#0" expanded="false" />
+                <element signature="e#13333#13593#0" expanded="false" />
+                <element signature="e#13666#17920#0" expanded="false" />
+                <element signature="e#13901#14297#0" expanded="false" />
+                <element signature="e#14314#17892#0" expanded="false" />
+                <element signature="e#14558#14920#0" expanded="false" />
+                <element signature="e#15223#15585#0" expanded="false" />
+                <element signature="e#15606#15866#0" expanded="false" />
+                <element signature="e#15888#16250#0" expanded="false" />
+                <element signature="e#16271#16531#0" expanded="false" />
+                <element signature="e#16553#16915#0" expanded="false" />
+                <element signature="e#16936#17196#0" expanded="false" />
+                <element signature="e#17218#17580#0" expanded="false" />
+                <element signature="e#17601#17861#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -265,8 +543,8 @@
       <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="31" />
+            <state relative-caret-position="495">
+              <caret line="33" column="84" lean-forward="false" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -285,10 +563,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>setTitl</find>
-      <find>setTitle</find>
-      <find>app:sr</find>
-      <find>app:src</find>
       <find>ㄱㅁㅇ</find>
       <find>ㄱㅁ</find>
       <find>ㄱad</find>
@@ -315,7 +589,24 @@
       <find>builder</find>
       <find>tvTest</find>
       <find>main_label</find>
+      <find>1</find>
+      <find>rb2</find>
+      <find>sbSatsi</find>
+      <find>3</find>
     </findStrings>
+    <replaceStrings>
+      <replace>2</replace>
+      <replace>rb2</replace>
+      <replace>rb3</replace>
+      <replace>4</replace>
+      <replace>10</replace>
+      <replace>3</replace>
+      <replace>5</replace>
+      <replace>6</replace>
+      <replace>7</replace>
+      <replace>8</replace>
+      <replace>9</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/app/src/main/res/drawable-v24</dir>
     </dirStrings>
@@ -2483,11 +2774,11 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/custom_dialog.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_survey_previous.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/CustomDialog.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_survey.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/SurveyActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/CustomDialog.java" />
       </list>
     </option>
   </component>
@@ -2533,6 +2824,13 @@
             <path>
               <item name="Android" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="measure_happiness" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
@@ -2563,7 +2861,7 @@
   <component name="PropertiesComponent">
     <property name="VectorAssetImportPath" value="$PROJECT_DIR$/../../.." />
     <property name="android.profiler.active" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536163233265" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536174884632" />
     <property name="device.picker.selection" value="ce091609cbda400f03" />
     <property name="do.not.display.dialog.enable.single.variant.sync" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -2894,6 +3192,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -2906,11 +3205,11 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20171674" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20171674" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1426844" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -3173,18 +3472,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="84" lean-forward="false" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="28" column="47" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2438">
+          <caret line="273" column="1" lean-forward="false" selection-start-line="110" selection-start-column="15" selection-end-line="110" selection-end-column="24" />
+          <folding>
+            <element signature="e#4278#4309#0" expanded="false" />
+            <element signature="e#4311#4343#0" expanded="false" />
+            <element signature="e#6631#6643#0" expanded="false" />
+            <element signature="e#6701#6713#0" expanded="false" />
+            <element signature="e#7950#7965#0" expanded="false" />
+            <element signature="e#8290#9272#0" expanded="false" />
+            <element signature="e#9271#9272#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="61" lean-forward="false" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_dialog.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="30" column="12" lean-forward="false" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+        <state relative-caret-position="174">
+          <caret line="52" column="48" lean-forward="false" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="48" />
           <folding>
             <element signature="e#4293#5187#0" expanded="false" />
-            <element signature="e#5829#9408#0" expanded="false" />
             <element signature="e#6074#6436#0" expanded="false" />
-            <element signature="e#6457#6717#0" expanded="false" />
             <element signature="e#6739#7101#0" expanded="false" />
             <element signature="e#7122#7382#0" expanded="false" />
             <element signature="e#7404#7766#0" expanded="false" />
@@ -3222,164 +3592,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_survey.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/CustomDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="157">
+          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#2111#2400#0" expanded="true" />
-            <element signature="e#2399#2400#0" expanded="true" />
-            <element signature="e#2443#2710#0" expanded="true" />
-            <element signature="e#2709#2710#0" expanded="true" />
+            <element signature="e#683#1865#0" expanded="false" />
+            <element signature="e#3804#5982#0" expanded="false" />
+            <element signature="e#6042#8223#0" expanded="false" />
+            <element signature="e#8280#10461#0" expanded="false" />
+            <element signature="e#10521#12702#0" expanded="false" />
+            <element signature="e#11257#11280#0" expanded="true" />
+            <element signature="e#12766#14947#0" expanded="false" />
+            <element signature="e#13502#13525#0" expanded="true" />
+            <element signature="e#15009#17190#0" expanded="false" />
+            <element signature="e#15745#15768#0" expanded="true" />
+            <element signature="e#17253#19434#0" expanded="false" />
+            <element signature="e#17989#18012#0" expanded="true" />
+            <element signature="e#19493#21674#0" expanded="false" />
+            <element signature="e#20229#20252#0" expanded="true" />
+            <element signature="e#21731#23912#0" expanded="false" />
+            <element signature="e#22467#22490#0" expanded="true" />
+            <element signature="e#23971#26155#0" expanded="false" />
+            <element signature="e#24707#24731#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/SurveyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-644">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="1260">
+          <caret line="88" column="28" lean-forward="false" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
           <folding>
-            <element signature="e#1017#4051#0" expanded="true" />
-            <element signature="e#1509#1894#0" expanded="true" />
-            <element signature="e#1893#1894#0" expanded="true" />
-            <element signature="e#2550#2583#0" expanded="true" />
-            <element signature="e#2613#2652#0" expanded="true" />
-            <element signature="e#2682#2720#0" expanded="true" />
-            <element signature="e#2750#2788#0" expanded="true" />
-            <element signature="e#2818#2856#0" expanded="true" />
-            <element signature="e#3092#3125#0" expanded="true" />
-            <element signature="e#3155#3194#0" expanded="true" />
-            <element signature="e#3224#3262#0" expanded="true" />
-            <element signature="e#3292#3330#0" expanded="true" />
-            <element signature="e#3360#3398#0" expanded="true" />
-            <element signature="e#3634#3667#0" expanded="true" />
-            <element signature="e#3697#3736#0" expanded="true" />
-            <element signature="e#3766#3804#0" expanded="true" />
-            <element signature="e#3834#3872#0" expanded="true" />
-            <element signature="e#3902#3940#0" expanded="true" />
-            <element signature="e#4050#4051#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2850#2888#0" expanded="true" />
+            <element signature="e#3742#3775#0" expanded="true" />
+            <element signature="e#3805#3844#0" expanded="true" />
+            <element signature="e#3874#3912#0" expanded="true" />
+            <element signature="e#3942#3980#0" expanded="true" />
+            <element signature="e#4010#4048#0" expanded="true" />
+            <element signature="e#4322#4355#0" expanded="true" />
+            <element signature="e#4385#4424#0" expanded="true" />
+            <element signature="e#4454#4492#0" expanded="true" />
+            <element signature="e#4522#4560#0" expanded="true" />
+            <element signature="e#4590#4628#0" expanded="true" />
+            <element signature="e#4902#4935#0" expanded="true" />
+            <element signature="e#4965#5004#0" expanded="true" />
+            <element signature="e#5034#5072#0" expanded="true" />
+            <element signature="e#5102#5140#0" expanded="true" />
+            <element signature="e#5170#5208#0" expanded="true" />
+            <element signature="e#5482#5515#0" expanded="true" />
+            <element signature="e#5545#5584#0" expanded="true" />
+            <element signature="e#5614#5652#0" expanded="true" />
+            <element signature="e#5682#5720#0" expanded="true" />
+            <element signature="e#5750#5788#0" expanded="true" />
+            <element signature="e#6062#6095#0" expanded="true" />
+            <element signature="e#6125#6164#0" expanded="true" />
+            <element signature="e#6194#6232#0" expanded="true" />
+            <element signature="e#6262#6300#0" expanded="true" />
+            <element signature="e#6330#6368#0" expanded="true" />
+            <element signature="e#6642#6675#0" expanded="true" />
+            <element signature="e#6705#6744#0" expanded="true" />
+            <element signature="e#6774#6812#0" expanded="true" />
+            <element signature="e#6842#6880#0" expanded="true" />
+            <element signature="e#6910#6948#0" expanded="true" />
+            <element signature="e#7222#7255#0" expanded="true" />
+            <element signature="e#7285#7324#0" expanded="true" />
+            <element signature="e#7354#7392#0" expanded="true" />
+            <element signature="e#7422#7460#0" expanded="true" />
+            <element signature="e#7490#7528#0" expanded="true" />
+            <element signature="e#7806#7840#0" expanded="true" />
+            <element signature="e#7870#7910#0" expanded="true" />
+            <element signature="e#7940#7979#0" expanded="true" />
+            <element signature="e#8009#8048#0" expanded="true" />
+            <element signature="e#8078#8117#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_survey.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/CustomDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="238" column="60" lean-forward="false" selection-start-line="238" selection-start-column="60" selection-end-line="238" selection-end-column="60" />
+        <state relative-caret-position="1200">
+          <caret line="80" column="58" lean-forward="false" selection-start-line="80" selection-start-column="58" selection-end-line="80" selection-end-column="58" />
           <folding>
-            <element signature="e#683#1865#0" expanded="false" />
-            <element signature="e#3866#3893#0" expanded="true" />
-            <element signature="e#4267#4284#0" expanded="true" />
-            <element signature="e#4543#4566#0" expanded="true" />
-            <element signature="e#5988#8112#0" expanded="false" />
-            <element signature="e#6047#6074#0" expanded="true" />
-            <element signature="e#6448#6465#0" expanded="true" />
-            <element signature="e#6724#6747#0" expanded="true" />
-            <element signature="e#8223#8250#0" expanded="true" />
-            <element signature="e#8624#8641#0" expanded="true" />
-            <element signature="e#8900#8923#0" expanded="true" />
-            <element signature="e#10402#10429#0" expanded="true" />
-            <element signature="e#10631#11331#0" expanded="false" />
-            <element signature="e#10803#10820#0" expanded="true" />
-            <element signature="e#11483#11510#0" expanded="true" />
-            <element signature="e#11712#12412#0" expanded="false" />
-            <element signature="e#11884#11901#0" expanded="true" />
-            <element signature="e#12564#12591#0" expanded="true" />
-            <element signature="e#12793#13492#0" expanded="false" />
-            <element signature="e#12965#12982#0" expanded="true" />
-            <element signature="e#13643#13670#0" expanded="true" />
-            <element signature="e#13872#14572#0" expanded="false" />
-            <element signature="e#14044#14061#0" expanded="true" />
-            <element signature="e#14719#14746#0" expanded="true" />
-            <element signature="e#14948#15647#0" expanded="false" />
-            <element signature="e#15120#15137#0" expanded="true" />
-            <element signature="e#15791#15818#0" expanded="true" />
-            <element signature="e#16020#16720#0" expanded="false" />
-            <element signature="e#16192#16209#0" expanded="true" />
-            <element signature="e#16866#16893#0" expanded="true" />
-            <element signature="e#17095#17796#0" expanded="false" />
-            <element signature="e#17267#17284#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#2284#3038#0" expanded="true" />
+            <element signature="e#3037#3038#0" expanded="true" />
+            <element signature="e#3081#3348#0" expanded="true" />
+            <element signature="e#3347#3348#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="28" column="47" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2438">
-          <caret line="273" column="1" lean-forward="false" selection-start-line="110" selection-start-column="15" selection-end-line="110" selection-end-column="24" />
-          <folding>
-            <element signature="e#4278#4309#0" expanded="true" />
-            <element signature="e#4311#4343#0" expanded="true" />
-            <element signature="e#6631#6643#0" expanded="true" />
-            <element signature="e#6701#6713#0" expanded="true" />
-            <element signature="e#7950#7965#0" expanded="true" />
-            <element signature="e#8290#9272#0" expanded="true" />
-            <element signature="e#9271#9272#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="61" lean-forward="false" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
