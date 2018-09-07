@@ -19,10 +19,10 @@ import com.pkteam.measure_happiness.R;
  */
 
 public class SurveyActivity extends AppCompatActivity {
-    private Button btnBack, btnSubmit;
     private CustomDialog mCustomDialog;
     private TextView tvScore1, tvScore2, tvScore3, tvScore4, tvScore5,
             tvScore6, tvScore7, tvScore8, tvScore9, tvScore10;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
