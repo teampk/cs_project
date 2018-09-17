@@ -67,6 +67,8 @@ public class SurveyActivity extends AppCompatActivity {
                                                     score6, score7, score8, score9, score10);
 
 
+
+
                                             Toast.makeText(SurveyActivity.this, "완료.", Toast.LENGTH_SHORT).show();
 
                                             finish();
