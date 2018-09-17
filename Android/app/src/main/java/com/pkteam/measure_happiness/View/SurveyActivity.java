@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.pkteam.measure_happiness.CustomDialog;
 import com.pkteam.measure_happiness.R;
+import com.pkteam.measure_happiness.model.Value;
 
 /**
  * Created by paeng on 2018. 8. 1..
@@ -48,7 +49,26 @@ public class SurveyActivity extends AppCompatActivity {
                             .setPositiveButton("예",
                                     new DialogInterface.OnClickListener() {
                                         public void onClick(DialogInterface dialog, int which) {
+
+                                            // 점수 데이터베이스에 입력
+                                            int score1 = Integer.valueOf(tvScore1.getText().toString());
+                                            int score2 = Integer.valueOf(tvScore2.getText().toString());
+                                            int score3 = Integer.valueOf(tvScore3.getText().toString());
+                                            int score4 = Integer.valueOf(tvScore4.getText().toString());
+                                            int score5 = Integer.valueOf(tvScore5.getText().toString());
+                                            int score6 = Integer.valueOf(tvScore6.getText().toString());
+                                            int score7 = Integer.valueOf(tvScore7.getText().toString());
+                                            int score8 = Integer.valueOf(tvScore8.getText().toString());
+                                            int score9 = Integer.valueOf(tvScore9.getText().toString());
+                                            int score10 = Integer.valueOf(tvScore10.getText().toString());
+
+                                            Value surveyValue = new Value("nuggy875@naver.com", "201809150900",
+                                                    score1, score2, score3, score4, score5,
+                                                    score6, score7, score8, score9, score10);
+
+
                                             Toast.makeText(SurveyActivity.this, "완료.", Toast.LENGTH_SHORT).show();
+
                                             finish();
                                         }
                                     })
