@@ -9,10 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3",
     "connect-mongo": "^2.0.1",
+    "express": "^4.16.3",
     "mongodb": "^3.0.5",
     "mongoose": "^5.0.12",
+    "morgan": "^1.9.1",
     "nodemon": "^1.17.4"
   }
 }

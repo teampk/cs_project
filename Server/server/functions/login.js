@@ -16,9 +16,9 @@ exports.loginUser = (mId, password) =>
 			}
 		})
 
-		.then(users => {
+		.then(user => {
 
-			var hashed_password = users.hashed_password;
+			var hashed_password = user.hashed_password;
 
 			if (bcrypt.compareSync(password, hashed_password)) {
 
