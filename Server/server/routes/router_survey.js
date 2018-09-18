@@ -13,24 +13,19 @@ router.get('/', function(req,res){
 
 router.get('/getValue/:id', function(req, res){
   console.log("id="+req.params.id);
-  if (checkToken(req)) {
-    getValue.getValue(req.params.id)
-      .then(function(result) {
-        console.log('value result : ' + result);
-        res.json(result);
-      })
-      .catch(function(err) {
-        console.log('value err : ' + err);
-        res.status(err.status).json({
-          message: err.message
-        });
+
+  getValue.getValue(req.params.id)
+    .then(function(result) {
+      console.log('value result : ' + result);
+      res.json(result);
+    })
+    .catch(function(err) {
+      console.log('value err : ' + err);
+      res.status(err.status).json({
+        message: err.message
       });
-  } else {
-    console.log("else");
-    res.status(401).json({
-      message: 'Invalid Token !'
     });
-  }
+  
 });
 
 
