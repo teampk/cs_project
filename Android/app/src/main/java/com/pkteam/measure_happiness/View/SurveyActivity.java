@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
@@ -191,16 +192,19 @@ public class SurveyActivity extends AppCompatActivity {
 
                                             if(registerCheck()){
                                                 // 점수 데이터베이스에 입력
-                                                int score1 = Integer.valueOf(tvScore1.getText().toString());
-                                                int score2 = Integer.valueOf(tvScore2.getText().toString());
-                                                int score3 = Integer.valueOf(tvScore3.getText().toString());
-                                                int score4 = Integer.valueOf(tvScore4.getText().toString());
-                                                int score5 = Integer.valueOf(tvScore5.getText().toString());
-                                                int score6 = Integer.valueOf(tvScore6.getText().toString());
-                                                int score7 = Integer.valueOf(tvScore7.getText().toString());
-                                                int score8 = Integer.valueOf(tvScore8.getText().toString());
-                                                int score9 = Integer.valueOf(tvScore9.getText().toString());
-                                                int score10 = Integer.valueOf(tvScore10.getText().toString());
+                                                String score1 = tvScore1.getText().toString();
+                                                String score2 = tvScore2.getText().toString();
+                                                String score3 = tvScore3.getText().toString();
+                                                String score4 = tvScore4.getText().toString();
+                                                String score5 = tvScore5.getText().toString();
+                                                String score6 = tvScore6.getText().toString();
+                                                String score7 = tvScore7.getText().toString();
+                                                String score8 = tvScore8.getText().toString();
+                                                String score9 = tvScore9.getText().toString();
+                                                String score10 = tvScore10.getText().toString();
+
+                                                Log.d("TestPaeng", score1);
+
 
                                                 Value surveyValue = new Value("nuggy875@naver.com", "201809150900",
                                                         score1, score2, score3, score4, score5,
