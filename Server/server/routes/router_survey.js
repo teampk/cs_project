@@ -28,6 +28,7 @@ router.get('/getValue/:userId', function(req,res){
         });
       });
   } else {
+    console.log("else");
     res.status(401).json({
       message: 'Invalid Token !'
     });
