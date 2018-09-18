@@ -7,6 +7,7 @@ var fs = require('fs');
 
 var registerUser = require('../functions/registerUser');
 var profile = require('../functions/profile');
+var login = require('../functions/login');
 
 var config = require('../config/config.json');
 var multer = require('multer');
