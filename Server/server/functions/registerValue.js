@@ -8,7 +8,7 @@ exports.registerValue = (userId, createdAt, value1, value2, value3, value4, valu
 
 	 	var newValue = new modelValue({
       userId: userId,
-      createdAt: new Date(),
+      createdAt: new Date().toString(),
       value1: value1,
       value2: value2,
       value3: value3,
