@@ -273,7 +273,7 @@
                         />
 
                     <Spinner
-                        android:id="@+id/tv_department"
+                        android:id="@+id/sp_department"
                         android:layout_marginLeft="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"

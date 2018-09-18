@@ -77,6 +77,8 @@ public class SignUpActivity extends AppCompatActivity {
         Button btnSubmit = findViewById(R.id.btn_submit);
         btnSubmit.setOnClickListener(listener);
 
+        spDepartment = findViewById(R.id.sp_department);
+
         mProgressbar = findViewById(R.id.progress);
 
         genderChecked = false;
@@ -195,21 +197,26 @@ public class SignUpActivity extends AppCompatActivity {
     private boolean checkJoin(){
         if (etId.getText().toString().matches("")){
             Toast.makeText(this, "아이디를 입력해주세요.", Toast.LENGTH_SHORT).show();
+            return false;
         }else if (etPw.getText().toString().matches("")){
             Toast.makeText(this, "패스워드를 입력해주세요.", Toast.LENGTH_SHORT).show();
+            return false;
         }else if (etPw2.getText().toString().matches("")){
             Toast.makeText(this, "두번째 패스워드를 입력해주세요.", Toast.LENGTH_SHORT).show();
-        }else if (etPw.getText().toString().matches(etPw2.getText().toString())){
+            return false;
+        }else if (!etPw.getText().toString().matches(etPw2.getText().toString())){
             Toast.makeText(this, "패스워드가 일치하지 않습니다.", Toast.LENGTH_SHORT).show();
+            return false;
         }else if (etName.getText().toString().matches("")){
             Toast.makeText(this, "이름을 입력해주세요.", Toast.LENGTH_SHORT).show();
+            return false;
         }else if (!genderChecked){
             Toast.makeText(this, "성별을 선택해주세요.", Toast.LENGTH_SHORT).show();
+            return false;
         }else if (!birthChecked){
             Toast.makeText(this, "생년월일을 선택해주세요.", Toast.LENGTH_SHORT).show();
+            return false;
         }
-
-
 
         return true;
     }
