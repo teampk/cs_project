@@ -44,11 +44,19 @@ public class Value {
         this.value10 = v10;
     }
 
-    public void setmEmail(String mEmail) {
-        this.userId = mEmail;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     public void setCreated_at(String created_at) {
         this.created_at = created_at;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public String getCreated_at() {
+        return created_at;
     }
 }
