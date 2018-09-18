@@ -6,6 +6,10 @@ router.get('/', function(req,res){
 
 });
 
+router.get('/value:id', function(req, res){
+  res.send('hello how are you');
+});
+
 router.post('/register', function (req, res){
   var userId = req.body.userId;
   var createdAt = req.body.createdAt;
