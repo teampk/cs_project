@@ -59,4 +59,8 @@ public class Value {
     public String getCreatedAt() {
         return createdAt;
     }
+
+    public String getValue1() {
+        return value1;
+    }
 }

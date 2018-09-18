@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="departments_array">
+        <item>학과</item>
+        <item>기계공학부</item>
+        <item>컴퓨터공학부</item>
+        <item>전자전기공학부</item>
+        <item>화학공학과</item>
+        <item>융합공학부</item>
+        <item>국어교육과</item>
+        <item>영어교육과</item>
+        <item>유아교육과</item>
+        <item>체육교육과</item>
+        <item>수학과</item>
+        <item>물리학과</item>
+        <item>생물학과</item>
+
+    </string-array>
+</resources>

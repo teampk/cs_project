@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,7 +22,9 @@ import java.util.Calendar;
 
 public class SignUpActivity extends AppCompatActivity {
     private Button btnMale, btnFemale;
-    private TextView tvBirth, tvGotoSignIn;
+    private TextView tvBirth;
+
+    private EditText etId, etPw, etName, etPw2;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -31,15 +34,22 @@ public class SignUpActivity extends AppCompatActivity {
     }
     private void bindingView(){
 
+        etId = findViewById(R.id.et_id);
+        etPw = findViewById(R.id.et_pw);
+        etPw2 = findViewById(R.id.et_pw2);
+        etName = findViewById(R.id.et_name);
+
         btnMale = findViewById(R.id.btn_male);
         btnFemale = findViewById(R.id.btn_female);
         tvBirth = findViewById(R.id.tv_birth);
-        tvGotoSignIn = findViewById(R.id.tv_goto_sign_in);
+        TextView tvGotoSignIn = findViewById(R.id.tv_goto_sign_in);
 
         btnMale.setOnClickListener(listener);
         btnFemale.setOnClickListener(listener);
         tvBirth.setOnClickListener(listener);
         tvGotoSignIn.setOnClickListener(listener);
+        Button btnSubmit = findViewById(R.id.btn_submit);
+        btnSubmit.setOnClickListener(listener);
     }
 
     private View.OnClickListener listener = new View.OnClickListener(){
@@ -50,10 +60,12 @@ public class SignUpActivity extends AppCompatActivity {
                     btnMale.setBackground(getDrawable(R.drawable.button_blue_round));
                     btnFemale.setBackground(getDrawable(R.drawable.button_gray_round));
                     break;
+
                 case R.id.btn_female:
                     btnMale.setBackground(getDrawable(R.drawable.button_gray_round));
                     btnFemale.setBackground(getDrawable(R.drawable.button_red_round));
                     break;
+
                 case R.id.tv_birth:
                     Calendar calendarStart = Calendar.getInstance();
                     int todayYear = calendarStart.get(Calendar.YEAR);
@@ -69,9 +81,38 @@ public class SignUpActivity extends AppCompatActivity {
                     finish();
                     break;
 
+                case R.id.btn_submit:
+                    if (checkJoin()){
+                        Intent intentSubmit = new Intent(getApplicationContext(), SignInActivity.class);
+                        startActivity(intentSubmit);
+                        finish();
+                    }
+
+
+
+                    break;
+
             }
         }
     };
+
+    private boolean checkJoin(){
+        if (etId.getText().toString().matches("")){
+            Toast.makeText(this, "아이디를 입력해주세요.", Toast.LENGTH_SHORT).show();
+        }else if (etPw.getText().toString().matches("")){
+            Toast.makeText(this, "패스워드를 입력해주세요.", Toast.LENGTH_SHORT).show();
+        }else if (etPw2.getText().toString().matches("")){
+            Toast.makeText(this, "두번째 패스워드를 입력해주세요.", Toast.LENGTH_SHORT).show();
+        }else if (etPw.getText().toString().matches(etPw2.getText().toString())){
+            Toast.makeText(this, "패스워드가 일치하지 않습니다.", Toast.LENGTH_SHORT).show();
+        }else if (etName.getText().toString().matches("")){
+            Toast.makeText(this, "이름을 입력해주세요.", Toast.LENGTH_SHORT).show();
+        }
+
+
+
+        return true;
+    }
 
     private DatePickerDialog.OnDateSetListener listenerDate = new DatePickerDialog.OnDateSetListener() {
         @Override

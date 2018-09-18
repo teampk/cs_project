@@ -13,7 +13,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
             <TextView
                 android:layout_marginTop="80dp"
                 android:layout_width="match_parent"
@@ -61,6 +60,7 @@
                         />
 
                     <EditText
+                        android:id="@+id/et_id"
                         android:layout_marginLeft="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -95,15 +95,16 @@
                         />
 
                     <EditText
-                        android:layout_marginLeft="10dp"
+                        android:id="@+id/et_pw"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:inputType="textPassword"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
                         android:hint="PASSWORD"
-                        android:textSize="24dp"
+                        android:inputType="textPassword"
                         android:textColorHint="@color/colorRidge"
                         android:textCursorDrawable="@null"
-                        android:background="@null"/>
+                        android:textSize="24dp" />
 
                 </LinearLayout>
                 <!--divider-->
@@ -127,6 +128,7 @@
                         />
 
                     <EditText
+                        android:id="@+id/et_pw2"
                         android:layout_marginLeft="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -159,6 +161,7 @@
                         />
 
                     <EditText
+                        android:id="@+id/et_name"
                         android:layout_marginLeft="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -249,10 +252,45 @@
                         android:gravity="center|left"/>
 
                 </LinearLayout>
+                <!--divider-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorRidge"/>
+                <!--학과-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        app:srcCompat="@drawable/ic_school_black_24dp"
+
+                        />
+
+                    <Spinner
+                        android:id="@+id/tv_department"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:entries="@array/departments_array"
+                        android:textSize="24dp"
+                        android:textColor="@color/colorRidge"
+                        android:textCursorDrawable="@null"
+                        android:background="@null"/>
+
+                </LinearLayout>
+
 
             </LinearLayout>
 
             <Button
+                android:id="@+id/btn_submit"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
@@ -265,8 +303,6 @@
                 android:textColor="@color/colorTextInButton"
                 android:background="@drawable/button_orange_round"
                 />
-
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -294,8 +330,6 @@
 
 
             </LinearLayout>
-
-
 
         </LinearLayout>
 

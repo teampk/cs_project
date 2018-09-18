@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var registerValue = require('../functions/registerValue');
+var getValue = require('../functions/getValue');
 
 
 router.get('/', function(req,res){
@@ -9,9 +10,30 @@ router.get('/', function(req,res){
 
 });
 
-router.get('/value:id', function(req, res){
+router.get('/value/:id', function(req, res){
   res.send('hello how are you');
 });
+
+router.get('/getValue/:id', function(req,res){
+  if (checkToken(req)) {
+    getValue.getValue(req.params.id)
+      .then(function(result) {
+        console.log('value result : ' + result);
+        res.json(result);
+      })
+      .catch(function(err) {
+        console.log('value err : ' + err);
+        res.status(err.status).json({
+          message: err.message
+        });
+      });
+  } else {
+    res.status(401).json({
+      message: 'Invalid Token !'
+    });
+  }
+});
+
 
 router.post('/register', function (req, res){
   var userId = req.body.userId;
@@ -54,5 +76,19 @@ router.post('/register', function (req, res){
       });
   }
 });
+
+function checkToken(req) {
+  var token = req.headers['x-access-token'];
+  if (token) {
+    try {
+      var decoded = jwt.verify(token, config.secret);
+      return decoded.message === req.params.id;
+    } catch (err) {
+      return false;
+    }
+  } else {
+    return false;
+  }
+}
 
 module.exports = router;

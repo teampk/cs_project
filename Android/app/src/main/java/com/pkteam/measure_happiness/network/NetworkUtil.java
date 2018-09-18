@@ -25,4 +25,55 @@ public class NetworkUtil {
 
     }
 
+    // for Login
+    public static RetrofitInterface getRetrofit(String email, String password) {
+
+        String credentials = email + ":" + password;
+        String basic = "Basic " + Base64.encodeToString(credentials.getBytes(),Base64.NO_WRAP);
+        OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
+
+        httpClient.addInterceptor(chain -> {
+
+            Request original = chain.request();
+            Request.Builder builder = original.newBuilder()
+                    .addHeader("Authorization", basic)
+                    .method(original.method(),original.body());
+            return  chain.proceed(builder.build());
+
+        });
+
+        RxJavaCallAdapterFactory rxAdapter = RxJavaCallAdapterFactory.createWithScheduler(Schedulers.io());
+
+        return new Retrofit.Builder()
+                .baseUrl(Constants.BASE_URL)
+                .client(httpClient.build())
+                .addCallAdapterFactory(rxAdapter)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build().create(RetrofitInterface.class);
+    }
+
+    public static RetrofitInterface getRetrofit(String token) {
+
+        OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
+
+        httpClient.addInterceptor(chain -> {
+
+            Request original = chain.request();
+            Request.Builder builder = original.newBuilder()
+                    .addHeader("x-access-token", token)
+                    .method(original.method(),original.body());
+            return  chain.proceed(builder.build());
+
+        });
+
+        RxJavaCallAdapterFactory rxAdapter = RxJavaCallAdapterFactory.createWithScheduler(Schedulers.io());
+
+        return new Retrofit.Builder()
+                .baseUrl(Constants.BASE_URL)
+                .client(httpClient.build())
+                .addCallAdapterFactory(rxAdapter)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build().create(RetrofitInterface.class);
+    }
+
 }

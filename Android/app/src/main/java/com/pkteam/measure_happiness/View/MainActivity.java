@@ -1,10 +1,13 @@
 package com.pkteam.measure_happiness.View;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,6 +17,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.RadarChart;
 import com.github.mikephil.charting.components.AxisBase;
@@ -26,12 +30,23 @@ import com.github.mikephil.charting.data.RadarDataSet;
 import com.github.mikephil.charting.data.RadarEntry;
 import com.github.mikephil.charting.formatter.IAxisValueFormatter;
 import com.github.mikephil.charting.interfaces.datasets.IRadarDataSet;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.pkteam.measure_happiness.R;
 import com.pkteam.measure_happiness.custom.RadarMarkerView;
+import com.pkteam.measure_happiness.model.Res;
+import com.pkteam.measure_happiness.model.Value;
+import com.pkteam.measure_happiness.network.NetworkUtil;
+import com.pkteam.measure_happiness.utils.Constants;
 
 
-
+import java.io.IOException;
 import java.util.ArrayList;
+
+import retrofit2.adapter.rxjava.HttpException;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.schedulers.Schedulers;
+import rx.subscriptions.CompositeSubscription;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -41,10 +56,19 @@ public class MainActivity extends AppCompatActivity
 
     private LinearLayout llSmile;
 
+    private String mToken;
+    private String mID;
+
+    private SharedPreferences mSharedPreferences;
+    private CompositeSubscription mSubscriptions;
+
+    private ArrayList<Value> valueArrayList;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mID = "nuggy875@naver.com";
         bindingView();
         initiateView();
 
@@ -53,6 +77,12 @@ public class MainActivity extends AppCompatActivity
     protected void onResume(){
         super.onResume();
         initiateView();
+    }
+
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+        mSubscriptions.unsubscribe();
     }
 
     @Override
@@ -134,6 +164,10 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        // Retrofit2 (RxJAVA)
+        mSubscriptions = new CompositeSubscription();
+        initSharedPreferences();
+
 
         // CHART
         mChart = findViewById(R.id.chart_radar);
@@ -149,6 +183,8 @@ public class MainActivity extends AppCompatActivity
         MarkerView mv = new RadarMarkerView(this, R.layout.radar_markerview);
         mv.setChartView(mChart); // For bounds control
         mChart.setMarker(mv); // Set the marker to the chart
+
+        loadData();
 
         setData();
 
@@ -185,13 +221,20 @@ public class MainActivity extends AppCompatActivity
         l.setTextColor(getColor(R.color.colorBlack));
 
 
-
-
     }
 
     private void initiateView(){
 
         mChart.animateXY(1400, 1400);
+    }
+
+    private void loadData(){
+
+        mSubscriptions.add(NetworkUtil.getRetrofit(mToken).getValue(mID)
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribeOn(Schedulers.io())
+                .subscribe(this::handleResponse,this::handleError));
+
     }
 
     public void setData() {
@@ -243,6 +286,56 @@ public class MainActivity extends AppCompatActivity
         mChart.setData(data);
         mChart.invalidate();
     }
+
+    private void initSharedPreferences() {
+
+        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        mToken = mSharedPreferences.getString(Constants.TOKEN,"");
+        mID = mSharedPreferences.getString(Constants.ID,"");
+    }
+
+    private void handleResponse(Value[] value) {
+
+        valueArrayList = new ArrayList<Value>();
+
+
+
+
+        for (Value valueItem : value){
+            if(valueItem != null){
+
+                Log.d("TestPaengData", valueItem.getUserId());
+                Log.d("TestPaengDataCA", valueItem.getCreatedAt());
+                Log.d("TestPaengData1", valueItem.getValue1());
+
+            }
+        }
+
+    }
+
+    private void handleError(Throwable error) {
+
+        if (error instanceof HttpException) {
+
+            Gson gson = new GsonBuilder().create();
+            try {
+                String errorBody = ((HttpException) error).response().errorBody().string();
+                Res response = gson.fromJson(errorBody, com.pkteam.measure_happiness.model.Res.class);
+                showSnackBarMessage(response.getMessage());
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            showSnackBarMessage("Network Error !");
+        }
+    }
+
+    private void showSnackBarMessage(String message){
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+
+    }
+
 
     private View.OnClickListener listener = new View.OnClickListener(){
         @Override
