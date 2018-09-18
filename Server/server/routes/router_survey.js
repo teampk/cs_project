@@ -15,7 +15,7 @@ router.get('/value:id', function(req, res){
 
 router.post('/register', function (req, res){
   var userId = req.body.userId;
-  var createdAt = req.body.created_at;
+  var createdAt = req.body.createdAt;
   var value1 = req.body.value1;
   var value2 = req.body.value2;
   var value3 = req.body.value3;
