@@ -85,8 +85,8 @@ public class SignInActivity extends AppCompatActivity {
         editor.putString(Constants.TOKEN,response.getToken());
         editor.putString(Constants.EMAIL,response.getMessage());
         editor.apply();
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(intent);
+        Intent intentMain = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(intentMain);
         etId.setText(null);
         etPw.setText(null);
         finish();

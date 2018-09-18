@@ -30,12 +30,15 @@ router.post('/authenticate', function(req, res) {
         var token = jwt.sign(result, config.secret, {
           expiresIn: 1440
         });
+        console.log("fucking result:"+result.message);
+
         res.status(result.status).json({
           message: result.message,
           token: token
         });
       })
       .catch(function(err) {
+        console.log("fucking error:"+err);
         res.status(err.status).json({
           message: err.message
         });
