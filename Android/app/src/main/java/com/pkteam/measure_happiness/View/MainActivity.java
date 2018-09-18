@@ -184,7 +184,7 @@ public class MainActivity extends AppCompatActivity
         mv.setChartView(mChart); // For bounds control
         mChart.setMarker(mv); // Set the marker to the chart
 
-        loadData();
+        //loadData();
 
         setData();
 
