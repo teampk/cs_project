@@ -40,79 +40,12 @@ public class SignInActivity extends AppCompatActivity {
     private SharedPreferences mSharedPreferences;
 
 
-
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
-        mSubscriptions = new CompositeSubscription();
-        initSharedPreferences();
         bindingView();
-    }
 
-    @Override
-    protected void onDestroy(){
-        super.onDestroy();
-        mSubscriptions.unsubscribe();
-    }
-
-    private void initSharedPreferences() {
-        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(SignInActivity.this);
-    }
-
-    private void loginProcess(String id, String password) {
-
-        mSubscriptions.add(NetworkUtil.getRetrofit(id, password).login()
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribeOn(Schedulers.io())
-                .subscribe(this::handleResponse,this::handleError));
-    }
-
-    private void handleResponse(Res response) {
-
-        Log.d("TestErrorCheck2", "Passing?");
-
-        mProgressBar.setVisibility(View.GONE);
-
-        SharedPreferences.Editor editor = mSharedPreferences.edit();
-        editor.putString(Constants.TOKEN,response.getToken());
-        editor.putString(Constants.EMAIL,response.getMessage());
-        editor.apply();
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(intent);
-        etId.setText(null);
-        etPw.setText(null);
-        finish();
-    }
-
-    private void handleError(Throwable error) {
-
-        Log.d("PaengErrorCheck1", error.toString());
-
-        mProgressBar.setVisibility(View.GONE);
-
-        if (error instanceof HttpException) {
-
-            Gson gson = new GsonBuilder().create();
-
-            try {
-                String errorBody = ((HttpException) error).response().errorBody().string();
-                Res response = gson.fromJson(errorBody,Res.class);
-                showSnackBarMessage(response.getMessage());
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        } else {
-            Log.d("PaengErrorCheck", String.valueOf(error));
-            showSnackBarMessage("Network Error!");
-        }
-    }
-
-    private void showSnackBarMessage(String message) {
-
-        Toast.makeText(SignInActivity.this, message, Toast.LENGTH_SHORT).show();
     }
 
     private void bindingView(){
@@ -124,6 +57,7 @@ public class SignInActivity extends AppCompatActivity {
         btSignIn.setOnClickListener(listener);
     }
 
+    
     private View.OnClickListener listener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -136,8 +70,7 @@ public class SignInActivity extends AppCompatActivity {
                 case R.id.bt_sign_in:
                     String id = etId.getText().toString();
                     String pw = etPw.getText().toString();
-                    Log.d("CheckPaengIdPw", id+"/"+pw);
-                    loginProcess(id,pw);
+                    //loginProcess(id,pw);
                     break;
 
                 default:

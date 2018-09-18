@@ -19,34 +19,7 @@ router.get('/', function(req,res){
 
 });
 
-router.post('/authenticate', function(req, res) {
-  var credentials = auth(req);
-  if (!credentials) {
-    res.status(400).json({
-      message: 'Invalid Request !'
-    });
-  } else {
-    console.log(credentials.name);
-    console.log(credentials.pass);
 
-    login.loginUser(credentials.name, credentials.pass)
-      .then(function(result) {
-        var token = jwt.sign(result, config.secret, {
-          expiresIn: 1440
-        });
-        res.status(result.status).json({
-          message: result.message,
-          token: token
-        });
-      })
-      .catch(function(err) {
-        console.log("fucking error:"+err.status);
-        res.status(err.status).json({
-          message: err.message
-        });
-      });
-  }
-});
 
 router.post('/users', function(req,res){
   var id = req.body.mId;
@@ -73,27 +46,6 @@ router.post('/users', function(req,res){
           message: err.message
         });
       });
-  }
-});
-
-router.get('/users/:id', function(req, res) {
-
-  if (checkToken(req)) {
-    profile.getProfile(req.params.id)
-      .then(function(result) {
-        console.log('user result : ' + result);
-        res.json(result);
-      })
-      .catch(function(err) {
-        console.log('user err : ' + err);
-        res.status(err.status).json({
-          message: err.message
-        });
-      });
-  } else {
-    res.status(401).json({
-      message: 'Invalid Token !'
-    });
   }
 });
 
