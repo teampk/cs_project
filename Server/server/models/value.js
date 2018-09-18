@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 
 var valueSchema = mongoose.Schema({
   userId : String,
-  created_at		: String,
+  createdAt		: String,
   value1 : String,
   value2 : String,
   value3 : String,

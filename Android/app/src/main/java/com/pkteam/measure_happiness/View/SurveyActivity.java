@@ -167,16 +167,16 @@ public class SurveyActivity extends AppCompatActivity {
         public void onClick(View view) {
             switch (view.getId()) {
                 case R.id.rl_test:
-                    tvScore1.setText("1");
+                    tvScore1.setText("2");
                     tvScore2.setText("4");
                     tvScore3.setText("3");
                     tvScore4.setText("2");
-                    tvScore5.setText("5");
+                    tvScore5.setText("1");
                     tvScore6.setText("5");
                     tvScore7.setText("9");
                     tvScore8.setText("10");
                     tvScore9.setText("2");
-                    tvScore10.setText("3");
+                    tvScore10.setText("6");
                     break;
                 case R.id.btn_back:
                     finish();
@@ -209,7 +209,6 @@ public class SurveyActivity extends AppCompatActivity {
 
                                                 registerProgress(surveyValue);
 
-                                                Toast.makeText(SurveyActivity.this, "완료.", Toast.LENGTH_SHORT).show();
 
                                                 finish();
                                             }
