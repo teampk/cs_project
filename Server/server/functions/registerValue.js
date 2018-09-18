@@ -7,7 +7,7 @@ exports.registerValue = (userId, createdAt, value1, value2, value3, value4, valu
 		function(resolve,reject){
 
 	 	var newValue = new modelValue({
-      userId: usreId,
+      userId: userId,
       createdAt: new Date(),
       value1: value1,
       value2: value2,
