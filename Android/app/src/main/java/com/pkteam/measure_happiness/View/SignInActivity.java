@@ -77,7 +77,7 @@ public class SignInActivity extends AppCompatActivity {
 
         SharedPreferences.Editor editor = mSharedPreferences.edit();
         editor.putString(Constants.TOKEN,response.getToken());
-        editor.putString(Constants.ID,response.getMessage());
+        editor.putString(Constants.EMAIL,response.getMessage());
         editor.apply();
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(intent);

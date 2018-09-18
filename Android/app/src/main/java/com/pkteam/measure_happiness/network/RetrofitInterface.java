@@ -18,16 +18,16 @@ import rx.Observable;
 
 public interface RetrofitInterface {
 
-    @POST("user/users")
+    @POST("users")
     Observable<Res> register(@Body User user);
 
-    @POST("user/authenticate")
+    @POST("authenticate")
     Observable<Res> login();
 
-    @POST("survey/register")
+    @POST("register")
     Observable<Res> registerValue(@Body Value surveyValue);
 
-    @GET("survey/getValue/{userId}")
+    @GET("getValue/{userId}")
     Observable<Value[]> getValue(@Path("userId") String userId);
 
 

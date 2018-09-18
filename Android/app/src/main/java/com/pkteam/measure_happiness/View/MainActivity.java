@@ -240,7 +240,7 @@ public class MainActivity extends AppCompatActivity
 
         mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         mToken = mSharedPreferences.getString(Constants.TOKEN,"");
-        mID = mSharedPreferences.getString(Constants.ID,"");
+        mID = mSharedPreferences.getString(Constants.EMAIL,"");
     }
 
     private void handleResponse(Value[] value) {
