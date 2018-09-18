@@ -7,18 +7,18 @@ exports.loginUser = (mId, password) =>
 		console.log("id:"+mId);
 
 		user.find({mId: mId})
-		.then(user => {
+		.then(users => {
 
-			if (user.length == 0) {
+			if (users.length == 0) {
 				reject({ status: 404, message: 'User Not Found !' });
 			} else {
-				return user[0];
+				return users[0];
 			}
 		})
 
-		.then(user => {
+		.then(users => {
 
-			var hashed_password = user.hashed_password;
+			var hashed_password = users.hashed_password;
 
 			if (bcrypt.compareSync(password, hashed_password)) {
 

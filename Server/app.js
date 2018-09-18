@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(logger('dev'));
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/cs_project');
+mongoose.connect('mongodb://localhost:27017/cs_project', { useNewUrlParser: true });
 
 app.use('/api/v1', routes);
 
