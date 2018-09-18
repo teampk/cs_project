@@ -59,21 +59,14 @@ public class SignInActivity extends AppCompatActivity {
 
     }
 
-    private void loginProcess(String email, String password) {
+    private void loginProcess(String id, String password) {
 
-        mSubscriptions.add(NetworkUtil.getRetrofit(email, password).login()
+        mSubscriptions.add(NetworkUtil.getRetrofit(id, password).login()
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeOn(Schedulers.io())
                 .subscribe(this::handleResponse,this::handleError));
     }
-    private void bindingView(){
-        tvGotoSignUp = findViewById(R.id.tv_goto_sign_up);
-        tvGotoSignUp.setOnClickListener(listener);
-        etId = findViewById(R.id.et_id);
-        etPw = findViewById(R.id.et_pw);
-        Button btSignIn = findViewById(R.id.bt_sign_in);
-        btSignIn.setOnClickListener(listener);
-    }
+
     private void handleResponse(Res response) {
 
         mProgressBar.setVisibility(View.GONE);
@@ -90,6 +83,8 @@ public class SignInActivity extends AppCompatActivity {
     }
 
     private void handleError(Throwable error) {
+
+        Log.d("PaengErrorCheck1", error.toString());
 
         mProgressBar.setVisibility(View.GONE);
 
@@ -116,6 +111,14 @@ public class SignInActivity extends AppCompatActivity {
         Toast.makeText(SignInActivity.this, message, Toast.LENGTH_SHORT).show();
     }
 
+    private void bindingView(){
+        tvGotoSignUp = findViewById(R.id.tv_goto_sign_up);
+        tvGotoSignUp.setOnClickListener(listener);
+        etId = findViewById(R.id.et_id);
+        etPw = findViewById(R.id.et_pw);
+        Button btSignIn = findViewById(R.id.bt_sign_in);
+        btSignIn.setOnClickListener(listener);
+    }
     private View.OnClickListener listener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {

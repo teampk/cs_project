@@ -27,6 +27,7 @@ router.post('/authenticate', function(req, res) {
   } else {
     login.loginUser(credentials.name, credentials.pass)
       .then(function(result) {
+        console.log("result:"+result);
         var token = jwt.sign(result, config.secret, {
           expiresIn: 1440
         });

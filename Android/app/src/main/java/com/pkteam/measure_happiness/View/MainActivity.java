@@ -68,8 +68,8 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mID = "nuggy875@naver.com";
         bindingView();
+        initSharedPreferences();
     }
 
     @Override
@@ -195,7 +195,7 @@ public class MainActivity extends AppCompatActivity
 
     private void loadData(){
 
-        mSubscriptions.add(NetworkUtil.getRetrofit().getValue("nuggy875@naver.com")
+        mSubscriptions.add(NetworkUtil.getRetrofit(mToken).getValue(mID)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeOn(Schedulers.io())
                 .subscribe(this::handleResponse, this::handleError));
@@ -296,7 +296,6 @@ public class MainActivity extends AppCompatActivity
         mChart.setData(data);
         mChart.invalidate();
 
-
     }
     private String[] getValueArray (Value valueItem){
         String[] valueArray = new String[11];
@@ -342,59 +341,6 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-
-    /*
-    public void setData() {
-
-        float mult = 9;
-        float min = 1;
-        int cnt = 10;
-
-        ArrayList<RadarEntry> entries1 = new ArrayList<RadarEntry>();
-        ArrayList<RadarEntry> entries2 = new ArrayList<RadarEntry>();
-
-        // NOTE: The order of the entries when being added to the entries array determines their position around the center of
-        // the chart.
-        for (int i = 0; i < cnt; i++) {
-            float val1 = (float) (Math.random() * mult) + min;
-            entries1.add(new RadarEntry(val1));
-
-            float val2 = (float) (Math.random() * mult) + min;
-            entries2.add(new RadarEntry(val2));
-        }
-
-        RadarDataSet set1 = new RadarDataSet(entries1, "지난 측정값");
-        set1.setColor(getColor(R.color.colorGraphGray));
-        set1.setFillColor(getColor(R.color.colorGraphGray));
-        set1.setDrawFilled(true);
-        set1.setFillAlpha(180);
-        set1.setLineWidth(2f);
-        set1.setDrawHighlightCircleEnabled(true);
-        set1.setDrawHighlightIndicators(false);
-
-        RadarDataSet set2 = new RadarDataSet(entries2, "이번 측정값");
-        set2.setColor(getColor(R.color.colorPrimary));
-        set2.setFillColor(getColor(R.color.colorPrimary));
-        set2.setDrawFilled(true);
-        set2.setFillAlpha(180);
-        set2.setLineWidth(2f);
-        set2.setDrawHighlightCircleEnabled(true);
-        set2.setDrawHighlightIndicators(false);
-
-        ArrayList<IRadarDataSet> sets = new ArrayList<IRadarDataSet>();
-        sets.add(set1);
-        sets.add(set2);
-
-        RadarData data = new RadarData(sets);
-        data.setValueTextSize(8f);
-        data.setDrawValues(false);
-        data.setValueTextColor(Color.WHITE);
-
-        mChart.setData(data);
-        mChart.invalidate();
-    }
-
-*/
 
     private View.OnClickListener listener = new View.OnClickListener(){
         @Override
