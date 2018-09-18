@@ -7,7 +7,7 @@ router.get('/', function(req,res){
 
 });
 
-router.post('/register', function(req,res){
+router.post('/users', function(req,res){
   var id = req.body.mId;
   var password = req.body.mPassword;
   var name = req.body.mName;
@@ -22,7 +22,7 @@ router.post('/register', function(req,res){
     registerUser.registerUser(id, password, name, gender, birth, department)
       .then(function(result) {
         console.log('post result for user: ' + result);
-        res.setHeader('Location', '/signin/' + email);
+        res.setHeader('Location', '/users/' + id);
         res.status(result.status).json({
           message: result.message
         });
@@ -34,7 +34,9 @@ router.post('/register', function(req,res){
       });
   }
 });
-router.get('/signin', function(req,res){
+
+router.get('/users/:id', function(req, res) {
+
   if (checkToken(req)) {
     profile.getProfile(req.params.id)
       .then(function(result) {
@@ -54,4 +56,18 @@ router.get('/signin', function(req,res){
   }
 });
 
+
+function checkToken(req) {
+  var token = req.headers['x-access-token'];
+  if (token) {
+    try {
+      var decoded = jwt.verify(token, config.secret);
+      return decoded.message === req.params.id;
+    } catch (err) {
+      return false;
+    }
+  } else {
+    return false;
+  }
+}
 module.exports = router;
