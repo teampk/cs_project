@@ -82,14 +82,12 @@ public class SurveyActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         } else {
-            Log.d("TestPaengError", error.toString());
-            showMessage("Network Error !");
+            showMessage("Network Error! 내트워크 연결을 확인하세요.");
         }
     }
     private void showMessage(String message){
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
-
 
     private boolean registerCheck(){
 
