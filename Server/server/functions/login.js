@@ -1,11 +1,11 @@
 var user = require('../models/user');
 var bcrypt = require('bcryptjs');
 
-exports.loginUser = (mId, password) =>
+exports.loginUser = (id, password) =>
 
 	new Promise((resolve,reject) => {
 
-		user.find({mId: mId})
+		user.find({mId: id})
 
 		.then(users => {
 
@@ -30,10 +30,10 @@ exports.loginUser = (mId, password) =>
 
 			} else {
 
-				reject({ status: 401, message: 'Wrong Password !' });
+				reject({ status: 401, message: 'Wrong Password!' });
 			}
 		})
 
-		.catch(err => reject({ status: 500, message: 'Internal Server Error !' }));
+		.catch(err => reject({ status: 500, message: 'Internal Server Error!' }));
 
 	});

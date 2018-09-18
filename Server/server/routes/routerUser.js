@@ -8,7 +8,6 @@ var fs = require('fs');
 var registerUser = require('../functions/registerUser');
 var profile = require('../functions/profile');
 var login = require('../functions/login');
-
 var config = require('../config/config.json');
 var multer = require('multer');
 var path = require('path');
@@ -25,6 +24,9 @@ router.post('/authenticate', function(req, res) {
       message: 'Invalid Request !'
     });
   } else {
+    console.log(credentials.name);
+    console.log(credentials.pass);
+    
     login.loginUser(credentials.name, credentials.pass)
       .then(function(result) {
         var token = jwt.sign(result, config.secret, {
@@ -36,7 +38,6 @@ router.post('/authenticate', function(req, res) {
         });
       })
       .catch(function(err) {
-        console.log("result:"+err);
         res.status(err.status).json({
           message: err.message
         });

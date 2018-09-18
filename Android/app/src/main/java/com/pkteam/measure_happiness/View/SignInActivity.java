@@ -46,17 +46,19 @@ public class SignInActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
-
-        bindingView();
         mSubscriptions = new CompositeSubscription();
         initSharedPreferences();
-
-
+        bindingView();
     }
+
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+        mSubscriptions.unsubscribe();
+    }
+
     private void initSharedPreferences() {
-
         mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(SignInActivity.this);
-
     }
 
     private void loginProcess(String id, String password) {
@@ -119,6 +121,7 @@ public class SignInActivity extends AppCompatActivity {
         Button btSignIn = findViewById(R.id.bt_sign_in);
         btSignIn.setOnClickListener(listener);
     }
+
     private View.OnClickListener listener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -131,6 +134,7 @@ public class SignInActivity extends AppCompatActivity {
                 case R.id.bt_sign_in:
                     String id = etId.getText().toString();
                     String pw = etPw.getText().toString();
+                    Log.d("CheckPaengIdPw", id+"/"+pw);
                     loginProcess(id,pw);
                     break;
 
