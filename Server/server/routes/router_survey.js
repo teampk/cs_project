@@ -1,5 +1,7 @@
 var express = require('express');
 var router = express.Router();
+var registerValue = require('../functions/registerValue');
+
 
 router.get('/', function(req,res){
   res.send('this is survey page mf');
