@@ -6,7 +6,7 @@ package com.pkteam.measure_happiness.model;
 
 public class Value {
     private String userId;
-    private String created_at;
+    private String createdAt;
     private String value1;
     private String value2;
     private String value3;
@@ -31,7 +31,7 @@ public class Value {
                   String v9,
                   String v10){
         this.userId = id;
-        this.created_at = createdAt;
+        this.createdAt = createdAt;
         this.value1 = v1;
         this.value2 = v2;
         this.value3 = v3;
@@ -48,15 +48,15 @@ public class Value {
         this.userId = userId;
     }
 
-    public void setCreated_at(String created_at) {
-        this.created_at = created_at;
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
     }
 
     public String getUserId() {
         return userId;
     }
 
-    public String getCreated_at() {
-        return created_at;
+    public String getCreatedAt() {
+        return createdAt;
     }
 }
