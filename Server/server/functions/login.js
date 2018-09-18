@@ -4,9 +4,9 @@ var bcrypt = require('bcryptjs');
 exports.loginUser = (id, password) =>
 
 	new Promise((resolve,reject) => {
+		console.log("id:"+id);
 
 		user.find({mId: id})
-
 		.then(users => {
 
 			if (users.length == 0) {

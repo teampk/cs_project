@@ -71,6 +71,8 @@ public class SignInActivity extends AppCompatActivity {
 
     private void handleResponse(Res response) {
 
+        Log.d("TestErrorCheck2", "Passing?");
+
         mProgressBar.setVisibility(View.GONE);
 
         SharedPreferences.Editor editor = mSharedPreferences.edit();
