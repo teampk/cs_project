@@ -82,6 +82,7 @@ public class SurveyActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         } else {
+            Log.d("TestPaengError", error.toString());
             showMessage("Network Error !");
         }
     }
@@ -202,8 +203,6 @@ public class SurveyActivity extends AppCompatActivity {
                                                 String score8 = tvScore8.getText().toString();
                                                 String score9 = tvScore9.getText().toString();
                                                 String score10 = tvScore10.getText().toString();
-
-                                                Log.d("TestPaeng", score1);
 
 
                                                 Value surveyValue = new Value("nuggy875@naver.com", "201809150900",
