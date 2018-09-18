@@ -137,6 +137,9 @@ public class SignUpActivity extends AppCompatActivity {
 
                         registerProcess(userDB);
 
+                        Intent intent = new Intent(getApplicationContext(), SignInActivity.class);
+                        startActivity(intent);
+
                         finish();
                     }
 
