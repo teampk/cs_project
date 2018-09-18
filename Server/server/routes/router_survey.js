@@ -33,7 +33,7 @@ router.post('/register', function (req, res){
   value4 + '/' + value5 + '/' + value6 + '/' +
   value7 + '/' + value8 + '/' + value9 + '/' + value10);
 
-  if (!dogId || !ownerId || !dogName || !dogGender || !dogSpecies || !dogBirth || !dogId.trim() || !ownerId.trim() || !dogName.trim() || !dogGender.trim() || !dogBirth.trim() || !dogSpecies.trim()) {
+  if (!userId || !createdAt || !value1 || !value2 || !value3 || !value4 || !value5 || !value6 || !value7 || !value8 || !value9 || !value10 || !userId.trim() || !createdAt.trim() || !value1.trim() || !value2.trim() || !value3.trim() || !value4.trim() || !value5.trim() || !value6.trim() || !value7.trim() || !value8.trim() || !value9.trim() || !value10.trim()) {
     res.status(400).json({
       message: 'Invalid Request !'
     });
