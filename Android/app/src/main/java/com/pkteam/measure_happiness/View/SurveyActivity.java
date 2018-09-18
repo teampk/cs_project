@@ -156,10 +156,6 @@ public class SurveyActivity extends AppCompatActivity {
 
         RelativeLayout rlTest = findViewById(R.id.rl_test);
         rlTest.setOnClickListener(listener);
-
-
-
-
     }
 
     private View.OnClickListener listener = new View.OnClickListener() {

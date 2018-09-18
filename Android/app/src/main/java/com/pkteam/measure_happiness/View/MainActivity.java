@@ -184,7 +184,7 @@ public class MainActivity extends AppCompatActivity
         mv.setChartView(mChart); // For bounds control
         mChart.setMarker(mv); // Set the marker to the chart
 
-        //loadData();
+        loadData();
 
         setData();
 
@@ -230,10 +230,10 @@ public class MainActivity extends AppCompatActivity
 
     private void loadData(){
 
-        mSubscriptions.add(NetworkUtil.getRetrofit(mToken).getValue(mID)
+        mSubscriptions.add(NetworkUtil.getRetrofit().getValue(mID)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeOn(Schedulers.io())
-                .subscribe(this::handleResponse,this::handleError));
+                .subscribe(this::handleResponse, this::handleError));
 
     }
 
@@ -299,8 +299,6 @@ public class MainActivity extends AppCompatActivity
         valueArrayList = new ArrayList<Value>();
 
 
-
-
         for (Value valueItem : value){
             if(valueItem != null){
 
@@ -325,6 +323,8 @@ public class MainActivity extends AppCompatActivity
 
             } catch (IOException e) {
                 e.printStackTrace();
+                showSnackBarMessage(e.toString());
+                Log.d("PaengTest", e.toString());
             }
         } else {
             showSnackBarMessage("Network Error !");
