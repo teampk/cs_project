@@ -207,10 +207,7 @@ public class SurveyActivity extends AppCompatActivity {
                                                         score1, score2, score3, score4, score5,
                                                         score6, score7, score8, score9, score10);
 
-                                                Log.d("TestPaengValue", surveyValue.getUserId());
-
                                                 registerProgress(surveyValue);
-
 
                                                 Toast.makeText(SurveyActivity.this, "완료.", Toast.LENGTH_SHORT).show();
 

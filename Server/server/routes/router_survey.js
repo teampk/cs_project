@@ -14,8 +14,6 @@ router.get('/value:id', function(req, res){
 });
 
 router.post('/register', function (req, res){
-  console.log("testingPaeng");
-  console.log("id " + req.body.userId);
   var userId = req.body.userId;
   var createdAt = req.body.created_at;
   var value1 = req.body.value1;
@@ -35,19 +33,26 @@ router.post('/register', function (req, res){
   value4 + '/' + value5 + '/' + value6 + '/' +
   value7 + '/' + value8 + '/' + value9 + '/' + value10);
 
-  registerValue.registerValue(userId, createdAt, value1, value2, value3, value4, value5, value6, value7, value8, value9, value10)
-    .then(function(result) {
-      console.log('post result: ' + result);
-      res.setHeader('Location', '/register/' + userId);
-      res.status(result.status).json({
-        message: result.message
-      });
-    })
-    .catch(function(err) {
-      res.status(err.status).json({
-        message: err.message
-      });
+  if (!dogId || !ownerId || !dogName || !dogGender || !dogSpecies || !dogBirth || !dogId.trim() || !ownerId.trim() || !dogName.trim() || !dogGender.trim() || !dogBirth.trim() || !dogSpecies.trim()) {
+    res.status(400).json({
+      message: 'Invalid Request !'
     });
+  }else {
+    registerValue.registerValue(userId, createdAt, value1, value2, value3, value4, value5, value6, value7, value8, value9, value10)
+      .then(function(result) {
+        console.log('post result: ' + result);
+        res.setHeader('Location', '/register/' + userId);
+        res.status(result.status).json({
+          message: result.message
+        });
+      })
+      .catch(function(err) {
+        console.log('error: ' + err);
+        res.status(err.status).json({
+          message: err.message
+        });
+      });
+  }
 });
 
 module.exports = router;
