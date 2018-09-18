@@ -65,4 +65,40 @@ public class Value implements Serializable {
     public String getValue1() {
         return value1;
     }
+
+    public String getValue2() {
+        return value2;
+    }
+
+    public String getValue3() {
+        return value3;
+    }
+
+    public String getValue4() {
+        return value4;
+    }
+
+    public String getValue5() {
+        return value5;
+    }
+
+    public String getValue6() {
+        return value6;
+    }
+
+    public String getValue7() {
+        return value7;
+    }
+
+    public String getValue8() {
+        return value8;
+    }
+
+    public String getValue9() {
+        return value9;
+    }
+
+    public String getValue10() {
+        return value10;
+    }
 }

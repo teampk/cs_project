@@ -1,6 +1,7 @@
 package com.pkteam.measure_happiness.network;
 
 import com.pkteam.measure_happiness.model.Res;
+import com.pkteam.measure_happiness.model.User;
 import com.pkteam.measure_happiness.model.Value;
 
 import okhttp3.MultipartBody;
@@ -16,6 +17,9 @@ import retrofit2.http.Path;
 import rx.Observable;
 
 public interface RetrofitInterface {
+
+    @POST("user/register")
+    Observable<Res> register(@Body User user);
 
     @POST("survey/register")
     Observable<Res> registerValue(@Body Value surveyValue);

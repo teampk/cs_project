@@ -22,6 +22,9 @@ import com.pkteam.measure_happiness.model.Value;
 import com.pkteam.measure_happiness.network.NetworkUtil;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 
 import retrofit2.adapter.rxjava.HttpException;
 import rx.android.schedulers.AndroidSchedulers;
@@ -198,8 +201,14 @@ public class SurveyActivity extends AppCompatActivity {
                                                 String score9 = tvScore9.getText().toString();
                                                 String score10 = tvScore10.getText().toString();
 
+                                                long now = System.currentTimeMillis();
+                                                Date mDate = new Date(now);
+                                                SimpleDateFormat simpleDate = new SimpleDateFormat("yyyyMMddhhmmss");
+                                                String getTime = simpleDate.format(mDate);
 
-                                                Value surveyValue = new Value("nuggy875@naver.com", "201809150900",
+
+
+                                                Value surveyValue = new Value("nuggy875@naver.com", getTime,
                                                         score1, score2, score3, score4, score5,
                                                         score6, score7, score8, score9, score10);
 

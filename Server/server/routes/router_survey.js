@@ -25,7 +25,6 @@ router.get('/getValue/:id', function(req, res){
         message: err.message
       });
     });
-  
 });
 
 

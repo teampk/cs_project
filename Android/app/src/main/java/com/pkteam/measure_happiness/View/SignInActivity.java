@@ -67,7 +67,7 @@ public class SignInActivity extends AppCompatActivity {
         }
     };
     private boolean checkSignIn(){
-        if(!etId.getText().toString().equals("nuggy875@naver.com") || !etPw.getText().toString().equals("1234")){
+        if(etId.getText().toString().equals("nugg")){
             Toast.makeText(this, "Check your Id or Password", Toast.LENGTH_SHORT).show();
             return false;
         }else{

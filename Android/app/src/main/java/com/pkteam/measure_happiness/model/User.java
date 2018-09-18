@@ -7,11 +7,12 @@ package com.pkteam.measure_happiness.model;
 public class User {
 
 
-    private String mEmail;
+    private String mId;
     private String mPassword;
     private String mName;
     private String mGender;
     private String mBirth;
+    private String mDepartment;
     private String mSmile;
 
     private String created_at;
@@ -20,9 +21,36 @@ public class User {
 
 
 
-    public void setEmail(String email) {
-        this.mEmail = email;
+    public String getmId() {
+        return mId;
     }
+
+
+    public void setmId(String mId) {
+        this.mId = mId;
+    }
+    public void setmPassword(String mPassword){
+        this.mPassword = mPassword;
+    }
+
+    public void setmName(String mName) {
+        this.mName = mName;
+    }
+    public void setmGender(String mGender) {
+        this.mGender = mGender;
+    }
+
+    public void setmBirth(String mBirth) {
+        this.mBirth = mBirth;
+    }
+    public void setmDepartment(String mDepartment){
+        this.mDepartment = mDepartment;
+    }
+    public void setmSmile(String mSmile){
+        this.mSmile = mSmile;
+    }
+
+
 
     public void setPassword(String password) {
         this.mPassword = password;

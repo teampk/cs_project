@@ -70,12 +70,13 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         mID = "nuggy875@naver.com";
         bindingView();
-        initiateView();
-
     }
+
     @Override
     protected void onResume(){
         super.onResume();
+        loadData();
+        setChart();
         initiateView();
     }
 
@@ -174,22 +175,33 @@ public class MainActivity extends AppCompatActivity
 
         mChart.getDescription().setEnabled(false);
 
-        mChart.setWebLineWidth(1f);
+        mChart.setWebLineWidth(1);
         mChart.setWebColor(getColor(R.color.colorBlack));
-        mChart.setWebLineWidthInner(1f);
+        mChart.setWebLineWidthInner(1);
         mChart.setWebColorInner(getColor(R.color.colorBlack));
         mChart.setWebAlpha(100);
         MarkerView mv = new RadarMarkerView(this, R.layout.radar_markerview);
         mv.setChartView(mChart); // For bounds control
         mChart.setMarker(mv); // Set the marker to the chart
-        Log.d("PaengTestId", mID);
 
 
-        loadData();
 
-        setData();
+    }
 
+    private void initiateView(){
 
+        mChart.animateXY(1400, 1400);
+    }
+
+    private void loadData(){
+
+        mSubscriptions.add(NetworkUtil.getRetrofit().getValue("nuggy875@naver.com")
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribeOn(Schedulers.io())
+                .subscribe(this::handleResponse, this::handleError));
+
+    }
+    private void setChart(){
         XAxis xAxis = mChart.getXAxis();
         xAxis.setTextSize(11);
         xAxis.setYOffset(0);
@@ -207,9 +219,9 @@ public class MainActivity extends AppCompatActivity
 
         YAxis yAxis = mChart.getYAxis();
         yAxis.setLabelCount(5, false);
-        yAxis.setTextSize(9f);
+        yAxis.setTextSize(9);
         yAxis.setAxisMinimum(0);
-        yAxis.setAxisMaximum(9);
+        yAxis.setAxisMaximum(8);
         yAxis.setDrawLabels(true);
 
         Legend l = mChart.getLegend();
@@ -220,25 +232,118 @@ public class MainActivity extends AppCompatActivity
         l.setXEntrySpace(7);
         l.setYEntrySpace(5);
         l.setTextColor(getColor(R.color.colorBlack));
+    }
+
+
+
+    private void initSharedPreferences() {
+
+        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        mToken = mSharedPreferences.getString(Constants.TOKEN,"");
+        mID = mSharedPreferences.getString(Constants.ID,"");
+    }
+
+    private void handleResponse(Value[] value) {
+
+
+        valueArrayList = new ArrayList<>();
+
+
+        for (Value valueItem : value){
+            if(valueItem != null) {
+                valueArrayList.add(valueItem);
+            }
+        }
+        String[] valueArray1 = getValueArray(valueArrayList.get(valueArrayList.size()-2));
+        String[] valueArray2 = getValueArray(valueArrayList.get(valueArrayList.size()-1));
+
+        int cnt = 10;
+        ArrayList<RadarEntry> entries1 = new ArrayList<>();
+        ArrayList<RadarEntry> entries2 = new ArrayList<>();
+
+        for (int i = 0; i < cnt; i++){
+            entries1.add(new RadarEntry(Float.valueOf(valueArray1[i+1])));
+            entries2.add(new RadarEntry(Float.valueOf(valueArray2[i+1])));
+        }
+
+        RadarDataSet set1 = new RadarDataSet(entries1, "저번 측정값 ("+valueArray1[0]+")");
+        set1.setColor(getColor(R.color.colorGraphGray));
+        set1.setFillColor(getColor(R.color.colorGraphGray));
+        set1.setDrawFilled(true);
+        set1.setFillAlpha(180);
+        set1.setLineWidth(2f);
+        set1.setDrawHighlightCircleEnabled(true);
+        set1.setDrawHighlightIndicators(false);
+
+        RadarDataSet set2 = new RadarDataSet(entries2, "이번 측정값 ("+valueArray2[0]+")");
+        set2.setColor(getColor(R.color.colorPrimary));
+        set2.setFillColor(getColor(R.color.colorPrimary));
+        set2.setDrawFilled(true);
+        set2.setFillAlpha(180);
+        set2.setLineWidth(2f);
+        set2.setDrawHighlightCircleEnabled(true);
+        set2.setDrawHighlightIndicators(false);
+
+        ArrayList<IRadarDataSet> sets = new ArrayList<>();
+        sets.add(set1);
+        sets.add(set2);
+
+        RadarData data = new RadarData(sets);
+        data.setValueTextSize(8f);
+        data.setDrawValues(false);
+        data.setValueTextColor(Color.WHITE);
+
+        mChart.setData(data);
+        mChart.invalidate();
 
 
     }
+    private String[] getValueArray (Value valueItem){
+        String[] valueArray = new String[11];
+        valueArray[0] = valueItem.getCreatedAt();
+        valueArray[1] = valueItem.getValue1();
+        valueArray[2] = valueItem.getValue2();
+        valueArray[3] = valueItem.getValue3();
+        valueArray[4] = valueItem.getValue4();
+        valueArray[5] = valueItem.getValue5();
+        valueArray[6] = valueItem.getValue6();
+        valueArray[7] = valueItem.getValue7();
+        valueArray[8] = valueItem.getValue8();
+        valueArray[9] = valueItem.getValue9();
+        valueArray[10] = valueItem.getValue10();
 
-    private void initiateView(){
-
-        mChart.animateXY(1400, 1400);
+        return valueArray;
     }
 
-    private void loadData(){
+    private void handleError(Throwable error) {
 
+        if (error instanceof HttpException) {
 
-        mSubscriptions.add(NetworkUtil.getRetrofit().getValue("nuggy875@naver.com")
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribeOn(Schedulers.io())
-                .subscribe(this::handleResponse, this::handleError));
+            Log.d("PaengTest1", error.toString());
+
+            Gson gson = new GsonBuilder().create();
+            try {
+                String errorBody = ((HttpException) error).response().errorBody().string();
+                Res response = gson.fromJson(errorBody, com.pkteam.measure_happiness.model.Res.class);
+                showSnackBarMessage(response.getMessage());
+
+            } catch (IOException e) {
+                e.printStackTrace();
+                showSnackBarMessage(e.toString());
+                Log.d("PaengTest", e.toString());
+            }
+        } else {
+            showSnackBarMessage("Network Error !");
+        }
+    }
+
+    private void showSnackBarMessage(String message){
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
 
     }
 
+
+    /*
     public void setData() {
 
         float mult = 9;
@@ -289,57 +394,7 @@ public class MainActivity extends AppCompatActivity
         mChart.invalidate();
     }
 
-    private void initSharedPreferences() {
-
-        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        mToken = mSharedPreferences.getString(Constants.TOKEN,"");
-        mID = mSharedPreferences.getString(Constants.ID,"");
-    }
-
-    private void handleResponse(Value[] value) {
-
-        valueArrayList = new ArrayList<Value>();
-
-
-        for (Value valueItem : value){
-            if(valueItem != null){
-
-                Log.d("TestPaengData", valueItem.getUserId());
-                Log.d("TestPaengDataCA", valueItem.getCreatedAt());
-                Log.d("TestPaengData1", valueItem.getValue1());
-
-            }
-        }
-
-    }
-
-    private void handleError(Throwable error) {
-
-        if (error instanceof HttpException) {
-
-            Log.d("PaengTest1", error.toString());
-
-            Gson gson = new GsonBuilder().create();
-            try {
-                String errorBody = ((HttpException) error).response().errorBody().string();
-                Res response = gson.fromJson(errorBody, com.pkteam.measure_happiness.model.Res.class);
-                showSnackBarMessage(response.getMessage());
-
-            } catch (IOException e) {
-                e.printStackTrace();
-                showSnackBarMessage(e.toString());
-                Log.d("PaengTest", e.toString());
-            }
-        } else {
-            showSnackBarMessage("Network Error !");
-        }
-    }
-
-    private void showSnackBarMessage(String message){
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
-
-    }
-
+*/
 
     private View.OnClickListener listener = new View.OnClickListener(){
         @Override
