@@ -115,7 +115,7 @@ router.get('/getValue/:id', function(req, res){
 });
 
 
-router.post('/register', function (req, res){
+router.post('/registerValue', function (req, res){
   var userId = req.body.userId;
   var createdAt = req.body.createdAt;
   var value1 = req.body.value1;

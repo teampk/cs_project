@@ -1,22 +1,18 @@
 var user = require('../models/user');
 var bcrypt = require('bcryptjs');
 
-exports.loginUser = (id, password) =>
+exports.loginUser = (mId, password) =>
 
 	new Promise((resolve,reject) => {
-		console.log("id:"+id);
+		console.log("id:"+mId);
 
-		user.find({mId: id})
-		.then(users => {
+		user.find({mId: mId})
+		.then(user => {
 
-			if (users.length == 0) {
-
+			if (user.length == 0) {
 				reject({ status: 404, message: 'User Not Found !' });
-
 			} else {
-
-				return users[0];
-
+				return user[0];
 			}
 		})
 
