@@ -1,7 +1,6 @@
 package com.pkteam.measure_happiness.network;
 
 import com.pkteam.measure_happiness.model.Res;
-import com.pkteam.measure_happiness.model.User;
 import com.pkteam.measure_happiness.model.Value;
 
 import okhttp3.MultipartBody;

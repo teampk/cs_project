@@ -28,18 +28,6 @@ public class User {
         this.mPassword = password;
     }
 
-    public void setName(String name) {
-        this.mName = name;
-    }
-
-    public String getEmail() {
-        return mEmail;
-    }
-
-    public String getName() {
-        return mName;
-    }
-
     public String getCreated_at() {
         return created_at;
     }

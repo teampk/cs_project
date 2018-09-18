@@ -4,7 +4,9 @@ package com.pkteam.measure_happiness.model;
  * Created by paeng on 18/08/2018.
  */
 
-public class Value {
+import java.io.Serializable;
+
+public class Value implements Serializable {
     private String userId;
     private String createdAt;
     private String value1;

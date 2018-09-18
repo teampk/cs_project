@@ -14,9 +14,10 @@ router.get('/value/:id', function(req, res){
   res.send('hello how are you');
 });
 
-router.get('/getValue/:userId', function(req,res){
+router.get('/getValue/:id', function(req,res){
+  console.log("id="+id);
   if (checkToken(req)) {
-    getValue.getValue(req.params.userId)
+    getValue.getValue(req.params.id)
       .then(function(result) {
         console.log('value result : ' + result);
         res.json(result);
