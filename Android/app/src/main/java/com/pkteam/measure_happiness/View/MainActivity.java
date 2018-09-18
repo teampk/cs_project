@@ -166,7 +166,6 @@ public class MainActivity extends AppCompatActivity
 
         // Retrofit2 (RxJAVA)
         mSubscriptions = new CompositeSubscription();
-        initSharedPreferences();
 
 
         // CHART
@@ -183,8 +182,10 @@ public class MainActivity extends AppCompatActivity
         MarkerView mv = new RadarMarkerView(this, R.layout.radar_markerview);
         mv.setChartView(mChart); // For bounds control
         mChart.setMarker(mv); // Set the marker to the chart
+        Log.d("PaengTestId", mID);
 
-        //loadData();
+
+        loadData();
 
         setData();
 
@@ -230,7 +231,8 @@ public class MainActivity extends AppCompatActivity
 
     private void loadData(){
 
-        mSubscriptions.add(NetworkUtil.getRetrofit(mToken).getValue(mID)
+
+        mSubscriptions.add(NetworkUtil.getRetrofit().getValue("nuggy875@naver.com")
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeOn(Schedulers.io())
                 .subscribe(this::handleResponse, this::handleError));
