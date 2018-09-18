@@ -26,7 +26,7 @@ router.post('/authenticate', function(req, res) {
   } else {
     console.log(credentials.name);
     console.log(credentials.pass);
-    
+
     login.loginUser(credentials.name, credentials.pass)
       .then(function(result) {
         var token = jwt.sign(result, config.secret, {
@@ -38,6 +38,7 @@ router.post('/authenticate', function(req, res) {
         });
       })
       .catch(function(err) {
+        console.log("fucking error:"+err.status);
         res.status(err.status).json({
           message: err.message
         });

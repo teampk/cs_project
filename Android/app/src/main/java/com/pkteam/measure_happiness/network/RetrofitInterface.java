@@ -31,12 +31,4 @@ public interface RetrofitInterface {
     Observable<Value[]> getValue(@Path("userId") String userId);
 
 
-/*
-    @GET("dogs/{ownerId}")
-    Observable<Dog[]> getDogProfiles(@Path("ownerId") String ownerId);
-*/
-
-
-
-
 }
