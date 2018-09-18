@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var valueSchema = mongoose.Schema({
-  ownerId : String,
+  userId : String,
   created_at		: String,
   value1 : String,
   value2 : String,

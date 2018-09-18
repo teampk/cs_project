@@ -32,13 +32,11 @@ import rx.subscriptions.CompositeSubscription;
  */
 
 public class SurveyActivity extends AppCompatActivity {
-    private CustomDialog mCustomDialog;
     private TextView tvScore1, tvScore2, tvScore3, tvScore4, tvScore5,
             tvScore6, tvScore7, tvScore8, tvScore9, tvScore10;
 
     private CompositeSubscription mSubscriptions;
 
-    private RelativeLayout rlTest;
 
 
 
@@ -156,7 +154,7 @@ public class SurveyActivity extends AppCompatActivity {
         tvScore9 = findViewById(R.id.tv_score_9);
         tvScore10 = findViewById(R.id.tv_score_10);
 
-        rlTest = findViewById(R.id.rl_test);
+        RelativeLayout rlTest = findViewById(R.id.rl_test);
         rlTest.setOnClickListener(listener);
 
 

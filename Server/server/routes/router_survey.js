@@ -3,7 +3,7 @@ var router = express.Router();
 
 router.get('/', function(req,res){
   res.send('this is survey page mf');
-  console.log('console long testing');
+  console.log('console log testing');
 
 });
 
@@ -13,7 +13,7 @@ router.get('/value:id', function(req, res){
 
 router.post('/register', function (req, res){
   var userId = req.body.userId;
-  var createdAt = req.body.createdAt;
+  var createdAt = req.body.created_at;
   var value1 = req.body.value1;
   var value2 = req.body.value2;
   var value3 = req.body.value3;

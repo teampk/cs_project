@@ -6,7 +6,7 @@ exports.registerValue = (userId, createdAt, value1, value2, value3, value4, valu
 	new Promise(
 		function(resolve,reject){
 
-	 	var newValue = new value({
+	 	var newValue = new modelValue({
       userId: usreId,
       createdAt: new Date(),
       value1: value1,
