@@ -6,6 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Test" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
@@ -32,65 +33,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SurveyActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SurveyActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/SurveyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="211" column="97" lean-forward="false" selection-start-line="211" selection-start-column="97" selection-end-line="211" selection-end-column="97" />
+            <state relative-caret-position="281">
+              <caret line="61" column="61" lean-forward="false" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
               <folding>
                 <element signature="method#registerCheck#0;class#SurveyActivity#0" expanded="false" />
                 <element signature="method#surveyNotComplete#0;class#SurveyActivity#0" expanded="false" />
-                <element signature="e#9397#9430#0" expanded="true" />
-                <element signature="e#9460#9499#0" expanded="true" />
-                <element signature="e#9529#9567#0" expanded="true" />
-                <element signature="e#9597#9635#0" expanded="true" />
-                <element signature="e#9665#9703#0" expanded="true" />
-                <element signature="e#9977#10010#0" expanded="true" />
-                <element signature="e#10040#10079#0" expanded="true" />
-                <element signature="e#10109#10147#0" expanded="true" />
-                <element signature="e#10177#10215#0" expanded="true" />
-                <element signature="e#10245#10283#0" expanded="true" />
-                <element signature="e#10557#10590#0" expanded="true" />
-                <element signature="e#10620#10659#0" expanded="true" />
-                <element signature="e#10689#10727#0" expanded="true" />
-                <element signature="e#10757#10795#0" expanded="true" />
-                <element signature="e#10825#10863#0" expanded="true" />
-                <element signature="e#11137#11170#0" expanded="true" />
-                <element signature="e#11200#11239#0" expanded="true" />
-                <element signature="e#11269#11307#0" expanded="true" />
-                <element signature="e#11337#11375#0" expanded="true" />
-                <element signature="e#11405#11443#0" expanded="true" />
-                <element signature="e#11717#11750#0" expanded="true" />
-                <element signature="e#11780#11819#0" expanded="true" />
-                <element signature="e#11849#11887#0" expanded="true" />
-                <element signature="e#11917#11955#0" expanded="true" />
-                <element signature="e#11985#12023#0" expanded="true" />
-                <element signature="e#12297#12330#0" expanded="true" />
-                <element signature="e#12360#12399#0" expanded="true" />
-                <element signature="e#12429#12467#0" expanded="true" />
-                <element signature="e#12497#12535#0" expanded="true" />
-                <element signature="e#12565#12603#0" expanded="true" />
-                <element signature="e#12877#12910#0" expanded="true" />
-                <element signature="e#12940#12979#0" expanded="true" />
-                <element signature="e#13009#13047#0" expanded="true" />
-                <element signature="e#13077#13115#0" expanded="true" />
-                <element signature="e#13145#13183#0" expanded="true" />
-                <element signature="e#13457#13490#0" expanded="true" />
-                <element signature="e#13520#13559#0" expanded="true" />
-                <element signature="e#13589#13627#0" expanded="true" />
-                <element signature="e#13657#13695#0" expanded="true" />
-                <element signature="e#13725#13763#0" expanded="true" />
-                <element signature="e#14037#14070#0" expanded="true" />
-                <element signature="e#14100#14139#0" expanded="true" />
-                <element signature="e#14169#14207#0" expanded="true" />
-                <element signature="e#14237#14275#0" expanded="true" />
-                <element signature="e#14305#14343#0" expanded="true" />
-                <element signature="e#14621#14655#0" expanded="true" />
-                <element signature="e#14685#14725#0" expanded="true" />
-                <element signature="e#14755#14794#0" expanded="true" />
-                <element signature="e#14824#14863#0" expanded="true" />
-                <element signature="e#14893#14932#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RetrofitInterface.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/network/RetrofitInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="25" column="2" lean-forward="true" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,8 +59,8 @@
       <file leaf-file-name="Value.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/model/Value.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="55" column="15" lean-forward="false" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
+            <state relative-caret-position="81">
+              <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
               <folding>
                 <element signature="e#1334#1335#0" expanded="true" />
                 <element signature="e#1363#1364#0" expanded="true" />
@@ -115,8 +76,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Integer.valueOf(</find>
-      <find>registerProgress</find>
       <find>mV</find>
+      <find>registerProgress</find>
     </findStrings>
     <replaceStrings>
       <replace>v</replace>
@@ -2246,6 +2207,7 @@
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/model/Value.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/SurveyActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/splash.xml" />
       </list>
     </option>
   </component>
@@ -2548,7 +2510,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36638454" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36638454" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -2577,17 +2539,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_survey_previous.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_survey.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
@@ -2639,14 +2590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/network/RetrofitInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="21" column="59" lean-forward="false" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/network/NetworkUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -2666,10 +2609,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/SurveyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="61" column="61" lean-forward="false" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
+          <folding>
+            <element signature="method#registerCheck#0;class#SurveyActivity#0" expanded="false" />
+            <element signature="method#surveyNotComplete#0;class#SurveyActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/splash.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_survey_previous.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_sign_in.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/model/Value.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="55" column="15" lean-forward="false" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
+        <state relative-caret-position="81">
+          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
           <folding>
             <element signature="e#1334#1335#0" expanded="true" />
             <element signature="e#1363#1364#0" expanded="true" />
@@ -2679,64 +2666,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/SurveyActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/network/RetrofitInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="211" column="97" lean-forward="false" selection-start-line="211" selection-start-column="97" selection-end-line="211" selection-end-column="97" />
-          <folding>
-            <element signature="method#registerCheck#0;class#SurveyActivity#0" expanded="false" />
-            <element signature="method#surveyNotComplete#0;class#SurveyActivity#0" expanded="false" />
-            <element signature="e#9397#9430#0" expanded="true" />
-            <element signature="e#9460#9499#0" expanded="true" />
-            <element signature="e#9529#9567#0" expanded="true" />
-            <element signature="e#9597#9635#0" expanded="true" />
-            <element signature="e#9665#9703#0" expanded="true" />
-            <element signature="e#9977#10010#0" expanded="true" />
-            <element signature="e#10040#10079#0" expanded="true" />
-            <element signature="e#10109#10147#0" expanded="true" />
-            <element signature="e#10177#10215#0" expanded="true" />
-            <element signature="e#10245#10283#0" expanded="true" />
-            <element signature="e#10557#10590#0" expanded="true" />
-            <element signature="e#10620#10659#0" expanded="true" />
-            <element signature="e#10689#10727#0" expanded="true" />
-            <element signature="e#10757#10795#0" expanded="true" />
-            <element signature="e#10825#10863#0" expanded="true" />
-            <element signature="e#11137#11170#0" expanded="true" />
-            <element signature="e#11200#11239#0" expanded="true" />
-            <element signature="e#11269#11307#0" expanded="true" />
-            <element signature="e#11337#11375#0" expanded="true" />
-            <element signature="e#11405#11443#0" expanded="true" />
-            <element signature="e#11717#11750#0" expanded="true" />
-            <element signature="e#11780#11819#0" expanded="true" />
-            <element signature="e#11849#11887#0" expanded="true" />
-            <element signature="e#11917#11955#0" expanded="true" />
-            <element signature="e#11985#12023#0" expanded="true" />
-            <element signature="e#12297#12330#0" expanded="true" />
-            <element signature="e#12360#12399#0" expanded="true" />
-            <element signature="e#12429#12467#0" expanded="true" />
-            <element signature="e#12497#12535#0" expanded="true" />
-            <element signature="e#12565#12603#0" expanded="true" />
-            <element signature="e#12877#12910#0" expanded="true" />
-            <element signature="e#12940#12979#0" expanded="true" />
-            <element signature="e#13009#13047#0" expanded="true" />
-            <element signature="e#13077#13115#0" expanded="true" />
-            <element signature="e#13145#13183#0" expanded="true" />
-            <element signature="e#13457#13490#0" expanded="true" />
-            <element signature="e#13520#13559#0" expanded="true" />
-            <element signature="e#13589#13627#0" expanded="true" />
-            <element signature="e#13657#13695#0" expanded="true" />
-            <element signature="e#13725#13763#0" expanded="true" />
-            <element signature="e#14037#14070#0" expanded="true" />
-            <element signature="e#14100#14139#0" expanded="true" />
-            <element signature="e#14169#14207#0" expanded="true" />
-            <element signature="e#14237#14275#0" expanded="true" />
-            <element signature="e#14305#14343#0" expanded="true" />
-            <element signature="e#14621#14655#0" expanded="true" />
-            <element signature="e#14685#14725#0" expanded="true" />
-            <element signature="e#14755#14794#0" expanded="true" />
-            <element signature="e#14824#14863#0" expanded="true" />
-            <element signature="e#14893#14932#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="25" column="2" lean-forward="true" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>

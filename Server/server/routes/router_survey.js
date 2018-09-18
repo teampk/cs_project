@@ -12,6 +12,7 @@ router.get('/value:id', function(req, res){
 });
 
 router.post('/register', function (req, res){
+  console.log("testingPaeng");
   console.log("id " + req.body.userId);
   var userId = req.body.userId;
   var createdAt = req.body.created_at;
