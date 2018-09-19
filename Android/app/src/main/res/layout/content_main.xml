@@ -51,53 +51,54 @@
 
             </RelativeLayout>
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
 
                 <LinearLayout
-                    android:layout_marginTop="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:orientation="horizontal">
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
-                    <Button
-                        android:id="@+id/btn_change"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@drawable/button_orange_round"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        android:text="변화 추이"
-                        android:textStyle="bold"
-                        android:textSize="16dp"
-                        android:textColor="@color/colorTextInButton"
+                </LinearLayout>
 
-                        />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="최근 행복점수 : "
+                    android:textStyle="bold"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="24dp"/>
 
-                    <Button
-                        android:id="@+id/btn_ranking"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@drawable/button_orange_round"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        android:text="랭 킹"
-                        android:textStyle="bold"
-                        android:textSize="16dp"
-                        android:textColor="@color/colorTextInButton"
+                <TextView
+                    android:id="@+id/tv_score_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="67"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="24dp"/>
 
-                        />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
                 </LinearLayout>
 
 
-            </RelativeLayout>
+
+
+
+            </LinearLayout>
 
 
         </LinearLayout>

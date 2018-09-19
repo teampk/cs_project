@@ -2,8 +2,10 @@ package com.pkteam.measure_happiness.View;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
+import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -20,10 +22,12 @@ import com.pkteam.measure_happiness.R;
 import com.pkteam.measure_happiness.model.Res;
 import com.pkteam.measure_happiness.model.Value;
 import com.pkteam.measure_happiness.network.NetworkUtil;
+import com.pkteam.measure_happiness.utils.Constants;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Random;
 
 
 import retrofit2.adapter.rxjava.HttpException;
@@ -39,7 +43,13 @@ public class SurveyActivity extends AppCompatActivity {
     private TextView tvScore1, tvScore2, tvScore3, tvScore4, tvScore5,
             tvScore6, tvScore7, tvScore8, tvScore9, tvScore10;
 
+    Button btnQuestion1,btnQuestion2,btnQuestion3,btnQuestion4,btnQuestion5,
+            btnQuestion6,btnQuestion7,btnQuestion8,btnQuestion9,btnQuestion10;
+
     private CompositeSubscription mSubscriptions;
+    private SharedPreferences mSharedPreferences;
+
+    private String mToken, mEmail;
 
 
 
@@ -49,6 +59,7 @@ public class SurveyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_survey);
         mSubscriptions = new CompositeSubscription();
+        initSharedPreferences();
         bindingView();
 
 
@@ -57,6 +68,13 @@ public class SurveyActivity extends AppCompatActivity {
     protected void onDestroy(){
         super.onDestroy();
         mSubscriptions.unsubscribe();
+    }
+
+    private void initSharedPreferences() {
+
+        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        mToken = mSharedPreferences.getString(Constants.TOKEN,"");
+        mEmail = mSharedPreferences.getString(Constants.EMAIL,"");
     }
 
 
@@ -161,21 +179,29 @@ public class SurveyActivity extends AppCompatActivity {
         rlTest.setOnClickListener(listener);
     }
 
+    private int getRandomValue(){
+
+        Random generator = new Random();
+        return  generator.nextInt(10) + 1;
+
+    }
+
     private View.OnClickListener listener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             switch (view.getId()) {
                 case R.id.rl_test:
-                    tvScore1.setText("2");
-                    tvScore2.setText("4");
-                    tvScore3.setText("3");
-                    tvScore4.setText("2");
-                    tvScore5.setText("1");
-                    tvScore6.setText("5");
-                    tvScore7.setText("9");
-                    tvScore8.setText("10");
-                    tvScore9.setText("2");
-                    tvScore10.setText("6");
+                    tvScore1.setText(String.valueOf(getRandomValue()));
+                    tvScore2.setText(String.valueOf(getRandomValue()));
+                    tvScore3.setText(String.valueOf(getRandomValue()));
+                    tvScore4.setText(String.valueOf(getRandomValue()));
+                    tvScore5.setText(String.valueOf(getRandomValue()));
+                    tvScore6.setText(String.valueOf(getRandomValue()));
+                    tvScore7.setText(String.valueOf(getRandomValue()));
+                    tvScore8.setText(String.valueOf(getRandomValue()));
+                    tvScore9.setText(String.valueOf(getRandomValue()));
+                    tvScore10.setText(String.valueOf(getRandomValue()));
+
                     break;
                 case R.id.btn_back:
                     finish();
@@ -203,12 +229,12 @@ public class SurveyActivity extends AppCompatActivity {
 
                                                 long now = System.currentTimeMillis();
                                                 Date mDate = new Date(now);
-                                                SimpleDateFormat simpleDate = new SimpleDateFormat("yyyyMMddhhmmss");
+                                                SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy/MM/dd hh:mm:ss");
                                                 String getTime = simpleDate.format(mDate);
 
 
 
-                                                Value surveyValue = new Value("nuggy875@naver.com", getTime,
+                                                Value surveyValue = new Value(mEmail, getTime,
                                                         score1, score2, score3, score4, score5,
                                                         score6, score7, score8, score9, score10);
 
@@ -234,7 +260,7 @@ public class SurveyActivity extends AppCompatActivity {
                 case R.id.btn_question_1:
                     CustomDialog customDialog1 = new CustomDialog(SurveyActivity.this);
                     customDialog1.callFunction(
-                            tvScore1,
+                            tvScore1, btnQuestion1,
                             getString(R.string.happy_title_1),
                             getString(R.string.happy_description_1),
                             getString(R.string.happy_question_1_1),
@@ -244,7 +270,7 @@ public class SurveyActivity extends AppCompatActivity {
                 case R.id.btn_question_2:
                     CustomDialog customDialog2 = new CustomDialog(SurveyActivity.this);
                     customDialog2.callFunction(
-                            tvScore2,
+                            tvScore2, btnQuestion2,
                             getString(R.string.happy_title_2),
                             getString(R.string.happy_description_2),
                             getString(R.string.happy_question_2_1),
@@ -254,7 +280,7 @@ public class SurveyActivity extends AppCompatActivity {
                 case R.id.btn_question_3:
                     CustomDialog customDialog3 = new CustomDialog(SurveyActivity.this);
                     customDialog3.callFunction(
-                            tvScore3,
+                            tvScore3, btnQuestion3,
                             getString(R.string.happy_title_3),
                             getString(R.string.happy_description_3),
                             getString(R.string.happy_question_3_1),
@@ -264,7 +290,7 @@ public class SurveyActivity extends AppCompatActivity {
                 case R.id.btn_question_4:
                     CustomDialog customDialog4 = new CustomDialog(SurveyActivity.this);
                     customDialog4.callFunction(
-                            tvScore4,
+                            tvScore4, btnQuestion4,
                             getString(R.string.happy_title_4),
                             getString(R.string.happy_description_4),
                             getString(R.string.happy_question_4_1),
@@ -274,7 +300,7 @@ public class SurveyActivity extends AppCompatActivity {
                 case R.id.btn_question_5:
                     CustomDialog customDialog5 = new CustomDialog(SurveyActivity.this);
                     customDialog5.callFunction(
-                            tvScore5,
+                            tvScore5, btnQuestion5,
                             getString(R.string.happy_title_5),
                             getString(R.string.happy_description_5),
                             getString(R.string.happy_question_5_1),
@@ -284,7 +310,7 @@ public class SurveyActivity extends AppCompatActivity {
                 case R.id.btn_question_6:
                     CustomDialog customDialog6 = new CustomDialog(SurveyActivity.this);
                     customDialog6.callFunction(
-                            tvScore6,
+                            tvScore6, btnQuestion6,
                             getString(R.string.happy_title_6),
                             getString(R.string.happy_description_6),
                             getString(R.string.happy_question_6_1),
@@ -294,7 +320,7 @@ public class SurveyActivity extends AppCompatActivity {
                 case R.id.btn_question_7:
                     CustomDialog customDialog7 = new CustomDialog(SurveyActivity.this);
                     customDialog7.callFunction(
-                            tvScore7,
+                            tvScore7, btnQuestion7,
                             getString(R.string.happy_title_7),
                             getString(R.string.happy_description_7),
                             getString(R.string.happy_question_7_1),
@@ -304,7 +330,7 @@ public class SurveyActivity extends AppCompatActivity {
                 case R.id.btn_question_8:
                     CustomDialog customDialog8 = new CustomDialog(SurveyActivity.this);
                     customDialog8.callFunction(
-                            tvScore8,
+                            tvScore8, btnQuestion8,
                             getString(R.string.happy_title_8),
                             getString(R.string.happy_description_8),
                             getString(R.string.happy_question_8_1),
@@ -314,7 +340,7 @@ public class SurveyActivity extends AppCompatActivity {
                 case R.id.btn_question_9:
                     CustomDialog customDialog9 = new CustomDialog(SurveyActivity.this);
                     customDialog9.callFunction(
-                            tvScore9,
+                            tvScore9, btnQuestion9,
                             getString(R.string.happy_title_9),
                             getString(R.string.happy_description_9),
                             getString(R.string.happy_question_9_1),
@@ -324,7 +350,7 @@ public class SurveyActivity extends AppCompatActivity {
                 case R.id.btn_question_10:
                     CustomDialog customDialog10 = new CustomDialog(SurveyActivity.this);
                     customDialog10.callFunction(
-                            tvScore10,
+                            tvScore10, btnQuestion10,
                             getString(R.string.happy_title_10),
                             getString(R.string.happy_description_10),
                             getString(R.string.happy_question_10_1),

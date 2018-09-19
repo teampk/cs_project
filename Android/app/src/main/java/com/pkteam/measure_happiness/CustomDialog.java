@@ -2,6 +2,8 @@ package com.pkteam.measure_happiness;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -22,7 +24,7 @@ public class CustomDialog {
     }
 
     // 호출할 다이얼로그 함수를 정의한다.
-    public void callFunction(final TextView tvScore, String dialogTitle, String dialogDescription, String dialogQuestion1, String dialogQuestion2, String dialogQuestion3) {
+    public void callFunction(final TextView tvScore, Button btQuestion, String dialogTitle, String dialogDescription, String dialogQuestion1, String dialogQuestion2, String dialogQuestion3) {
 
         // 커스텀 다이얼로그를 정의하기위해 Dialog클래스를 생성한다.
         final Dialog dlg = new Dialog(context);
@@ -79,6 +81,7 @@ public class CustomDialog {
                     int finalScore = getFinalScore(score);
 
                     tvScore.setText(String.valueOf(finalScore));
+                    btQuestion.setBackgroundColor(999999);
 
                     dlg.dismiss();
                 }

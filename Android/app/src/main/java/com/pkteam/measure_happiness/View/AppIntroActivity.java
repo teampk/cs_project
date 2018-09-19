@@ -39,7 +39,7 @@ public class AppIntroActivity extends AppIntro {
     @Override
     public void onSkipPressed(Fragment currentFragment) {
         super.onSkipPressed(currentFragment);
-        Intent mainIntent = new Intent(AppIntroActivity.this, MainActivity.class);
+        Intent mainIntent = new Intent(AppIntroActivity.this, SignInActivity.class);
         AppIntroActivity.this.startActivity(mainIntent);
         AppIntroActivity.this.finish();
     }
@@ -47,7 +47,7 @@ public class AppIntroActivity extends AppIntro {
     @Override
     public void onDonePressed(Fragment currentFragment) {
         super.onDonePressed(currentFragment);
-        Intent mainIntent = new Intent(AppIntroActivity.this, MainActivity.class);
+        Intent mainIntent = new Intent(AppIntroActivity.this, SignInActivity.class);
         AppIntroActivity.this.startActivity(mainIntent);
         AppIntroActivity.this.finish();
     }

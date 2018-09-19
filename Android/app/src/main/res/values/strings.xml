@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">행복 지수 측정</string>
+    <string name="app_name">Happy Campus</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -9,17 +9,17 @@
     <string name="description_sign_in">당신의 행복을 측정하기 위해\n로그인이 필요합니다.</string>
     <string name="description_sign_up">간단한 회원가입으로\n당신의 행복을 측정해보세요.</string>
 
-    <string name="app_intro_title_1">안녕하세요.</string>
+    <string name="app_intro_title_1">안녕하세요!</string>
     <string name="app_intro_title_2">당신의 행복을\n측정해보세요.</string>
-    <string name="app_intro_title_3">해택을 누리세요.</string>
+    <string name="app_intro_title_3">같이 행복해져요!</string>
     <string name="app_intro_title_4">자, 이제 시작합니다!</string>
 
     <string name="app_intro_description_1">저희는 중앙대학교 학생의\n행복을 추구하는\n\"해피캠퍼스 for 중앙대\" 입니다.</string>
-    <string name="app_intro_description_2">매일매일의 행복 측정값으로부터\n부족한 부분을 채우면서\n삶의 질을 높여보세요!.</string>
-    <string name="app_intro_description_3">주기적인 측정으로부터 축적된 스마일로\n할인 등 여러가지 해택을 누려보세요!</string>
+    <string name="app_intro_description_2">행복 측정값으로부터\n부족한 행복지수를 채워가면서\n삶의 질을 높여보세요!.</string>
+    <string name="app_intro_description_3">유저들과의 소통을 통해\n우리 모두 행복해져요</string>
     <string name="app_intro_description_4">저희 어플은 웰니스IT와 협업하여\n개인의 행복을 10가지 지표를 나누고\n신빙성 있는 설문조사를 기반으로 한\n행복 측정 어플리케이션입니다.</string>
 
-    <string name="description_importance">당신의 삶에서의 이 분야가 얼마나 중요한지, 중요성을 입력해주세요. (0~7점)</string>
+    <string name="description_importance">당신의 행복에서 이 항목이 얼마나 중요한지 체크해주세요. (1~7점)</string>
     <string name="description_satisfaction">당신의 삶에서의 이 분야의 만족도를 설문을 통해 체크해보세요. (3문항) </string>
 
     <string name="happy_title_1">1.신체적(Physical)</string>
@@ -32,6 +32,18 @@
     <string name="happy_title_8">8.영적(Spiritual)</string>
     <string name="happy_title_9">9.정신적(Mental)</string>
     <string name="happy_title_10">10.메디컬(Medical)</string>
+
+    <string name="happy_title_kor_1">1.신체적</string>
+    <string name="happy_title_kor_2">2.정서적</string>
+    <string name="happy_title_kor_3">3.사회적</string>
+    <string name="happy_title_kor_4">4.경제적</string>
+    <string name="happy_title_kor_5">5.환경적</string>
+    <string name="happy_title_kor_6">6.지적</string>
+    <string name="happy_title_kor_7">7.직업적</string>
+    <string name="happy_title_kor_8">8.영적</string>
+    <string name="happy_title_kor_9">9.정신적</string>
+    <string name="happy_title_kor_10">10.메디컬</string>
+
 
     <string name="happy_description_1">신체적 건강, 수면, 몸매관리, 자세교정, 성형수술, 근육발달, 면역력 유지</string>
     <string name="happy_description_2">마음의 상처 치유, 온유한 마음, 편안한 상태, 풍부한 감정, 좋은 기분, 신바람</string>

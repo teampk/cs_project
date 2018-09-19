@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private RadarChart mChart;
-    private TextView tvValueSmile;
+    private TextView tvValueSmile, navTvName, navTvEmail, tvScoreTotal;
 
     private LinearLayout llSmile;
 
@@ -68,8 +68,8 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bindingView();
         initSharedPreferences();
+        bindingView();
     }
 
     @Override
@@ -103,21 +103,29 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_user_info) {
 
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_sign_out) {
+            Intent intentSignOut = new Intent(getApplicationContext(), SignInActivity.class);
+            startActivity(intentSignOut);
+            Toast.makeText(this, "로그아웃 되었습니다.", Toast.LENGTH_SHORT).show();
+            finish();
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_feedback) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_setting) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_change) {
+            Intent intent1 = new Intent(getApplicationContext(), ValueChangeActivity.class);
+            startActivity(intent1);
 
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_ranking) {
+            Intent intent2 = new Intent(getApplicationContext(), ValueRankingActivity.class);
+            startActivity(intent2);
         }
 
         ////////// testing
+        /*
         else if (id == R.id.test_app_intro){
             Intent intent = new Intent(getApplicationContext(), AppIntroActivity.class);
             startActivity(intent);
@@ -128,6 +136,7 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(getApplicationContext(), SignUpActivity.class);
             startActivity(intent);
         }
+        */
         //////////
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -137,14 +146,14 @@ public class MainActivity extends AppCompatActivity
 
     private void bindingView(){
         setContentView(R.layout.activity_main);
+        navTvName = findViewById(R.id.tv_name);
+        navTvEmail = findViewById(R.id.tv_email);
+
+        tvScoreTotal = findViewById(R.id.tv_score_total);
 
         // SURVEY 버튼
         Button btnSurvey = findViewById(R.id.btn_survey);
-        Button btnChange = findViewById(R.id.btn_change);
-        Button btnRanking = findViewById(R.id.btn_ranking);
         btnSurvey.setOnClickListener(listener);
-        btnChange.setOnClickListener(listener);
-        btnRanking.setOnClickListener(listener);
         llSmile = findViewById(R.id.ll_smile);
         tvValueSmile = findViewById(R.id.tv_value_smile);
 
@@ -186,6 +195,7 @@ public class MainActivity extends AppCompatActivity
 
 
 
+
     }
 
     private void initiateView(){
@@ -203,7 +213,7 @@ public class MainActivity extends AppCompatActivity
     }
     private void setChart(){
         XAxis xAxis = mChart.getXAxis();
-        xAxis.setTextSize(11);
+        xAxis.setTextSize(14);
         xAxis.setYOffset(0);
         xAxis.setXOffset(0);
         xAxis.setValueFormatter(new IAxisValueFormatter() {
@@ -219,7 +229,7 @@ public class MainActivity extends AppCompatActivity
 
         YAxis yAxis = mChart.getYAxis();
         yAxis.setLabelCount(5, false);
-        yAxis.setTextSize(9);
+        yAxis.setTextSize(11);
         yAxis.setAxisMinimum(0);
         yAxis.setAxisMaximum(8);
         yAxis.setDrawLabels(true);
@@ -235,7 +245,6 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-
     private void initSharedPreferences() {
 
         mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
@@ -245,9 +254,7 @@ public class MainActivity extends AppCompatActivity
 
     private void handleResponse(Value[] value) {
 
-
         valueArrayList = new ArrayList<>();
-
 
         for (Value valueItem : value){
             if(valueItem != null) {
@@ -261,12 +268,17 @@ public class MainActivity extends AppCompatActivity
         ArrayList<RadarEntry> entries1 = new ArrayList<>();
         ArrayList<RadarEntry> entries2 = new ArrayList<>();
 
+        float totalScore = 0;
+
         for (int i = 0; i < cnt; i++){
             entries1.add(new RadarEntry(Float.valueOf(valueArray1[i+1])));
             entries2.add(new RadarEntry(Float.valueOf(valueArray2[i+1])));
+            totalScore += Float.valueOf(valueArray2[i+1]);
         }
+        tvScoreTotal.setText(String.valueOf(totalScore));
 
-        RadarDataSet set1 = new RadarDataSet(entries1, "저번 측정값 ("+valueArray1[0]+")");
+
+        RadarDataSet set1 = new RadarDataSet(entries1, "유저 평균값");
         set1.setColor(getColor(R.color.colorGraphGray));
         set1.setFillColor(getColor(R.color.colorGraphGray));
         set1.setDrawFilled(true);
@@ -275,7 +287,7 @@ public class MainActivity extends AppCompatActivity
         set1.setDrawHighlightCircleEnabled(true);
         set1.setDrawHighlightIndicators(false);
 
-        RadarDataSet set2 = new RadarDataSet(entries2, "이번 측정값 ("+valueArray2[0]+")");
+        RadarDataSet set2 = new RadarDataSet(entries2, "최근 측정값 ("+valueArray2[0]+")");
         set2.setColor(getColor(R.color.colorPrimary));
         set2.setFillColor(getColor(R.color.colorPrimary));
         set2.setDrawFilled(true);
@@ -284,12 +296,13 @@ public class MainActivity extends AppCompatActivity
         set2.setDrawHighlightCircleEnabled(true);
         set2.setDrawHighlightIndicators(false);
 
+
         ArrayList<IRadarDataSet> sets = new ArrayList<>();
         sets.add(set1);
         sets.add(set2);
 
         RadarData data = new RadarData(sets);
-        data.setValueTextSize(8f);
+        data.setValueTextSize(11);
         data.setDrawValues(false);
         data.setValueTextColor(Color.WHITE);
 
@@ -346,17 +359,6 @@ public class MainActivity extends AppCompatActivity
         @Override
         public void onClick(View v) {
             switch (v.getId()){
-                case R.id.btn_change:
-                    Intent intent1 = new Intent(getApplicationContext(), ValueChangeActivity.class);
-                    startActivity(intent1);
-                    break;
-
-                case R.id.btn_ranking:
-
-                    Intent intent2 = new Intent(getApplicationContext(), ValueRankingActivity.class);
-                    startActivity(intent2);
-                    break;
-
                 case R.id.btn_survey:
                     Intent intent3 = new Intent(getApplicationContext(), SurveyActivity.class);
                     startActivity(intent3);

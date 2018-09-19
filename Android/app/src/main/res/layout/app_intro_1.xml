@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_android_orange_24dp"/>
+            app:srcCompat="@drawable/happy"/>
 
         <TextView
             android:layout_marginBottom="30dp"

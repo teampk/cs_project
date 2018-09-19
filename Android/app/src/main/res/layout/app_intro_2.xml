@@ -25,11 +25,11 @@
             android:gravity="center"/>
 
         <ImageView
-            android:padding="40dp"
+            android:padding="0dp"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_child_care_orange_24dp"/>
+            app:srcCompat="@drawable/measure"/>
 
         <TextView
             android:layout_marginBottom="30dp"

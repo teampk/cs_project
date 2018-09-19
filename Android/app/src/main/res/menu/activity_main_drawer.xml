@@ -5,33 +5,33 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_user_info"
             android:icon="@drawable/ic_person_black_24dp"
             android:title="유저정보" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_sign_out"
             android:icon="@drawable/ic_person_black_24dp"
             android:title="로그아웃" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_menu_send"
             android:title="피드백" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_setting"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="설정" />
     </group>
 
     <item android:title="행복 측정 어플리케이션">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:id="@+id/nav_change"
+                android:icon="@drawable/ic_trending_up_black_24dp"
+                android:title="변화 추이" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="피드백" />
+                android:id="@+id/nav_ranking"
+                android:icon="@drawable/ic_ranking_24dp"
+                android:title="랭킹" />
 
             <item
                 android:id="@+id/nav_inf"
@@ -40,6 +40,7 @@
         </menu>
     </item>
 
+<!--
     <item android:title="테스트 용">
         <menu>
             <item
@@ -57,5 +58,6 @@
                 android:title="로그인" />
         </menu>
     </item>
+-->
 
 </menu>

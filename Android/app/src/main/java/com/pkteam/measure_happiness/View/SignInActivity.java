@@ -67,6 +67,7 @@ public class SignInActivity extends AppCompatActivity {
         etPw = findViewById(R.id.et_pw);
         Button btSignIn = findViewById(R.id.bt_sign_in);
         btSignIn.setOnClickListener(listener);
+        mProgressBar = findViewById(R.id.progress_bar);
     }
 
     private void loginProcess(String email, String password) {
@@ -109,8 +110,7 @@ public class SignInActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         } else {
-            Log.d("어떤 에러가 뜨니 찬일", String.valueOf(error));
-            showSnackBarMessage("Network Error!");
+            showSnackBarMessage("네트워크 상태를 확인해주세요!");
         }
     }
 
@@ -126,11 +126,11 @@ public class SignInActivity extends AppCompatActivity {
                 case R.id.tv_goto_sign_up:
                     Intent intentSignUp = new Intent(getApplicationContext(), SignUpActivity.class);
                     startActivity(intentSignUp);
-                    finish();
                     break;
                 case R.id.bt_sign_in:
                     String id = etId.getText().toString();
                     String pw = etPw.getText().toString();
+                    mProgressBar.setVisibility(View.VISIBLE);
                     loginProcess(id,pw);
                     break;
 
