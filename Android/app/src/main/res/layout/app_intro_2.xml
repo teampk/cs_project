@@ -3,11 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:orientation="vertical"
+
+    android:background="@color/colorWhite">
+
+
 
     <LinearLayout
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -16,28 +18,33 @@
 
         <TextView
             android:id="@+id/intro_title"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/app_intro_title_2"
             android:textSize="28dp"
+            android:textStyle="bold"
             android:textColor="@color/colorText"
+            android:background="@color/colorWhite"
             android:gravity="center"/>
 
+
+
         <ImageView
-            android:padding="0dp"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/measure"/>
+            app:srcCompat="@drawable/measuring"/>
 
         <TextView
-            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:id="@+id/intro_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/app_intro_description_2"
-            android:textSize="20dp"
+            android:textSize="24dp"
             android:textColor="@color/colorText"
             android:gravity="center"/>
 

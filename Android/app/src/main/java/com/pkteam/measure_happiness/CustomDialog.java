@@ -81,7 +81,8 @@ public class CustomDialog {
                     int finalScore = getFinalScore(score);
 
                     tvScore.setText(String.valueOf(finalScore));
-                    btQuestion.setBackgroundColor(999999);
+                    btQuestion.setBackgroundColor(context.getResources().getColor(R.color.colorGraphGray));
+                    btQuestion.setText("Complete");
 
                     dlg.dismiss();
                 }

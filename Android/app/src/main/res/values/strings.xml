@@ -10,13 +10,13 @@
     <string name="description_sign_up">간단한 회원가입으로\n당신의 행복을 측정해보세요.</string>
 
     <string name="app_intro_title_1">안녕하세요!</string>
-    <string name="app_intro_title_2">당신의 행복을\n측정해보세요.</string>
+    <string name="app_intro_title_2">당신의 행복을 측정해보세요!</string>
     <string name="app_intro_title_3">같이 행복해져요!</string>
     <string name="app_intro_title_4">자, 이제 시작합니다!</string>
 
-    <string name="app_intro_description_1">저희는 중앙대학교 학생의\n행복을 추구하는\n\"해피캠퍼스 for 중앙대\" 입니다.</string>
-    <string name="app_intro_description_2">행복 측정값으로부터\n부족한 행복지수를 채워가면서\n삶의 질을 높여보세요!.</string>
-    <string name="app_intro_description_3">유저들과의 소통을 통해\n우리 모두 행복해져요</string>
+    <string name="app_intro_description_1">저희는 중앙대학교 학생의\n행복을 추구하는\n\"HAPCAU\"  입니다.</string>
+    <string name="app_intro_description_2">행복 측정값으로부터\n부족한 행복지수를 채워가면서\n삶의 질을 높여보세요!</string>
+    <string name="app_intro_description_3">유저들과의 소통을 통해\n피드백을 주고받으며\n우리 모두 행복해져요!!</string>
     <string name="app_intro_description_4">저희 어플은 웰니스IT와 협업하여\n개인의 행복을 10가지 지표를 나누고\n신빙성 있는 설문조사를 기반으로 한\n행복 측정 어플리케이션입니다.</string>
 
     <string name="description_importance">당신의 행복에서 이 항목이 얼마나 중요한지 체크해주세요. (1~7점)</string>

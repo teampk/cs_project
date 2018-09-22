@@ -142,25 +142,25 @@ public class SurveyActivity extends AppCompatActivity {
         Button btnSubmit = findViewById(R.id.btn_submit);
         btnSubmit.setOnClickListener(listener);
 
-        Button btnQuestion1 = findViewById(R.id.btn_question_1);
+        btnQuestion1 = findViewById(R.id.btn_question_1);
         btnQuestion1.setOnClickListener(listener);
-        Button btnQuestion2 = findViewById(R.id.btn_question_2);
+        btnQuestion2 = findViewById(R.id.btn_question_2);
         btnQuestion2.setOnClickListener(listener);
-        Button btnQuestion3 = findViewById(R.id.btn_question_3);
+        btnQuestion3 = findViewById(R.id.btn_question_3);
         btnQuestion3.setOnClickListener(listener);
-        Button btnQuestion4 = findViewById(R.id.btn_question_4);
+        btnQuestion4 = findViewById(R.id.btn_question_4);
         btnQuestion4.setOnClickListener(listener);
-        Button btnQuestion5 = findViewById(R.id.btn_question_5);
+        btnQuestion5 = findViewById(R.id.btn_question_5);
         btnQuestion5.setOnClickListener(listener);
-        Button btnQuestion6 = findViewById(R.id.btn_question_6);
+        btnQuestion6 = findViewById(R.id.btn_question_6);
         btnQuestion6.setOnClickListener(listener);
-        Button btnQuestion7 = findViewById(R.id.btn_question_7);
+        btnQuestion7 = findViewById(R.id.btn_question_7);
         btnQuestion7.setOnClickListener(listener);
-        Button btnQuestion8 = findViewById(R.id.btn_question_8);
+        btnQuestion8 = findViewById(R.id.btn_question_8);
         btnQuestion8.setOnClickListener(listener);
-        Button btnQuestion9 = findViewById(R.id.btn_question_9);
+        btnQuestion9 = findViewById(R.id.btn_question_9);
         btnQuestion9.setOnClickListener(listener);
-        Button btnQuestion10 = findViewById(R.id.btn_question_10);
+        btnQuestion10 = findViewById(R.id.btn_question_10);
         btnQuestion10.setOnClickListener(listener);
 
 
@@ -201,6 +201,27 @@ public class SurveyActivity extends AppCompatActivity {
                     tvScore8.setText(String.valueOf(getRandomValue()));
                     tvScore9.setText(String.valueOf(getRandomValue()));
                     tvScore10.setText(String.valueOf(getRandomValue()));
+
+                    btnQuestion1.setBackgroundColor(getResources().getColor(R.color.colorGraphGray));
+                    btnQuestion1.setText("Complete");
+                    btnQuestion2.setBackgroundColor(getResources().getColor(R.color.colorGraphGray));
+                    btnQuestion2.setText("Complete");
+                    btnQuestion3.setBackgroundColor(getResources().getColor(R.color.colorGraphGray));
+                    btnQuestion3.setText("Complete");
+                    btnQuestion4.setBackgroundColor(getResources().getColor(R.color.colorGraphGray));
+                    btnQuestion4.setText("Complete");
+                    btnQuestion5.setBackgroundColor(getResources().getColor(R.color.colorGraphGray));
+                    btnQuestion5.setText("Complete");
+                    btnQuestion6.setBackgroundColor(getResources().getColor(R.color.colorGraphGray));
+                    btnQuestion6.setText("Complete");
+                    btnQuestion7.setBackgroundColor(getResources().getColor(R.color.colorGraphGray));
+                    btnQuestion7.setText("Complete");
+                    btnQuestion8.setBackgroundColor(getResources().getColor(R.color.colorGraphGray));
+                    btnQuestion8.setText("Complete");
+                    btnQuestion9.setBackgroundColor(getResources().getColor(R.color.colorGraphGray));
+                    btnQuestion9.setText("Complete");
+                    btnQuestion10.setBackgroundColor(getResources().getColor(R.color.colorGraphGray));
+                    btnQuestion10.setText("Complete");
 
                     break;
                 case R.id.btn_back:

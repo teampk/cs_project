@@ -128,8 +128,8 @@
 
                         <Button
                             android:id="@+id/btn_question_1"
-                            android:layout_width="70dp"
-                            android:layout_height="30dp"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
                             android:gravity="center"
                             android:text="설문시작"
                             android:textColor="@color/colorTextInButton"
@@ -171,8 +171,8 @@
 
                         <Button
                             android:id="@+id/btn_question_2"
-                            android:layout_width="70dp"
-                            android:layout_height="30dp"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
                             android:gravity="center"
                             android:text="설문시작"
                             android:textColor="@color/colorTextInButton"
@@ -217,8 +217,8 @@
 
                         <Button
                             android:id="@+id/btn_question_3"
-                            android:layout_width="70dp"
-                            android:layout_height="30dp"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
                             android:gravity="center"
                             android:text="설문시작"
                             android:textColor="@color/colorTextInButton"
@@ -259,8 +259,8 @@
 
                         <Button
                             android:id="@+id/btn_question_4"
-                            android:layout_width="70dp"
-                            android:layout_height="30dp"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
                             android:gravity="center"
                             android:text="설문시작"
                             android:textColor="@color/colorTextInButton"
@@ -302,8 +302,8 @@
 
                         <Button
                             android:id="@+id/btn_question_5"
-                            android:layout_width="70dp"
-                            android:layout_height="30dp"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
                             android:gravity="center"
                             android:text="설문시작"
                             android:textColor="@color/colorTextInButton"
@@ -344,8 +344,8 @@
 
                         <Button
                             android:id="@+id/btn_question_6"
-                            android:layout_width="70dp"
-                            android:layout_height="30dp"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
                             android:gravity="center"
                             android:text="설문시작"
                             android:textColor="@color/colorTextInButton"
@@ -386,8 +386,8 @@
 
                         <Button
                             android:id="@+id/btn_question_7"
-                            android:layout_width="70dp"
-                            android:layout_height="30dp"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
                             android:gravity="center"
                             android:text="설문시작"
                             android:textColor="@color/colorTextInButton"
@@ -428,8 +428,8 @@
 
                         <Button
                             android:id="@+id/btn_question_8"
-                            android:layout_width="70dp"
-                            android:layout_height="30dp"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
                             android:gravity="center"
                             android:text="설문시작"
                             android:textColor="@color/colorTextInButton"
@@ -470,8 +470,8 @@
 
                         <Button
                             android:id="@+id/btn_question_9"
-                            android:layout_width="70dp"
-                            android:layout_height="30dp"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
                             android:gravity="center"
                             android:text="설문시작"
                             android:textColor="@color/colorTextInButton"
@@ -512,8 +512,8 @@
 
                         <Button
                             android:id="@+id/btn_question_10"
-                            android:layout_width="70dp"
-                            android:layout_height="30dp"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
                             android:gravity="center"
                             android:text="설문시작"
                             android:textColor="@color/colorTextInButton"

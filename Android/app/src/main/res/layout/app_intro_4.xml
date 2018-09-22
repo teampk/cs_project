@@ -6,8 +6,6 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -22,7 +20,8 @@
             android:text="@string/app_intro_title_4"
             android:textSize="40dp"
             android:textColor="@color/colorText"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:textStyle="bold"/>
 
         <ImageView
             android:layout_width="match_parent"
