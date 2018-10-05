@@ -3,6 +3,7 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var logger = require('morgan');
 var routes = require('./server/routes/routes');
+var routes2 = require('/.server/routes/routes2');
 var mongoose = require('mongoose');
 var app = express();
 var router = express.Router();
@@ -13,6 +14,7 @@ app.use(logger('dev'));
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost:27017/cs_project', { useNewUrlParser: true });
 
+app.use('/', routes2);
 app.use('/api/v1', routes);
 
 module.exports = app;
