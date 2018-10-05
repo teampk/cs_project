@@ -9,3 +9,4 @@ var path = require('path');
 router.get('/', function(req,res){
   res.send('(주)웰니스 IT');
 });
+module.exports = router;
