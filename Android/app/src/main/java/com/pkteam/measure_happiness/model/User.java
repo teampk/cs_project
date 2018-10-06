@@ -25,6 +25,23 @@ public class User {
         return mId;
     }
 
+    public String getmName(){
+        return mName;
+    }
+
+    public String getmGender(){
+        return mGender;
+    }
+    public String getmBirth(){
+        return mBirth;
+    }
+    public String getmDepartment(){
+        return mDepartment;
+    }
+    public String getmSmile(){
+        return mSmile;
+    }
+
 
     public void setmId(String mId) {
         this.mId = mId;

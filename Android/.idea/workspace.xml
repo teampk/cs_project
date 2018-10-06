@@ -43,17 +43,38 @@
       <file leaf-file-name="UserInfoActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/UserInfoActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="59" column="64" lean-forward="true" selection-start-line="59" selection-start-column="64" selection-end-line="59" selection-end-column="64" />
+            <state relative-caret-position="400">
+              <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RetrofitInterface.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/model/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="395">
+              <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+              <folding>
+                <element signature="e#486#487#0" expanded="true" />
+                <element signature="e#503#504#0" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
+                <element signature="e#581#582#0" expanded="true" />
+                <element signature="e#603#604#0" expanded="true" />
+                <element signature="e#631#632#0" expanded="true" />
+                <element signature="e#616#617#0" expanded="true" />
+                <element signature="e#650#651#0" expanded="true" />
+                <element signature="e#681#682#0" expanded="true" />
+                <element signature="e#705#706#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RetrofitInterface.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/network/RetrofitInterface.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
+              <caret line="33" column="31" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -71,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2295">
-              <caret line="359" column="35" lean-forward="true" selection-start-line="359" selection-start-column="35" selection-end-line="359" selection-end-column="35" />
+              <caret line="359" column="35" selection-start-line="359" selection-start-column="35" selection-end-line="359" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -80,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/SurveyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="224">
-              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
               <folding>
                 <element signature="method#showMessage#0;class#SurveyActivity#0" />
                 <element signature="method#registerCheck#0;class#SurveyActivity#0" />
@@ -2265,7 +2286,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/network/NetworkUtil.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/model/Value.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/Splash.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/model/User.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/AppIntroActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_in.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_value_change.xml" />
@@ -2290,8 +2310,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/CustomDialog.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/SignInActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/UserInfoActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/network/RetrofitInterface.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/UserInfoActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/model/User.java" />
       </list>
     </option>
   </component>
@@ -2345,6 +2366,13 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="measure_happiness" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="measure_happiness" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Android" type="1abcf292:AndroidViewProjectNode" />
@@ -2712,13 +2740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/network/ImageResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -3041,18 +3062,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/SurveyActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
-          <folding>
-            <element signature="method#showMessage#0;class#SurveyActivity#0" />
-            <element signature="method#registerCheck#0;class#SurveyActivity#0" />
-            <element signature="method#surveyNotComplete#0;class#SurveyActivity#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/utils/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -3063,21 +3072,52 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2295">
-          <caret line="359" column="35" lean-forward="true" selection-start-line="359" selection-start-column="35" selection-end-line="359" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/UserInfoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="59" column="64" lean-forward="true" selection-start-line="59" selection-start-column="64" selection-end-line="59" selection-end-column="64" />
+          <caret line="359" column="35" selection-start-line="359" selection-start-column="35" selection-end-line="359" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/network/RetrofitInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/SurveyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="method#showMessage#0;class#SurveyActivity#0" />
+            <element signature="method#registerCheck#0;class#SurveyActivity#0" />
+            <element signature="method#surveyNotComplete#0;class#SurveyActivity#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/UserInfoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="68" column="38" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+          <folding>
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -64,7 +64,11 @@ public class UserInfoActivity extends AppCompatActivity {
     }
 
     private void handleResponse(User user){
-
+        Log.d("TESTDATAPAENG", "id:"+user.getmId());
+        Log.d("TESTDATAPAENG", "name:"+user.getmName());
+        Log.d("TESTDATAPAENG", "gender:"+user.getmGender());
+        Log.d("TESTDATAPAENG", "department:"+user.getmDepartment());
+        Log.d("TESTDATAPAENG", "birth:"+user.getmBirth());
     }
 
     private void handleError(Throwable error) {
