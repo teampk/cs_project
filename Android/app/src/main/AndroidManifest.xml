@@ -3,8 +3,6 @@
     package="com.pkteam.measure_happiness">
     <uses-permission android:name="android.permission.INTERNET"/>
 
-
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/happy"
@@ -13,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".View.Splash"
+            android:name=".view.Splash"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -22,14 +20,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".View.MainActivity"/>
-        <activity android:name=".View.SurveyActivity"/>
-        <activity android:name=".View.AppIntroActivity"/>
-        <activity android:name=".View.SignInActivity"/>
-        <activity android:name=".View.SignUpActivity"/>
-        <activity android:name=".View.ValueChangeActivity"/>
-        <activity android:name=".View.ValueRankingActivity"/>
-        <activity android:name=".View.SmileInfoActivity"/>
+        <activity android:name=".view.MainActivity"/>
+        <activity android:name=".view.SurveyActivity"/>
+        <activity android:name=".view.AppIntroActivity"/>
+        <activity android:name=".view.SignInActivity"/>
+        <activity android:name=".view.SignUpActivity"/>
+        <activity android:name=".view.ValueChangeActivity"/>
+        <activity android:name=".view.ValueRankingActivity"/>
+        <activity android:name=".view.SmileInfoActivity"/>
+        <activity android:name=".view.UserInfoActivity"/>
 
 
 

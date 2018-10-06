@@ -12,6 +12,10 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.pkteam.measure_happiness.view.SurveyActivity;
+
+import de.mateware.snacky.Snacky;
+
 
 public class CustomDialog {
     private Context context;
@@ -92,12 +96,16 @@ public class CustomDialog {
             @Override
             public void onClick(View view) {
                 Toast.makeText(context, "취소 했습니다.", Toast.LENGTH_SHORT).show();
-
                 // 커스텀 다이얼로그를 종료한다.
                 dlg.dismiss();
             }
         });
     }
+
+
+
+
+
     private int calculateScoreRadioButton(RadioButton rbA, RadioButton rbB, RadioButton rbC, RadioButton rbD, RadioButton rbE){
         int score=0;
 
@@ -172,15 +180,19 @@ public class CustomDialog {
             return false;
         }else if (!rb2a.isChecked() && !rb2b.isChecked() && !rb2c.isChecked() && !rb2d.isChecked() && !rb2e.isChecked()){
             Toast.makeText(context, "2번 문항을 체크해주세요.", Toast.LENGTH_SHORT).show();
+
             return false;
         }else if (!rb3a.isChecked() && !rb3b.isChecked() && !rb3c.isChecked() && !rb3d.isChecked() && !rb3e.isChecked()){
             Toast.makeText(context, "3번 문항을 체크해주세요.", Toast.LENGTH_SHORT).show();
+
             return false;
         }
 
 
         return true;
     }
+
+
 
 
 }

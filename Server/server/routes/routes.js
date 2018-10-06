@@ -8,6 +8,7 @@ var fs = require('fs');
 var registerUser = require('../functions/registerUser');
 var login = require('../functions/login');
 var password = require('../functions/password');
+var profile = require('../functions/profile');
 var config = require('../config/config.json');
 var path = require('path');
 var registerValue = require('../functions/registerValue');
@@ -43,6 +44,27 @@ router.post('/authenticate', function(req, res) {
           message: err.message
         });
       });
+  }
+});
+
+router.get('/users/:id', function(req, res) {
+
+  if (checkToken(req)) {
+    profile.getProfile(req.params.id)
+      .then(function(result) {
+        console.log('user result : ' + result);
+        res.json(result);
+      })
+      .catch(function(err) {
+        console.log('user err : ' + err);
+        res.status(err.status).json({
+          message: err.message
+        });
+      });
+  } else {
+    res.status(401).json({
+      message: 'Invalid Token !'
+    });
   }
 });
 

@@ -1,18 +1,18 @@
-package com.pkteam.measure_happiness.View;
+package com.pkteam.measure_happiness.view;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -23,6 +23,7 @@ import com.pkteam.measure_happiness.utils.Constants;
 
 import java.io.IOException;
 
+import de.mateware.snacky.Snacky;
 import retrofit2.adapter.rxjava.HttpException;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
@@ -44,6 +45,7 @@ public class SignInActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
+
         bindingView();
         mSubscriptions = new CompositeSubscription();
         initSharedPreferences();
@@ -113,10 +115,29 @@ public class SignInActivity extends AppCompatActivity {
             showSnackBarMessage("네트워크 상태를 확인해주세요!");
         }
     }
+    long pressTime;
+    @Override
+    public void onBackPressed() {
 
-    private void showSnackBarMessage(String message) {
+        if(System.currentTimeMillis() - pressTime <2000){
+            finish();
+            return;
+        }
+        showSnackBarMessage("한번 더 누르시면 앱이 종료됩니다.");
+        pressTime = System.currentTimeMillis();
 
-        Toast.makeText(SignInActivity.this, message, Toast.LENGTH_SHORT).show();
+    }
+
+    private void showSnackBarMessage(String message){
+        Snacky.builder()
+                .setActivity(this)
+                .setBackgroundColor(getColor(R.color.colorPrimary))
+                .setText(message)
+                .setTextColor(getColor(R.color.colorTextInButton))
+                .centerText()
+                .setDuration(Snacky.LENGTH_LONG)
+                .build()
+                .show();
     }
 
     private View.OnClickListener listener = new View.OnClickListener() {

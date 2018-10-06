@@ -1,8 +1,7 @@
-package com.pkteam.measure_happiness.View;
+package com.pkteam.measure_happiness.view;
 
 import android.graphics.Color;
 import android.graphics.DashPathEffect;
-import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;

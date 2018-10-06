@@ -1,4 +1,4 @@
-package com.pkteam.measure_happiness.View;
+package com.pkteam.measure_happiness.view;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

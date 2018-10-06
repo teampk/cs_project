@@ -1,4 +1,4 @@
-package com.pkteam.measure_happiness.View;
+package com.pkteam.measure_happiness.view;
 
 import android.app.Activity;
 import android.content.Intent;

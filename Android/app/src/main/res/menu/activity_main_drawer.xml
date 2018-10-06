@@ -40,7 +40,6 @@
         </menu>
     </item>
 
-<!--
     <item android:title="테스트 용">
         <menu>
             <item
@@ -58,6 +57,6 @@
                 android:title="로그인" />
         </menu>
     </item>
--->
+
 
 </menu>

@@ -1,5 +1,6 @@
-package com.pkteam.measure_happiness.View;
+package com.pkteam.measure_happiness.view;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -43,6 +44,7 @@ import com.pkteam.measure_happiness.utils.Constants;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import de.mateware.snacky.Snacky;
 import retrofit2.adapter.rxjava.HttpException;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
@@ -86,17 +88,6 @@ public class MainActivity extends AppCompatActivity
         mSubscriptions.unsubscribe();
     }
 
-    @Override
-    public void onBackPressed() {
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
-    }
-
-
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -104,6 +95,8 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_user_info) {
+            Intent intentUserInfo = new Intent(getApplicationContext(), UserInfoActivity.class);
+            startActivity(intentUserInfo);
 
         } else if (id == R.id.nav_sign_out) {
             Intent intentSignOut = new Intent(getApplicationContext(), SignInActivity.class);
@@ -112,8 +105,10 @@ public class MainActivity extends AppCompatActivity
             finish();
 
         } else if (id == R.id.nav_feedback) {
+            showSnackBarMessage("피드배백");
 
         } else if (id == R.id.nav_setting) {
+            showSnackBarMessage("Setting");
 
         } else if (id == R.id.nav_change) {
             Intent intent1 = new Intent(getApplicationContext(), ValueChangeActivity.class);
@@ -125,7 +120,7 @@ public class MainActivity extends AppCompatActivity
         }
 
         ////////// testing
-        /*
+
         else if (id == R.id.test_app_intro){
             Intent intent = new Intent(getApplicationContext(), AppIntroActivity.class);
             startActivity(intent);
@@ -136,7 +131,7 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(getApplicationContext(), SignUpActivity.class);
             startActivity(intent);
         }
-        */
+
         //////////
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -349,10 +344,37 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    private void showSnackBarMessage(String message){
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
-
+    long pressTime;
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            //super.onBackPressed();
+            if(System.currentTimeMillis() - pressTime <2000){
+                finish();
+                return;
+            }
+            showSnackBarMessage("한번 더 누르시면 앱이 종료됩니다.");
+            pressTime = System.currentTimeMillis();
+        }
     }
+
+    private void showSnackBarMessage(String message){
+        Snacky.builder()
+                .setActivity(this)
+                .setBackgroundColor(getColor(R.color.colorPrimary))
+                .setText(message)
+                .setTextColor(getColor(R.color.colorTextInButton))
+                .centerText()
+                .setDuration(Snacky.LENGTH_LONG)
+                .build()
+                .show();
+    }
+
+
+
 
 
     private View.OnClickListener listener = new View.OnClickListener(){
