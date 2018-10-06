@@ -6,7 +6,6 @@ exports.getProfile = userId =>
 
 		user.find({ userId: userId })
 		.then(function(users){
-			console.log('users:',users[0]);
 			resolve(users[0]);
 		})
 		.catch(function(err){
