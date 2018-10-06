@@ -1,10 +1,10 @@
 var user = require('../models/user');
 
-exports.getProfile = email =>
+exports.getProfile = userId =>
 
 	new Promise(function(resolve,reject){
 
-		user.find({ email: email }, { name: 1, email: 1, phone:1, created_at: 1, _id: 0 })
+		user.find({ userId: userId })
 		.then(function(users){
 			resolve(users[0]);
 		})
