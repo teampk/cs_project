@@ -50,7 +50,7 @@ router.post('/authenticate', function(req, res) {
 router.get('/users/:id', function(req, res) {
 
   if (checkToken(req)) {
-    console.log('req.params.id=', req,params.id);
+    console.log('req.params.id=', req.params.id);
     profile.getProfile(req.params.id)
       .then(function(result) {
         console.log('user result : ' + result);
