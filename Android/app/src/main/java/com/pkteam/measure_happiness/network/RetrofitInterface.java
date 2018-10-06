@@ -30,8 +30,8 @@ public interface RetrofitInterface {
     @GET("getValue/{userId}")
     Observable<Value[]> getValue(@Path("userId") String userId);
 
-    @GET("users/{email}")
-    Observable<User> getProfile(@Path("email") String email);
+    @GET("users/{userId}")
+    Observable<User> getProfile(@Path("userId") String userId);
 
 
 }

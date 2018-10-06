@@ -4,7 +4,7 @@ exports.getProfile = userId =>
 
 	new Promise(function(resolve,reject){
 
-		user.find({ userId: userId })
+		user.find({ mId: userId })
 		.then(function(users){
 			resolve(users[0]);
 		})
