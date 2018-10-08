@@ -24,6 +24,7 @@ import com.pkteam.measure_happiness.network.NetworkUtil;
 import java.io.IOException;
 import java.util.Calendar;
 
+import de.mateware.snacky.Snacky;
 import retrofit2.adapter.rxjava.HttpException;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
@@ -156,62 +157,64 @@ public class SignUpActivity extends AppCompatActivity {
     private void handleResponse(Res response) {
 
         mProgressbar.setVisibility(View.GONE);
-        showSnackBarMessage(response.getMessage());
+        showToastMessage(response.getMessage());
     }
 
     private void handleError(Throwable error) {
 
         mProgressbar.setVisibility(View.GONE);
-
         if (error instanceof HttpException) {
-
             Gson gson = new GsonBuilder().create();
-
             try {
-
                 String errorBody = ((HttpException) error).response().errorBody().string();
                 Res response = gson.fromJson(errorBody,Res.class);
-                showSnackBarMessage(response.getMessage());
-
+                showToastMessage(response.getMessage());
             } catch (IOException e) {
                 e.printStackTrace();
             }
         } else {
-
-            showSnackBarMessage("Network Error !");
+            showToastMessage("네트워크 오류");
         }
     }
 
-    private void showSnackBarMessage(String message) {
-
-        Toast.makeText(SignUpActivity.this, message, Toast.LENGTH_SHORT).show();
-
-
+    private void showSnackBarMessage(String message){
+        Snacky.builder()
+                .setActivity(this)
+                .setBackgroundColor(getColor(R.color.colorPrimary))
+                .setText(message)
+                .setTextColor(getColor(R.color.colorTextInButton))
+                .centerText()
+                .setDuration(Snacky.LENGTH_LONG)
+                .build()
+                .show();
+    }
+    private void showToastMessage(String message){
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
 
 
     private boolean checkJoin(){
         if (etId.getText().toString().matches("")){
-            Toast.makeText(this, "아이디를 입력해주세요.", Toast.LENGTH_SHORT).show();
+            showSnackBarMessage("아이디를 입력해주세요.");
             return false;
         }else if (etPw.getText().toString().matches("")){
-            Toast.makeText(this, "패스워드를 입력해주세요.", Toast.LENGTH_SHORT).show();
+            showSnackBarMessage("패스워드를 입력해주세요.");
             return false;
         }else if (etPw2.getText().toString().matches("")){
-            Toast.makeText(this, "두번째 패스워드를 입력해주세요.", Toast.LENGTH_SHORT).show();
+            showSnackBarMessage("두번째 패스워드를 입력해주세요.");
             return false;
         }else if (!etPw.getText().toString().matches(etPw2.getText().toString())){
-            Toast.makeText(this, "패스워드가 일치하지 않습니다.", Toast.LENGTH_SHORT).show();
+            showSnackBarMessage("패스워드가 일치하지 않습니다.");
             return false;
         }else if (etName.getText().toString().matches("")){
-            Toast.makeText(this, "이름을 입력해주세요.", Toast.LENGTH_SHORT).show();
+            showSnackBarMessage("이름을 입력해주세요.");
             return false;
         }else if (!genderChecked){
-            Toast.makeText(this, "성별을 선택해주세요.", Toast.LENGTH_SHORT).show();
+            showSnackBarMessage("성별을 선택해주세요.");
             return false;
         }else if (!birthChecked){
-            Toast.makeText(this, "생년월일을 선택해주세요.", Toast.LENGTH_SHORT).show();
+            showSnackBarMessage("생년월일을 선택해주세요.");
             return false;
         }
 

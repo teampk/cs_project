@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -106,7 +107,7 @@ public class SignInActivity extends AppCompatActivity {
             try {
                 String errorBody = ((HttpException) error).response().errorBody().string();
                 Res response = gson.fromJson(errorBody,Res.class);
-                showSnackBarMessage(response.getMessage());
+                showToastMessage(response.getMessage());
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -138,6 +139,10 @@ public class SignInActivity extends AppCompatActivity {
                 .setDuration(Snacky.LENGTH_LONG)
                 .build()
                 .show();
+    }
+
+    private void showToastMessage(String message){
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
     private View.OnClickListener listener = new View.OnClickListener() {

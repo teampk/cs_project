@@ -105,18 +105,19 @@ public class MainActivity extends AppCompatActivity
             finish();
 
         } else if (id == R.id.nav_feedback) {
-            showSnackBarMessage("피드배백");
+            showSnackBarMessage("준비중입니다...");
 
         } else if (id == R.id.nav_setting) {
-            showSnackBarMessage("Setting");
+            showSnackBarMessage("준비중입니다...");
 
         } else if (id == R.id.nav_change) {
             Intent intent1 = new Intent(getApplicationContext(), ValueChangeActivity.class);
             startActivity(intent1);
 
         } else if (id == R.id.nav_ranking) {
-            Intent intent2 = new Intent(getApplicationContext(), ValueRankingActivity.class);
-            startActivity(intent2);
+            // Intent intent2 = new Intent(getApplicationContext(), ValueRankingActivity.class);
+            // startActivity(intent2);
+            showSnackBarMessage("준비중입니다...");
         }
 
         ////////// testing
@@ -326,8 +327,6 @@ public class MainActivity extends AppCompatActivity
 
         if (error instanceof HttpException) {
 
-            Log.d("PaengTest1", error.toString());
-
             Gson gson = new GsonBuilder().create();
             try {
                 String errorBody = ((HttpException) error).response().errorBody().string();
@@ -372,10 +371,6 @@ public class MainActivity extends AppCompatActivity
                 .build()
                 .show();
     }
-
-
-
-
 
     private View.OnClickListener listener = new View.OnClickListener(){
         @Override
