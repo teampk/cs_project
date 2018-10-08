@@ -64,7 +64,7 @@
                 style="@style/Widget.AppCompat.SeekBar.Discrete"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:max="7"
+                android:max="6"
                 />
 
 
@@ -73,7 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="0"
+                android:text="-"
                 android:textColor="@color/colorTextBlack"
                 android:textSize="35dp"
                 android:textStyle="normal"/>

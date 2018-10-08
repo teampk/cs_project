@@ -57,7 +57,7 @@ public class CustomDialog {
         sbSatisfaction.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                tvSatisfaction.setText(String.valueOf(progress));
+                tvSatisfaction.setText(String.valueOf(progress+1));
             }
 
             @Override
@@ -184,7 +184,9 @@ public class CustomDialog {
             return false;
         }else if (!rb3a.isChecked() && !rb3b.isChecked() && !rb3c.isChecked() && !rb3d.isChecked() && !rb3e.isChecked()){
             Toast.makeText(context, "3번 문항을 체크해주세요.", Toast.LENGTH_SHORT).show();
-
+            return false;
+        }else if (tvSatisfaction.getText().toString().equals("-")){
+            Toast.makeText(context, "중요도를 체크해주세요.", Toast.LENGTH_SHORT).show();
             return false;
         }
 

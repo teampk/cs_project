@@ -6,7 +6,6 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="TESTDATA" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
@@ -41,30 +40,88 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="119" column="45" lean-forward="true" selection-start-line="119" selection-start-column="45" selection-end-line="119" selection-end-column="45" />
+            <state relative-caret-position="-507">
+              <caret line="256" column="46" selection-start-line="256" selection-start-column="46" selection-end-line="256" selection-end-column="46" />
+              <folding>
+                <element signature="e#5816#5847#0" expanded="true" />
+                <element signature="e#5849#5881#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SignInActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/SignInActivity.java">
+      <file leaf-file-name="ValueChangeActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/ValueChangeActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="110" selection-start-line="110" selection-end-line="110" />
+            <state relative-caret-position="592">
+              <caret line="220" column="34" selection-start-line="220" selection-start-column="34" selection-end-line="220" selection-end-column="34" />
+              <folding>
+                <element signature="method#onDestroy#0;class#ValueChangeActivity#0" />
+                <element signature="method#initSharedPreferences#0;class#ValueChangeActivity#0" />
+                <element signature="method#saveDataFromResponse#0;class#ValueChangeActivity#0" />
+                <element signature="method#showSnackBarMessage#0;class#ValueChangeActivity#0" />
+                <element signature="method#bindingView#0;class#ValueChangeActivity#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SignUpActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/SignUpActivity.java">
+      <file leaf-file-name="activity_value_change.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_value_change.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="174" column="16" selection-start-line="174" selection-start-column="16" selection-end-line="174" selection-end-column="16" />
+            <state relative-caret-position="302">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
             </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Value.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/model/Value.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SurveyActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/SurveyActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="492">
+              <caret line="265" selection-start-line="265" selection-end-line="265" />
+              <folding>
+                <element signature="method#showMessage#0;class#SurveyActivity#0" />
+                <element signature="method#registerCheck#0;class#SurveyActivity#0" />
+                <element signature="method#surveyNotComplete#0;class#SurveyActivity#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomDialog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/CustomDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="477">
+              <caret line="183" column="25" selection-start-line="183" selection-start-column="25" selection-end-line="183" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom_dialog.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_dialog.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="474">
+              <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="31" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
           </provider>
         </entry>
       </file>
@@ -79,21 +136,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>init</find>
-      <find>token</find>
-      <find>ID</find>
-      <find>loginProcess</find>
-      <find>mProgressBar</find>
-      <find>nuggy875</find>
-      <find>nuggy87</find>
-      <find>initSharedPreferences</find>
-      <find>happy_title</find>
-      <find>30</find>
-      <find>TextSize</find>
-      <find>점수</find>
       <find>android:layout_width=&quot;180dp&quot;</find>
       <find>tv_score_1</find>
-      <find>getValueArray</find>
       <find>tvScoreTotal</find>
       <find>getDrawable</find>
       <find>getResources</find>
@@ -103,12 +147,25 @@
       <find>btnQuestion1</find>
       <find>Button</find>
       <find>rl_test</find>
-      <find>mSubscriptions</find>
       <find>onBack</find>
       <find>t</find>
       <find>Toast</find>
       <find>showSnackBarMessage</find>
       <find>mID</find>
+      <find>mSharedPreferences</find>
+      <find>getValueArray</find>
+      <find>valueArrayList</find>
+      <find>private ArrayList&lt;Value&gt; valueArrayList;</find>
+      <find>mSubscriptions</find>
+      <find>getFinalScore</find>
+      <find>finalScore</find>
+      <find>tvSatisfaction</find>
+      <find>count</find>
+      <find>loadData</find>
+      <find>binding</find>
+      <find>bindingView</find>
+      <find>mChart.animateX(1000);</find>
+      <find>setData</find>
     </findStrings>
     <replaceStrings>
       <replace>v</replace>
@@ -2245,7 +2302,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/Splash.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/AppIntroActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_in.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_value_change.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/SignUpActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/SignInActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/MainActivity.java" />
@@ -2261,8 +2317,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/utils/Constants.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/View/UserInfoActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/CustomDialog.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/model/User.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/network/RetrofitInterface.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_user_info.xml" />
@@ -2270,15 +2324,18 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/SignInActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/SignUpActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/custom_dialog.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/CustomDialog.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_value_change.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/ValueChangeActivity.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="1440" />
-    <option name="y" value="-137" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -2332,7 +2389,31 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="measure_happiness" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="measure_happiness" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="Android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="Android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="menu" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
               <item name="Android" type="1abcf292:AndroidViewProjectNode" />
@@ -2346,7 +2427,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="device.picker.selection" value="Nexus_5X_API_27" />
+    <property name="device.picker.selection" value="emulator-5554" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
   </component>
@@ -2516,7 +2597,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="-137" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="7" />
@@ -2526,24 +2607,24 @@
       <window_info id="Build Variants" order="2" sideWeight="0.50180507" side_tool="true" weight="0.19599427" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007153" side_tool="true" weight="0.32848486" />
+      <window_info anchor="right" id="Preview" order="3" weight="0.3383405" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32889965" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32889965" />
-      <window_info anchor="bottom" id="Logcat" order="7" visible="true" weight="0.3562189" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="7" visible="true" weight="0.3551515" />
       <window_info id="Captures" order="2" weight="0.24964234" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49819493" visible="true" weight="0.13844515" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49928468" weight="0.32848486" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.496136" visible="true" weight="0.18597998" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49928468" weight="0.4" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" sideWeight="0.50180507" side_tool="true" weight="0.19599427" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" sideWeight="0.50180507" side_tool="true" weight="0.19599427" />
+      <window_info id="Favorites" order="2" sideWeight="0.503864" side_tool="true" weight="0.13844515" />
       <window_info anchor="right" id="Assistant" order="3" weight="0.3297568" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Preview" order="3" weight="0.3390558" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -2589,7 +2670,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -2638,13 +2719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/model/Value.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="46" column="5" selection-start-line="22" selection-start-column="4" selection-end-line="46" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/network/NetworkUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
@@ -2680,16 +2754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_value_change.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="932">
-          <caret line="190" column="56" selection-start-line="190" selection-start-column="56" selection-end-line="190" selection-end-column="56" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -2758,11 +2822,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/ValueChangeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1176" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -2828,16 +2887,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_dialog.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="56" column="41" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_survey.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -2882,13 +2931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/CustomDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -2897,33 +2939,6 @@
       </provider>
       <provider editor-type-id="android-manifest">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="781">
-          <caret line="56" column="38" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/UserInfoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="29" column="33" lean-forward="true" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
@@ -2980,15 +2995,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/SurveyActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/UserInfoActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-          <folding>
-            <element signature="method#showMessage#0;class#SurveyActivity#0" />
-            <element signature="method#registerCheck#0;class#SurveyActivity#0" />
-            <element signature="method#surveyNotComplete#0;class#SurveyActivity#0" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="29" column="33" lean-forward="true" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -3008,8 +3018,92 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="119" column="45" lean-forward="true" selection-start-line="119" selection-start-column="45" selection-end-line="119" selection-end-column="45" />
+        <state relative-caret-position="-507">
+          <caret line="256" column="46" selection-start-line="256" selection-start-column="46" selection-end-line="256" selection-end-column="46" />
+          <folding>
+            <element signature="e#5816#5847#0" expanded="true" />
+            <element signature="e#5849#5881#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="61" column="7" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/model/Value.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_dialog.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="31" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/CustomDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="183" column="25" selection-start-line="183" selection-start-column="25" selection-end-line="183" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/SurveyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="265" selection-start-line="265" selection-end-line="265" />
+          <folding>
+            <element signature="method#showMessage#0;class#SurveyActivity#0" />
+            <element signature="method#registerCheck#0;class#SurveyActivity#0" />
+            <element signature="method#surveyNotComplete#0;class#SurveyActivity#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_value_change.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pkteam/measure_happiness/view/ValueChangeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="220" column="34" selection-start-line="220" selection-start-column="34" selection-end-line="220" selection-end-column="34" />
+          <folding>
+            <element signature="method#onDestroy#0;class#ValueChangeActivity#0" />
+            <element signature="method#initSharedPreferences#0;class#ValueChangeActivity#0" />
+            <element signature="method#saveDataFromResponse#0;class#ValueChangeActivity#0" />
+            <element signature="method#showSnackBarMessage#0;class#ValueChangeActivity#0" />
+            <element signature="method#bindingView#0;class#ValueChangeActivity#0" />
+          </folding>
         </state>
       </provider>
     </entry>

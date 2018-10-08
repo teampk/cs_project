@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity
         }
 
         ////////// testing
-
+        /*
         else if (id == R.id.test_app_intro){
             Intent intent = new Intent(getApplicationContext(), AppIntroActivity.class);
             startActivity(intent);
@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(getApplicationContext(), SignUpActivity.class);
             startActivity(intent);
         }
-
+        */
         //////////
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -336,7 +336,6 @@ public class MainActivity extends AppCompatActivity
             } catch (IOException e) {
                 e.printStackTrace();
                 showSnackBarMessage(e.toString());
-                Log.d("PaengTest", e.toString());
             }
         } else {
             showSnackBarMessage("Network Error !");
