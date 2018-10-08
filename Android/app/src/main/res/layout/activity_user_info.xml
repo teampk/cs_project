@@ -235,6 +235,7 @@
                 </LinearLayout>
 
                 <Button
+                    android:id="@+id/bt_password_change"
                     android:layout_marginTop="30dp"
                     android:paddingLeft="10dp"
                     android:paddingRight="10dp"

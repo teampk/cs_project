@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -36,6 +37,8 @@ public class UserInfoActivity extends AppCompatActivity {
 
     private String mToken, mEmail;
 
+    private TextView tvId, tvName, tvBirth, tvDepartment;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +58,13 @@ public class UserInfoActivity extends AppCompatActivity {
     private void bindingView(){
         Button btnBack = findViewById(R.id.btn_back);
         btnBack.setOnClickListener(listener);
+        tvId = findViewById(R.id.tv_id);
+        tvDepartment = findViewById(R.id.tv_department);
+        tvBirth = findViewById(R.id.tv_birth);
+        tvName = findViewById(R.id.tv_name);
+        Button btPasswordChange = findViewById(R.id.bt_password_change);
+        btPasswordChange.setOnClickListener(listener);
+
     }
     private void loadData(){
         mSubscriptions.add(NetworkUtil.getRetrofit(mToken).getProfile(mEmail)
@@ -64,11 +74,13 @@ public class UserInfoActivity extends AppCompatActivity {
     }
 
     private void handleResponse(User user){
-        Log.d("TESTDATAPAENG", "id:"+user.getmId());
-        Log.d("TESTDATAPAENG", "name:"+user.getmName());
-        Log.d("TESTDATAPAENG", "gender:"+user.getmGender());
-        Log.d("TESTDATAPAENG", "department:"+user.getmDepartment());
-        Log.d("TESTDATAPAENG", "birth:"+user.getmBirth());
+
+        tvId.setText(user.getmId());
+        tvName.setText(user.getmName());
+        tvDepartment.setText(user.getmDepartment());
+        tvBirth.setText(user.getmBirth());
+
+
     }
 
     private void handleError(Throwable error) {
@@ -112,6 +124,11 @@ public class UserInfoActivity extends AppCompatActivity {
             switch (v.getId()){
                 case R.id.btn_back:
                     finish();
+                    break;
+                case R.id.bt_password_change:
+                    showSnackBarMessage("준비중입니다...");
+                    break;
+                default:
                     break;
             }
         }
