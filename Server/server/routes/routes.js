@@ -68,7 +68,6 @@ router.get('/users/:id', function(req, res) {
   }
 });
 
-
 router.post('/users', function(req,res){
   var id = req.body.mId;
   var password = req.body.mPassword;
@@ -97,7 +96,6 @@ router.post('/users', function(req,res){
   }
 });
 
-
 router.get('/getValue/:id', function(req, res){
   console.log("id="+req.params.id);
 
@@ -113,7 +111,6 @@ router.get('/getValue/:id', function(req, res){
       });
     });
 });
-
 
 router.post('/registerValue', function (req, res){
   var userId = req.body.userId;
